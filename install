@@ -1,6 +1,4 @@
 #!/bin/bash
 mkdir _backup
 mkdir _temp
-mkdir -p ${XDG_CONFIG_HOME:=$HOME/.config}
-ln -s "$(cd . && pwd)" $XDG_CONFIG_HOME/nvim
 nvim +PlugInstall +qall
