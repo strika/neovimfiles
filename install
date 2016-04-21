@@ -1,0 +1,4 @@
+#!/bin/bash
+
+mkdir -p ${XDG_CONFIG_HOME:=$HOME/.config}
+ln -s . $XDG_CONFIG_HOME/nvim
