@@ -45,8 +45,8 @@ set noerrorbells visualbell t_vb=      " Disable bell
 set hidden                             " Allow backgrounding buffers without writing
                                        " them, and remember marks/undo for backgrounded
                                        " buffers
-set backupdir=~/.config/neovim/_backup " where to put backup files.
-set directory=~/.config/neovim/_temp   " where to put swap files.
+set backupdir=~/.config/nvim/_backup   " where to put backup files.
+set directory=~/.config/nvim/_temp     " where to put swap files.
 
 " Whitespace
 set nowrap                        " don't wrap lines
