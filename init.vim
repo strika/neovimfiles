@@ -1,6 +1,3 @@
-set nocompatible
-set encoding=utf-8
-
 call plug#begin('~/.config/nvim/plugged')
 
 Plug 'Lokaltog/vim-powerline'
@@ -33,8 +30,6 @@ Plug 'vim-ruby/vim-ruby'
 
 call plug#end()
 
-syntax enable
-
 runtime macros/matchit.vim          " Enables % to cycle through `if/else/endif`, recognizing Ruby blocks, etc.
 
 set number
@@ -43,7 +38,6 @@ set cursorline                         " Highlight the line of the cursor
 set showcmd                            " Show partial commands below the status line
 set shell=bash                         " Avoids munging PATH under zsh
 let g:is_bash=1                        " Default shell syntax
-set history=200                        " Remember more Ex commands
 set scrolloff=3                        " Have some context around the current line always
                                        " on screen
 set noerrorbells visualbell t_vb=      " Disable bell
@@ -58,11 +52,8 @@ set nowrap                        " don't wrap lines
 set tabstop=2                     " a tab is two spaces
 set shiftwidth=2                  " an autoindent (with <<) is two spaces
 set expandtab                     " use spaces, not tabs
-set backspace=indent,eol,start    " backspace through everything in insert mode
 
 " Searching
-set hlsearch                      " highlight matches
-set incsearch                     " incremental searching
 set ignorecase                    " searches are case insensitive...
 set smartcase                     " ... unless they contain at least one capital letter
 
@@ -146,8 +137,6 @@ vnoremap <silent> <C-S> <C-C>:update<CR>
 inoremap <silent> <C-S> <C-O>:update<CR>
 
 if has("statusline") && !&cp
-  set laststatus=2  " always show the status bar
-
   " Start the status line
   set statusline=%f\ %m\ %r
 
