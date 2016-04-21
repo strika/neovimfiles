@@ -1,6 +1,5 @@
 call plug#begin('~/.config/nvim/plugged')
 
-Plug 'Lokaltog/vim-powerline'
 Plug 'chriskempson/base16-vim'
 Plug 'danro/rename.vim'
 Plug 'godlygeek/tabular'
@@ -26,6 +25,8 @@ Plug 'tpope/vim-markdown'
 Plug 'tpope/vim-rails'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'vim-ruby/vim-ruby'
 
 call plug#end()
