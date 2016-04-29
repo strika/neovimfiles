@@ -107,6 +107,7 @@ map <leader>gv :CtrlP app/views<cr>
 map <leader>gc :CtrlP app/controllers<cr>
 map <leader>gm :CtrlP app/models<cr>
 map <leader>gh :CtrlP app/helpers<cr>
+map <leader>gj :CtrlP app/assets/javascripts<cr>
 map <leader>gf :CtrlP features<cr>
 map <leader>gs :CtrlP spec<cr>
 map <leader>gt :CtrlP test<cr>
