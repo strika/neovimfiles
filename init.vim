@@ -116,6 +116,7 @@ map <leader>f :CtrlP ./<cr>
 map <leader>b :CtrlPBuffer<cr>
 map <leader>gd :e db/schema.rb<cr>
 map <leader>gr :e config/routes.rb<cr>
+map <leader>gg :e Gemfile<cr>
 map <leader>s :A<CR>
 map <leader>v :AV<CR>
 
