@@ -5,6 +5,7 @@ Plug 'danro/rename.vim'
 Plug 'godlygeek/tabular'
 Plug 'guns/vim-clojure-static'
 Plug 'isRuslan/vim-es6'
+Plug 'janko-m/vim-test'
 Plug 'jeffkreeftmeijer/vim-numbertoggle'
 Plug 'kana/vim-textobj-user'
 Plug 'kchmck/vim-coffee-script'
@@ -13,7 +14,6 @@ Plug 'mileszs/ack.vim'
 Plug 'nelstrom/vim-textobj-rubyblock'
 Plug 'othree/html5.vim'
 Plug 'pangloss/vim-javascript'
-Plug 'renderedtext/vim-bdd'
 Plug 'scrooloose/syntastic'
 Plug 'tpope/vim-classpath'
 Plug 'tpope/vim-commentary'
@@ -119,6 +119,13 @@ map <leader>gr :e config/routes.rb<cr>
 map <leader>gg :e Gemfile<cr>
 map <leader>s :A<CR>
 map <leader>v :AV<CR>
+
+" vim-test
+nmap <silent> <leader>t :TestNearest<CR>
+nmap <silent> <leader>T :TestFile<CR>
+nmap <silent> <leader>l :TestLast<CR>
+nmap <silent> <leader>g :TestVisit<CR>
+let test#strategy = "neovim"
 
 " ignore temp files
 set wildignore+=tmp/**
