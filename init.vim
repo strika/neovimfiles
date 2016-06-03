@@ -166,6 +166,6 @@ nmap <leader>a :Ack ""<Left>
 nmap <leader>A :Ack <C-r><C-w><CR>
 
 " Color scheme
-let base16colorspace=256
+" let base16colorspace=256
 set background=dark
 colorscheme base16-mocha
