@@ -133,8 +133,6 @@ set wildignore+=*/vendor/*
 
 nnoremap <leader><leader> <c-^>
 
-command! KillWhitespace :normal :%s/ *$//g<cr><c-o><cr>
-
 " easier navigation between split windows
 nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
