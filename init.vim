@@ -163,7 +163,7 @@ endif
 " Ack
 let g:ackprg="ack-grep -H --nocolor --nogroup --column"
 nmap <leader>a :Ack ""<Left>
-nmap <leader>A :Ack <C-r><C-w><CR>
+nmap <leader>A :Ack <C-r><C-w>
 
 " Color scheme
 " let base16colorspace=256
