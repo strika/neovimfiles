@@ -1,6 +1,7 @@
 call plug#begin('~/.config/nvim/plugged')
 
 Plug 'chriskempson/base16-vim'
+Plug 'danchoi/ri.vim'
 Plug 'danro/rename.vim'
 Plug 'godlygeek/tabular'
 Plug 'guns/vim-clojure-static'
