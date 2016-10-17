@@ -168,3 +168,5 @@ nmap <leader>A :Ack <C-r><C-w>
 " let base16colorspace=256
 set background=dark
 colorscheme base16-mocha
+
+let g:airline_theme='base16'
