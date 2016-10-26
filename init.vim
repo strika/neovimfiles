@@ -145,20 +145,6 @@ noremap <silent> <C-S>  :update<CR>
 vnoremap <silent> <C-S> <C-C>:update<CR>
 inoremap <silent> <C-S> <C-O>:update<CR>
 
-if has("statusline") && !&cp
-  " Start the status line
-  set statusline=%f\ %m\ %r
-
-  " Add fugitive
-  set statusline+=%{fugitive#statusline()}
-
-  " Finish the statusline
-  set statusline+=Line:%l/%L[%p%%]
-  set statusline+=Col:%v
-  set statusline+=Buf:#%n
-  set statusline+=[%b][0x%B]
-endif
-
 " Ack
 let g:ackprg="ack-grep -H --nocolor --nogroup --column"
 nmap <leader>a :Ack ""<Left>
