@@ -150,6 +150,13 @@ let g:ackprg="ack-grep -H --nocolor --nogroup --column"
 nmap <leader>a :Ack ""<Left>
 nmap <leader>A :Ack <C-r><C-w>
 
+" Airline
+let g:airline_left_sep = ""
+let g:airline_right_sep = ""
+let g:airline_section_x = ""
+let g:airline_section_y = ""
+let g:airline_section_z = "%l/%L %-3.c"
+
 " Color scheme
 " let base16colorspace=256
 set background=dark
