@@ -13,9 +13,9 @@ Plug 'kchmck/vim-coffee-script'
 Plug 'kien/ctrlp.vim'
 Plug 'mileszs/ack.vim'
 Plug 'nelstrom/vim-textobj-rubyblock'
+Plug 'neomake/neomake'
 Plug 'othree/html5.vim'
 Plug 'pangloss/vim-javascript'
-Plug 'scrooloose/syntastic'
 Plug 'tpope/vim-classpath'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-cucumber'
@@ -91,6 +91,8 @@ if has("autocmd")
 
   " Git
   au Filetype gitcommit setlocal spell textwidth=72
+
+  au BufWritePost * Neomake
 endif
 
 " clear the search buffer when hitting return
