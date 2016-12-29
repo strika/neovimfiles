@@ -12,6 +12,7 @@ Plug 'kana/vim-textobj-user'
 Plug 'kchmck/vim-coffee-script'
 Plug 'kien/ctrlp.vim'
 Plug 'mileszs/ack.vim'
+Plug 'morhetz/gruvbox'
 Plug 'nelstrom/vim-textobj-rubyblock'
 Plug 'neomake/neomake'
 Plug 'othree/html5.vim'
@@ -163,6 +164,6 @@ let g:airline_section_z = "%l/%L %-3.c"
 " Color scheme
 " let base16colorspace=256
 set background=dark
-colorscheme base16-mocha
+colorscheme gruvbox
 
-let g:airline_theme='base16'
+let g:airline_theme='gruvbox'
