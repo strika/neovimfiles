@@ -131,7 +131,7 @@ nmap <silent> <leader>t :TestNearest<CR>
 nmap <silent> <leader>T :TestFile<CR>
 nmap <silent> <leader>l :TestLast<CR>
 nmap <silent> <leader>g :TestVisit<CR>
-let test#strategy = "neovim"
+let test#strategy="neovim"
 
 " ignore temp files
 set wildignore+=tmp/**
@@ -156,17 +156,16 @@ nmap <leader>a :Ack ""<Left>
 nmap <leader>A :Ack <C-r><C-w>
 
 " Airline
-let g:airline_left_sep = ""
-let g:airline_right_sep = ""
-let g:airline_section_x = ""
-let g:airline_section_y = ""
-let g:airline_section_z = "%l/%L %-3.c"
-
-let g:gruvbox_contrast_light = "light"
+let g:airline_left_sep=""
+let g:airline_right_sep=""
+let g:airline_section_x=""
+let g:airline_section_y=""
+let g:airline_section_z="%l/%L %-3.c"
+let g:airline_theme='gruvbox'
 
 " Color scheme
 " let base16colorspace=256
 set background=dark
 colorscheme gruvbox
 
-let g:airline_theme='gruvbox'
+let g:gruvbox_contrast_light="light"
