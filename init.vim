@@ -31,6 +31,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'vim-ruby/vim-ruby'
 Plug 'wakatime/vim-wakatime'
+Plug 'morhetz/gruvbox'
 
 call plug#end()
 
@@ -160,6 +161,8 @@ let g:airline_right_sep = ""
 let g:airline_section_x = ""
 let g:airline_section_y = ""
 let g:airline_section_z = "%l/%L %-3.c"
+
+let g:gruvbox_contrast_light = "light"
 
 " Color scheme
 " let base16colorspace=256
