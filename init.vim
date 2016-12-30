@@ -164,6 +164,6 @@ let g:airline_section_z="%l/%L %-3.c"
 let g:airline_theme="gruvbox"
 
 " Color scheme
-" let base16colorspace=256
+let g:gruvbox_contrast_dark="soft"
 set background=dark
 colorscheme gruvbox
