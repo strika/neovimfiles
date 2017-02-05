@@ -1,5 +1,6 @@
 call plug#begin('~/.config/nvim/plugged')
 
+Plug 'AndrewRadev/splitjoin.vim'
 Plug 'chriskempson/base16-vim'
 Plug 'danchoi/ri.vim'
 Plug 'danro/rename.vim'
@@ -12,6 +13,7 @@ Plug 'kana/vim-textobj-user'
 Plug 'kchmck/vim-coffee-script'
 Plug 'kien/ctrlp.vim'
 Plug 'mileszs/ack.vim'
+Plug 'morhetz/gruvbox'
 Plug 'morhetz/gruvbox'
 Plug 'nelstrom/vim-textobj-rubyblock'
 Plug 'neomake/neomake'
@@ -31,7 +33,6 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'vim-ruby/vim-ruby'
 Plug 'wakatime/vim-wakatime'
-Plug 'morhetz/gruvbox'
 
 call plug#end()
 
