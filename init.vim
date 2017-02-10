@@ -40,6 +40,7 @@ runtime macros/matchit.vim          " Enables % to cycle through `if/else/endif`
 
 set number
 set ruler                              " Show the cursor position all the time
+set colorcolumn=80                     " Show vertical bar at column 80
 set cursorline                         " Highlight the line of the cursor
 set showcmd                            " Show partial commands below the status line
 set shell=bash                         " Avoids munging PATH under zsh
