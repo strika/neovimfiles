@@ -1,7 +1,6 @@
 call plug#begin('~/.config/nvim/plugged')
 
 Plug 'AndrewRadev/splitjoin.vim'
-Plug 'chriskempson/base16-vim'
 Plug 'danchoi/ri.vim'
 Plug 'danro/rename.vim'
 Plug 'godlygeek/tabular'
