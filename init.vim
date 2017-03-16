@@ -164,6 +164,9 @@ let g:airline_section_y=""
 let g:airline_section_z="%l/%L %-3.c"
 let g:airline_theme="gruvbox"
 
+" Reek
+let g:reek_on_loading = 0
+
 " Color scheme
 let g:gruvbox_contrast_dark="soft"
 set background=dark
