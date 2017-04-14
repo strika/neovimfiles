@@ -166,6 +166,7 @@ let g:airline_theme="gruvbox"
 
 " Reek
 let g:reek_on_loading = 0
+let g:reek_line_limit = 1000 " Don't check files with more than 1000 lines
 
 " Color scheme
 let g:gruvbox_contrast_dark="soft"
