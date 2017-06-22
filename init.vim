@@ -84,6 +84,9 @@ if has("autocmd")
   " Clojure
   au BufRead,BufNewFile *.{cljs,boot} setlocal filetype=clojure
 
+  " Encrypted Yaml
+  au BufRead,BufNewFile *.{yml.enc} setlocal filetype=yaml
+
   " Git
   au Filetype gitcommit setlocal spell textwidth=72
 
