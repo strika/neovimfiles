@@ -88,6 +88,8 @@ if has("autocmd")
   " Encrypted Yaml
   au BufRead,BufNewFile *.{yml.enc} setlocal filetype=yaml
 
+  au BufRead,BufNewFile *.{inky} setlocal filetype=html
+
   " Git
   au Filetype gitcommit setlocal spell textwidth=72
 
