@@ -164,6 +164,25 @@ let g:airline_theme="gruvbox"
 let g:reek_on_loading = 0
 let g:reek_line_limit = 1000 " Don't check files with more than 1000 lines
 
+" Nvim Terminal
+" Make escape work in the Neovim terminal.
+tnoremap <Esc> <C-\><C-n>
+
+" Make navigation into and out of Neovim terminal splits nicer.
+tnoremap <C-h> <C-\><C-N><C-w>h
+tnoremap <C-j> <C-\><C-N><C-w>j
+tnoremap <C-k> <C-\><C-N><C-w>k
+tnoremap <C-l> <C-\><C-N><C-w>l
+
+" I like relative numbering when in normal mode.
+autocmd TermOpen * setlocal conceallevel=0 colorcolumn=0 relativenumber
+
+" Prefer Neovim terminal insert mode to normal mode.
+autocmd BufEnter term://* startinsert
+
+" Ruby on Rails
+let g:rubycomplete_rails = 1
+
 " Color scheme
 let g:gruvbox_contrast_dark="soft"
 set background=dark
