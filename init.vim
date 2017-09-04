@@ -128,9 +128,9 @@ nmap <silent> <leader>l :TestLast<CR>
 nmap <silent> <leader>g :TestVisit<CR>
 let test#strategy="neovim"
 
-" ignore temp files
 set wildignore+=tmp/**
 set wildignore+=*/vendor/*
+set wildignore+=*/plugged/*
 
 nnoremap <leader><leader> <c-^>
 
