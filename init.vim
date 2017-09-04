@@ -81,9 +81,6 @@ if has("autocmd")
   au BufReadPost * if &filetype !~ '^git\c' && line("'\"") > 0 && line("'\"") <= line("$")
     \| exe "normal! g`\"" | endif
 
-  " Clojure
-  au BufRead,BufNewFile *.{cljs,boot} setlocal filetype=clojure
-
   " Encrypted Yaml
   au BufRead,BufNewFile *.{yml.enc} setlocal filetype=yaml
 
