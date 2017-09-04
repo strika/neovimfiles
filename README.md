@@ -127,34 +127,29 @@ In visual mode:
 ## Plugins:
 
 * ack.vim
-* base16-vim
 * ctrlp.vim
-* html5.vim
+* gruvbox
+* neomake
 * rename.vim
-* syntastic
+* ri.vim
+* splitjoin.vim
 * tabular
 * vim-airline
 * vim-airline-themes
-* vim-bdd
-* vim-classpath
-* vim-clojure-static
-* vim-coffee-script
 * vim-commentary
-* vim-cucumber
 * vim-endwise
 * vim-es6
-* vim-fireplace
 * vim-fugitive
-* vim-javascript
-* vim-markdown
 * vim-numbertoggle
+* vim-polyglot
 * vim-rails
+* vim-reek
 * vim-repeat
-* vim-ruby
 * vim-surround
+* vim-test
 * vim-textobj-rubyblock
 * vim-textobj-user
 
 ## Included colorschemes:
 
-* base16-vim package
+* gruvbox
