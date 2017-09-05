@@ -62,6 +62,9 @@ function s:setupWrappingAndSpellcheck()
   set spell
 endfunction
 
+" Toggle relative numbers
+nnoremap <C-n> :let &rnu=!&rnu<CR>
+
 if has("autocmd")
   " Delete empty space from the end of lines on every save
   au BufWritePre * :%s/\s\+$//e
