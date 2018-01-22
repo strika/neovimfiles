@@ -1,5 +1,4 @@
-Strika's Neovim configuration
-==========================
+# Strika's Neovim configuration
 
 Thanks to these guys:
 
@@ -124,6 +123,12 @@ In visual mode:
 * `:Gremove` - `rm %`
 * `:Gmove <dest>` - `mv % <dest>`
 
+### splitjoin
+
+* `gS` to split a one-liner into multiple lines
+* `gJ` (with the cursor on the first line of a block) to join a block into a
+  single-line statement
+
 ## Plugins:
 
 * ack.vim
@@ -132,7 +137,7 @@ In visual mode:
 * neomake
 * rename.vim
 * ri.vim
-* splitjoin.vim
+* [splitjoin.vim](https://github.com/AndrewRadev/splitjoin.vim)
 * tabular
 * vim-airline
 * vim-airline-themes
