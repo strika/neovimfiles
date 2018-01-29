@@ -123,29 +123,29 @@ In visual mode:
 
 ## Plugins:
 
-* ack.vim
-* ctrlp.vim
-* gruvbox
-* neomake
-* rename.vim
-* ri.vim
+* [ack.vim](https://github.com/mileszs/ack.vim)
+* [ctrlp.vim](https://github.com/kien/ctrlp.vim)
+* [gruvbox](https://github.com/morhetz/gruvbox)
+* [neomake](https://github.com/neomake/neomake)
+* [rename.vim](https://github.com/danro/rename.vim)
+* [ri.vim](https://github.com/danchoi/ri.vim)
 * [splitjoin.vim](https://github.com/AndrewRadev/splitjoin.vim)
-* tabular
-* vim-airline
-* vim-airline-themes
-* vim-commentary
-* vim-endwise
-* vim-es6
-* vim-fugitive
-* vim-numbertoggle
-* vim-polyglot
-* vim-rails
-* vim-reek
-* vim-repeat
-* vim-surround
-* vim-test
-* vim-textobj-rubyblock
-* vim-textobj-user
+* [tabular](https://github.com/godlygeek/tabular)
+* [vim-airline-themes](https://github.com/vim-airline/vim-airline-themes)
+* [vim-airline](https://github.com/vim-airline/vim-airline)
+* [vim-commentary](https://github.com/tpope/vim-commentary)
+* [vim-endwise](https://github.com/tpope/vim-endwise)
+* [vim-es6](https://github.com/isRuslan/vim-es6)
+* [vim-fugitive](https://github.com/tpope/vim-fugitive)
+* [vim-numbertoggle](https://github.com/jeffkreeftmeijer/vim-numbertoggle)
+* [vim-polyglot](https://github.com/sheerun/vim-polyglot)
+* [vim-rails](https://github.com/tpope/vim-rails)
+* [vim-reek](https://github.com/rainerborene/vim-reek)
+* [vim-repeat](https://github.com/tpope/vim-repeat)
+* [vim-surround](https://github.com/tpope/vim-surround)
+* [vim-test](https://github.com/janko-m/vim-test)
+* [vim-textobj-rubyblock](https://github.com/nelstrom/vim-textobj-rubyblock)
+* [vim-textobj-user](https://github.com/kana/vim-textobj-user)
 
 ## Included colorschemes:
 
