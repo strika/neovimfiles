@@ -149,7 +149,7 @@ In visual mode:
 
 ## Included colorschemes:
 
-* gruvbox
+* [gruvbox](https://github.com/morhetz/gruvbox)
 
 Thanks to these guys:
 
