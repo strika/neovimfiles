@@ -1,19 +1,11 @@
 # Strika's Neovim configuration
 
-Thanks to these guys:
-
-* [Drew Neil](http://vimcasts.org)
-* [Gary Bernhardt](http://destroyallsoftware.com)
-* [Janus project](https://github.com/carlhuda/janus)
-* [Mislav Marohnić](http://mislav.uniqpath.com/)
-* [Tim Pope](http://tbaggery.com)
-
 ## Installation:
 
 Prerequisites: git, ack.
 
 1. Move your existing configuration somewhere else:
-   `mv ~/.config/nvim* nvim_backup`
+   `mv ~/.config/nvim ~/.config/nvim_backup`
 2. Clone this repo into ".config/nvim":
    `git clone https://github.com/strika/neovimfiles ~/.config/nvim`
 3. Go into ".config/nvim" and run "install":
@@ -158,3 +150,11 @@ In visual mode:
 ## Included colorschemes:
 
 * gruvbox
+
+Thanks to these guys:
+
+* [Drew Neil](http://vimcasts.org)
+* [Gary Bernhardt](http://destroyallsoftware.com)
+* [Janus project](https://github.com/carlhuda/janus)
+* [Mislav Marohnić](http://mislav.uniqpath.com/)
+* [Tim Pope](http://tbaggery.com)
