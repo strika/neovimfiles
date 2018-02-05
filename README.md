@@ -22,7 +22,6 @@ installation fails for any reason, open Neovim and run `:PlugInstall`.
 * `<C-j/k/h/l>` - switch between splits (no need to prepend `<C-w>`)
 * relative line numbers by default
 * `<C-n>` switches between relative and absolute line numbers
-* `Q` - format lines
 * `  ` (space, space) - alternates between two most recent buffers
 * `<leader>f` - opens file search with :CtrlP plugin:
   * `<leader>b` - search in directory of current buffer
