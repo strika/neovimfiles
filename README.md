@@ -63,10 +63,9 @@ Surround + rails.vim:
 
 ### Commentary
 
-* `\\{motion}` - comment/uncomment lines that {motion} moves over
-* `\\\` - comment/uncomment [count] lines
-* `{Visual}\\` - comment/uncomment the highlighted lines
-* `\\u` - uncomment the current and adjacent commented lines
+* `gcc` - comment out a line (takes a count)
+* `gc` - comment out the target of a motion (for example, gcap to comment out a paragraph)
+* `gc` - in visual, comment out the selection
 
 ### ruby.vim
 
