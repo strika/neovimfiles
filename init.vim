@@ -25,34 +25,34 @@ Plug 'vim-airline/vim-airline-themes'
 
 call plug#end()
 
-runtime macros/matchit.vim          " Enables % to cycle through `if/else/endif`, recognizing Ruby blocks, etc.
+runtime macros/matchit.vim              " Enables % to cycle through `if/else/endif`, recognizing Ruby blocks, etc.
 
 set number
-set ruler                              " Show the cursor position all the time
-set colorcolumn=80                     " Show vertical bar at column 80
-set cursorline                         " Highlight the line of the cursor
-set showcmd                            " Show partial commands below the status line
-set shell=bash                         " Avoids munging PATH under zsh
-let g:is_bash=1                        " Default shell syntax
-set scrolloff=3                        " Have some context around the current line always
-                                       " on screen
-set noerrorbells visualbell t_vb=      " Disable bell
-set hidden                             " Allow backgrounding buffers without writing
-                                       " them, and remember marks/undo for backgrounded
-                                       " buffers
-set backupdir=~/.config/nvim/_backup   " where to put backup files
-set directory=~/.config/nvim/_temp     " where to put swap files
-set inccommand=nosplit                 " incremental substitute
+set ruler                               " Show the cursor position all the time
+set colorcolumn=80                      " Show vertical bar at column 80
+set cursorline                          " Highlight the line of the cursor
+set showcmd                             " Show partial commands below the status line
+set shell=bash                          " Avoids munging PATH under zsh
+let g:is_bash=1                         " Default shell syntax
+set scrolloff=3                         " Have some context around the current line always
+                                        " on screen
+set noerrorbells visualbell t_vb=       " Disable bell
+set hidden                              " Allow backgrounding buffers without writing
+                                        " them, and remember marks/undo for backgrounded
+                                        " buffers
+set backupdir=~/.config/nvim/_backup    " where to put backup files
+set directory=~/.config/nvim/_temp      " where to put swap files
+set inccommand=nosplit                  " incremental substitute
 
 " Whitespace
-set nowrap                        " don't wrap lines
-set tabstop=2                     " a tab is two spaces
-set shiftwidth=2                  " an autoindent (with <<) is two spaces
-set expandtab                     " use spaces, not tabs
+set nowrap                              " don't wrap lines
+set tabstop=2                           " a tab is two spaces
+set shiftwidth=2                        " an autoindent (with <<) is two spaces
+set expandtab                           " use spaces, not tabs
 
 " Searching
-set ignorecase                    " searches are case insensitive...
-set smartcase                     " ... unless they contain at least one capital letter
+set ignorecase                          " searches are case insensitive...
+set smartcase                           " ... unless they contain at least one capital letter
 
 function s:setupWrappingAndSpellcheck()
   set wrap
