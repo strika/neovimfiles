@@ -133,7 +133,6 @@ In visual mode:
 * [vim-airline](https://github.com/vim-airline/vim-airline)
 * [vim-commentary](https://github.com/tpope/vim-commentary)
 * [vim-endwise](https://github.com/tpope/vim-endwise)
-* [vim-es6](https://github.com/isRuslan/vim-es6)
 * [vim-fugitive](https://github.com/tpope/vim-fugitive)
 * [vim-numbertoggle](https://github.com/jeffkreeftmeijer/vim-numbertoggle)
 * [vim-polyglot](https://github.com/sheerun/vim-polyglot)
