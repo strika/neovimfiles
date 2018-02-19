@@ -99,10 +99,6 @@ endif
 
 let mapleader=" "
 
-" paste lines from unnamed register and fix indentation
-nmap <leader>p pV`]=
-nmap <leader>P PV`]=
-
 inoremap jj <Esc>
 
 map <leader>ga :CtrlP app<cr>
