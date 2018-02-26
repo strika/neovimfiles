@@ -129,6 +129,7 @@ set wildignore+=tmp/**
 set wildignore+=*/vendor/*
 set wildignore+=*/plugged/*
 
+" switch between 2 files opened last
 nnoremap <leader><leader> <c-^>
 
 " easier navigation between split windows
