@@ -22,6 +22,7 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'arcticicestudio/nord-vim'
 
 call plug#end()
 
@@ -154,7 +155,7 @@ let g:airline_right_sep=""
 let g:airline_section_x=""
 let g:airline_section_y=""
 let g:airline_section_z="%l/%L %-3.c"
-let g:airline_theme="gruvbox"
+let g:airline_theme="nord"
 
 " Reek
 let g:reek_on_loading = 0
@@ -180,6 +181,4 @@ autocmd BufEnter term://* startinsert
 let g:rubycomplete_rails = 1
 
 " Color scheme
-let g:gruvbox_contrast_dark="soft"
-set background=dark
-colorscheme gruvbox
+colorscheme nord
