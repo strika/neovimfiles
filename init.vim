@@ -112,6 +112,7 @@ map <leader>gf :CtrlP features<cr>
 map <leader>gs :CtrlP spec<cr>
 map <leader>gt :CtrlP test<cr>
 map <leader>gl :CtrlP lib<cr>
+map <leader>ge :CtrlP engines<cr>
 map <leader>f :CtrlP ./<cr>
 map <leader>b :CtrlPBuffer<cr>
 map <leader>gd :e db/schema.rb<cr>
