@@ -1,13 +1,15 @@
 call plug#begin('~/.config/nvim/plugged')
 
 Plug 'AndrewRadev/splitjoin.vim'
+Plug 'arcticicestudio/nord-vim'
 Plug 'danchoi/ri.vim'
 Plug 'danro/rename.vim'
 Plug 'godlygeek/tabular'
 Plug 'janko-m/vim-test'
 Plug 'jeffkreeftmeijer/vim-numbertoggle'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
+Plug 'junegunn/fzf.vim'
 Plug 'kana/vim-textobj-user'
-Plug 'kien/ctrlp.vim'
 Plug 'mileszs/ack.vim'
 Plug 'morhetz/gruvbox'
 Plug 'nelstrom/vim-textobj-rubyblock'
@@ -22,7 +24,6 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'arcticicestudio/nord-vim'
 
 call plug#end()
 
@@ -102,19 +103,19 @@ let mapleader=" "
 
 inoremap jj <Esc>
 
-map <leader>ga :CtrlP app<cr>
-map <leader>gv :CtrlP app/views<cr>
-map <leader>gc :CtrlP app/controllers<cr>
-map <leader>gm :CtrlP app/models<cr>
-map <leader>gh :CtrlP app/helpers<cr>
-map <leader>gj :CtrlP app/assets/javascripts<cr>
-map <leader>gf :CtrlP features<cr>
-map <leader>gs :CtrlP spec<cr>
-map <leader>gt :CtrlP test<cr>
-map <leader>gl :CtrlP lib<cr>
-map <leader>ge :CtrlP engines<cr>
-map <leader>f :CtrlP ./<cr>
-map <leader>b :CtrlPBuffer<cr>
+map <leader>ga :Files app<cr>
+map <leader>gv :Files app/views<cr>
+map <leader>gc :Files app/controllers<cr>
+map <leader>gm :Files app/models<cr>
+map <leader>gh :Files app/helpers<cr>
+map <leader>gj :Files app/assets/javascripts<cr>
+map <leader>gf :Files features<cr>
+map <leader>gs :Files spec<cr>
+map <leader>gt :Files test<cr>
+map <leader>gl :Files lib<cr>
+map <leader>ge :Files engines<cr>
+map <leader>f :Files ./<cr>
+map <leader>b :Buffers<cr>
 map <leader>gd :e db/schema.rb<cr>
 map <leader>gr :e config/routes.rb<cr>
 map <leader>gg :e Gemfile<cr>
@@ -180,6 +181,22 @@ autocmd BufEnter term://* startinsert
 
 " Ruby on Rails
 let g:rubycomplete_rails = 1
+
+" FZF
+let g:fzf_colors =
+\ { 'fg':      ['fg', 'Normal'],
+  \ 'bg':      ['bg', 'Normal'],
+  \ 'hl':      ['fg', 'Comment'],
+  \ 'fg+':     ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
+  \ 'bg+':     ['bg', 'CursorLine', 'CursorColumn'],
+  \ 'hl+':     ['fg', 'Statement'],
+  \ 'info':    ['fg', 'PreProc'],
+  \ 'border':  ['fg', 'Ignore'],
+  \ 'prompt':  ['fg', 'Conditional'],
+  \ 'pointer': ['fg', 'Exception'],
+  \ 'marker':  ['fg', 'Keyword'],
+  \ 'spinner': ['fg', 'Label'],
+  \ 'header':  ['fg', 'Comment'] }
 
 " Color scheme
 colorscheme nord
