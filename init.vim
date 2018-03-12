@@ -183,6 +183,8 @@ autocmd BufEnter term://* startinsert
 let g:rubycomplete_rails = 1
 
 " FZF
+autocmd FileType fzf tnoremap <buffer> <C-j> <Down>
+autocmd FileType fzf tnoremap <buffer> <C-k> <Up>
 let g:fzf_colors =
 \ { 'fg':      ['fg', 'Normal'],
   \ 'bg':      ['bg', 'Normal'],
