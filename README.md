@@ -146,7 +146,7 @@ In visual mode:
 
 ## Included colorschemes:
 
-* [gruvbox](https://github.com/morhetz/gruvbox)
+* [nord](https://github.com/arcticicestudio/nord-vim)
 
 Thanks to these guys:
 
