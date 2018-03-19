@@ -62,10 +62,6 @@ function s:setupWrappingAndSpellcheck()
   set spell
 endfunction
 
-function! IsOnBattery()
-  return readfile('/sys/class/power_supply/AC/online') == ['0']
-endfunction
-
 " Toggle relative numbers
 nnoremap <C-n> :let &rnu=!&rnu<CR>
 
@@ -202,11 +198,7 @@ let g:fzf_colors =
   \ 'header':  ['fg', 'Comment'] }
 
 " Neomake
-if IsOnBattery()
-  call neomake#configure#automake('w')
-else
-  call neomake#configure#automake('nw', 1000)
-endif
+call neomake#configure#automake('nw', 1000)
 
 " Color scheme
 colorscheme nord
