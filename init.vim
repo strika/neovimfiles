@@ -11,7 +11,6 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
 Plug 'junegunn/fzf.vim'
 Plug 'kana/vim-textobj-user'
 Plug 'mileszs/ack.vim'
-Plug 'morhetz/gruvbox'
 Plug 'nelstrom/vim-textobj-rubyblock'
 Plug 'neomake/neomake'
 Plug 'rainerborene/vim-reek'
