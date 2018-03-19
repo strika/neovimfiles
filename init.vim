@@ -62,6 +62,10 @@ function s:setupWrappingAndSpellcheck()
   set spell
 endfunction
 
+function! IsOnBattery()
+  return readfile('/sys/class/power_supply/AC/online') == ['0']
+endfunction
+
 " Toggle relative numbers
 nnoremap <C-n> :let &rnu=!&rnu<CR>
 
@@ -91,8 +95,6 @@ if has("autocmd")
 
   " Git
   au Filetype gitcommit setlocal spell textwidth=72
-
-  au BufWritePost * Neomake
 endif
 
 " clear the search buffer when hitting return
@@ -198,6 +200,13 @@ let g:fzf_colors =
   \ 'marker':  ['fg', 'Keyword'],
   \ 'spinner': ['fg', 'Label'],
   \ 'header':  ['fg', 'Comment'] }
+
+" Neomake
+if IsOnBattery()
+  call neomake#configure#automake('w')
+else
+  call neomake#configure#automake('nw', 1000)
+endif
 
 " Color scheme
 colorscheme nord
