@@ -32,6 +32,7 @@ set ruler                               " Show the cursor position all the time
 set colorcolumn=80                      " Show vertical bar at column 80
 set cursorline                          " Highlight the line of the cursor
 set showcmd                             " Show partial commands below the status line
+set noshowmode                          " Don't show current model - it's already displayed in Airline
 set shell=bash                          " Avoids munging PATH under zsh
 let g:is_bash=1                         " Default shell syntax
 set scrolloff=3                         " Have some context around the current line always
