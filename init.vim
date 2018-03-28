@@ -198,7 +198,7 @@ let g:fzf_colors =
   \ 'header':  ['fg', 'Comment'] }
 
 " Neomake
-call neomake#configure#automake('nw', 1000)
+call neomake#configure#automake('w')
 
 " Color scheme
 colorscheme nord
