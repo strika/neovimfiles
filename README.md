@@ -123,8 +123,8 @@ In visual mode:
 
 * [ack.vim](https://github.com/mileszs/ack.vim)
 * [ctrlp.vim](https://github.com/kien/ctrlp.vim)
-* [gruvbox](https://github.com/morhetz/gruvbox)
 * [neomake](https://github.com/neomake/neomake)
+* [nord-vim](https://github.com/arcticicestudio/nord-vim)
 * [rename.vim](https://github.com/danro/rename.vim)
 * [ri.vim](https://github.com/danchoi/ri.vim)
 * [splitjoin.vim](https://github.com/AndrewRadev/splitjoin.vim)
@@ -134,6 +134,8 @@ In visual mode:
 * [vim-commentary](https://github.com/tpope/vim-commentary)
 * [vim-endwise](https://github.com/tpope/vim-endwise)
 * [vim-fugitive](https://github.com/tpope/vim-fugitive)
+* [vim-gitgutter](https://github.com/airblade/vim-gitgutter)
+* [vim-gutentags](https://github.com/ludovicchabant/vim-gutentags)
 * [vim-numbertoggle](https://github.com/jeffkreeftmeijer/vim-numbertoggle)
 * [vim-polyglot](https://github.com/sheerun/vim-polyglot)
 * [vim-rails](https://github.com/tpope/vim-rails)
