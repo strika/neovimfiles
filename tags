@@ -113,13 +113,14 @@ $PYTHONWARNINGS	plugged/vim-polyglot/compiler/python.vim	/^  let $PYTHONWARNINGS
 <Plug><cfile>	plugged/vim-polyglot/ftplugin/ruby.vim	/^cmap <buffer><script><expr> <Plug><cfile> substitute(RubyCursorFile(),'^$',"\\022\\006",'')$/;"	m
 <Plug><cword>	plugged/vim-polyglot/ftplugin/ruby.vim	/^cmap <buffer><script><expr> <Plug><cword> substitute(RubyCursorIdentifier(),'^$',"\\022\\027",'')$/;"	m
 <Plug>AlwaysEnd	plugged/vim-endwise/plugin/endwise.vim	/^  imap    <script> <Plug>AlwaysEnd        <SID>AlwaysEnd$/;"	m
+<Plug>AutoPairsReturn	plugged/auto-pairs/plugin/auto-pairs.vim	/^imap <script> <Plug>AutoPairsReturn <SID>AutoPairsReturn$/;"	m
 <Plug>BUncomOff	plugged/vim-polyglot/ftplugin/ocaml.vim	/^  vnoremap <buffer> <Plug>BUncomOff <ESC>:'<,'><CR>`<dd`>dd`<$/;"	m
 <Plug>BUncomOn	plugged/vim-polyglot/ftplugin/ocaml.vim	/^  vnoremap <buffer> <Plug>BUncomOn <ESC>:'<,'><CR>`<O<ESC>0i(*<ESC>`>o<ESC>0i*)<ESC>`<$/;"	m
 <Plug>CSurround	plugged/vim-surround/plugin/surround.vim	/^nnoremap <silent> <Plug>CSurround  :<C-U>call <SID>changesurround(1)<CR>$/;"	m
 <Plug>ChangeCommentary	plugged/vim-commentary/plugin/commentary.vim	/^nnoremap <silent> <Plug>ChangeCommentary c:<C-U>call <SID>textobject(1)<CR>$/;"	m
-<Plug>Commentary	plugged/vim-commentary/plugin/commentary.vim	/^nnoremap <silent> <Plug>Commentary     :<C-U>set opfunc=<SID>go<CR>g@$/;"	m
+<Plug>Commentary	plugged/vim-commentary/plugin/commentary.vim	/^nnoremap <expr>   <Plug>Commentary     <SID>go()$/;"	m
 <Plug>Commentary	plugged/vim-commentary/plugin/commentary.vim	/^onoremap <silent> <Plug>Commentary        :<C-U>call <SID>textobject(0)<CR>$/;"	m
-<Plug>CommentaryLine	plugged/vim-commentary/plugin/commentary.vim	/^nnoremap <silent> <Plug>CommentaryLine :<C-U>set opfunc=<SID>go<Bar>exe 'norm! 'v:count1.'g@_'<CR>$/;"	m
+<Plug>CommentaryLine	plugged/vim-commentary/plugin/commentary.vim	/^nnoremap <expr>   <Plug>CommentaryLine <SID>go() . '_'$/;"	m
 <Plug>CommentaryUndo	plugged/vim-commentary/plugin/commentary.vim	/^nmap <silent> <Plug>CommentaryUndo <Plug>Commentary<Plug>Commentary$/;"	m
 <Plug>Csurround	plugged/vim-surround/plugin/surround.vim	/^nnoremap <silent> <Plug>Csurround  :<C-U>call <SID>changesurround()<CR>$/;"	m
 <Plug>DiscretionaryEnd	plugged/vim-endwise/plugin/endwise.vim	/^  imap    <script> <Plug>DiscretionaryEnd <SID>DiscretionaryEnd$/;"	m
@@ -160,6 +161,7 @@ $PYTHONWARNINGS	plugged/vim-polyglot/compiler/python.vim	/^  let $PYTHONWARNINGS
 <SID>:	plugged/vim-polyglot/ftplugin/ruby.vim	/^  nmap <buffer><script> <SID>:  :<C-U>$/;"	m
 <SID>:	plugged/vim-rails/autoload/rails.vim	/^nnoremap <SID>: :<C-U><C-R>=v:count ? v:count : ''<CR>$/;"	m
 <SID>AlwaysEnd	plugged/vim-endwise/plugin/endwise.vim	/^  inoremap <silent> <SID>AlwaysEnd        <C-R>=<SID>crend(1)<CR>$/;"	m
+<SID>AutoPairsReturn	plugged/auto-pairs/plugin/auto-pairs.vim	/^inoremap <silent> <SID>AutoPairsReturn <C-R>=AutoPairsReturn()<CR>$/;"	m
 <SID>DiscretionaryEnd	plugged/vim-endwise/plugin/endwise.vim	/^  inoremap <silent> <SID>DiscretionaryEnd <C-R>=<SID>crend(0)<CR>$/;"	m
 <SID>c:	plugged/vim-polyglot/ftplugin/ruby.vim	/^  nmap <buffer><script> <SID>c: :<C-U><C-R>=v:count ? v:count : ''<CR>$/;"	m
 <SID>foldopen	plugged/vim-polyglot/ftplugin/cucumber.vim	/^  cnoremap <SID>foldopen <Bar>if &foldopen =~# 'tag'<Bar>exe 'norm! zv'<Bar>endif$/;"	m
@@ -339,6 +341,18 @@ AtomsLexer	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/lexer
 AuthBase	plugged/vim-wakatime/plugin/packages/wakatime/packages/requests/auth.py	/^class AuthBase(object):$/;"	c
 AuthenticateMessage	plugged/vim-wakatime/plugin/packages/wakatime/packages/ntlm_auth/messages.py	/^class AuthenticateMessage(object):$/;"	c
 AutoItLexer	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/lexers/automation.py	/^class AutoItLexer(RegexLexer):$/;"	c
+AutoPairsBackInsert	plugged/auto-pairs/plugin/auto-pairs.vim	/^function! AutoPairsBackInsert()$/;"	f
+AutoPairsDelete	plugged/auto-pairs/plugin/auto-pairs.vim	/^function! AutoPairsDelete()$/;"	f
+AutoPairsFastWrap	plugged/auto-pairs/plugin/auto-pairs.vim	/^function! AutoPairsFastWrap()$/;"	f
+AutoPairsInit	plugged/auto-pairs/plugin/auto-pairs.vim	/^function! AutoPairsInit()$/;"	f
+AutoPairsInsert	plugged/auto-pairs/plugin/auto-pairs.vim	/^function! AutoPairsInsert(key)$/;"	f
+AutoPairsJump	plugged/auto-pairs/plugin/auto-pairs.vim	/^function! AutoPairsJump()$/;"	f
+AutoPairsMap	plugged/auto-pairs/plugin/auto-pairs.vim	/^function! AutoPairsMap(key)$/;"	f
+AutoPairsMoveCharacter	plugged/auto-pairs/plugin/auto-pairs.vim	/^function! AutoPairsMoveCharacter(key)$/;"	f
+AutoPairsReturn	plugged/auto-pairs/plugin/auto-pairs.vim	/^function! AutoPairsReturn()$/;"	f
+AutoPairsSpace	plugged/auto-pairs/plugin/auto-pairs.vim	/^function! AutoPairsSpace()$/;"	f
+AutoPairsToggle	plugged/auto-pairs/plugin/auto-pairs.vim	/^function! AutoPairsToggle()$/;"	f
+AutoPairsTryInit	plugged/auto-pairs/plugin/auto-pairs.vim	/^function! AutoPairsTryInit()$/;"	f
 AutohotkeyLexer	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/lexers/automation.py	/^class AutohotkeyLexer(RegexLexer):$/;"	c
 AutumnStyle	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/styles/autumn.py	/^class AutumnStyle(Style):$/;"	c
 AvFlags	plugged/vim-wakatime/plugin/packages/wakatime/packages/ntlm_auth/constants.py	/^class AvFlags(object):$/;"	c
@@ -529,7 +543,7 @@ BufCommands	plugged/vim-rails/autoload/rails.vim	/^function! s:BufCommands()$/;"
 BufDatabase	plugged/vim-rails/autoload/rails.vim	/^function! s:BufDatabase(level, ...)$/;"	f
 BufMappings	plugged/vim-rails/autoload/rails.vim	/^function! s:BufMappings() abort$/;"	f
 BufNavCommands	plugged/vim-rails/autoload/rails.vim	/^function! s:BufNavCommands()$/;"	f
-BufProjectionCommands	plugged/vim-rails/autoload/rails.vim	/^function! s:BufProjectionCommands()$/;"	f
+BufProjectionCommands	plugged/vim-rails/autoload/rails.vim	/^function! s:BufProjectionCommands() abort$/;"	f
 BufReadIndex	plugged/vim-fugitive/plugin/fugitive.vim	/^function! s:BufReadIndex() abort$/;"	f
 BufReadIndexFile	plugged/vim-fugitive/plugin/fugitive.vim	/^function! s:BufReadIndexFile() abort$/;"	f
 BufReadObject	plugged/vim-fugitive/plugin/fugitive.vim	/^function! s:BufReadObject() abort$/;"	f
@@ -701,7 +715,7 @@ Comment	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/lexers/r
 Comment	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/token.py	/^Comment = Token.Comment$/;"	v
 CommentKeywordMatch	plugged/vim-polyglot/syntax/swift.vim	/^function! s:CommentKeywordMatch(keyword)$/;"	f
 Commentary	plugged/vim-commentary/plugin/commentary.vim	/^command! -range -bar Commentary call s:go(<line1>,<line2>)$/;"	c
-Commit	plugged/vim-fugitive/plugin/fugitive.vim	/^function! s:Commit(args, ...) abort$/;"	f
+Commit	plugged/vim-fugitive/plugin/fugitive.vim	/^function! s:Commit(mods, args, ...) abort$/;"	f
 CommitComplete	plugged/vim-fugitive/plugin/fugitive.vim	/^function! s:CommitComplete(A,L,P) abort$/;"	f
 CommonLispLexer	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/lexers/lisp.py	/^class CommonLispLexer(RegexLexer):$/;"	c
 CompilerSet	plugged/vim-polyglot/compiler/cargo.vim	/^	command -nargs=* CompilerSet setlocal <args>$/;"	c
@@ -1045,6 +1059,7 @@ ExecuteInRoot	plugged/vim-polyglot/autoload/elm.vim	/^function! s:ExecuteInRoot(
 ExecuteInTree	plugged/vim-fugitive/plugin/fugitive.vim	/^function! s:ExecuteInTree(cmd) abort$/;"	f
 ExitingOneLineScope	plugged/vim-polyglot/indent/solidity.vim	/^function s:ExitingOneLineScope(lnum)$/;"	f
 Expand	plugged/vim-polyglot/autoload/rust.vim	/^function! s:Expand(dict, pretty, args)$/;"	f
+ExpandMap	plugged/auto-pairs/plugin/auto-pairs.vim	/^function! s:ExpandMap(map)$/;"	f
 ExprCol	plugged/vim-polyglot/indent/javascript.vim	/^function s:ExprCol()$/;"	f
 ExtendedInterpolation	plugged/vim-wakatime/plugin/packages/wakatime/packages/configparser/__init__.py	/^class ExtendedInterpolation(Interpolation):$/;"	c
 ExtendedRegexLexer	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/lexer.py	/^class ExtendedRegexLexer(RegexLexer):$/;"	c
@@ -1135,6 +1150,7 @@ Foo	plugged/vim-textobj-rubyblock/t/samples/if-else.rb	/^class Foo$/;"	c
 Foo	plugged/vim-textobj-rubyblock/t/samples/nested-blocks.rb	/^module Foo$/;"	m
 ForLoop	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/lexers/robotframework.py	/^class ForLoop(Tokenizer):$/;"	c
 ForceUpdate	plugged/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:ForceUpdate()$/;"	f
+FormatChunk	plugged/auto-pairs/plugin/auto-pairs.vim	/^func! s:FormatChunk(open, close)$/;"	f
 Formatter	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/formatter.py	/^class Formatter(object):$/;"	c
 ForthLexer	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/lexers/forth.py	/^class ForthLexer(RegexLexer):$/;"	c
 FortranFixedLexer	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/lexers/fortran.py	/^class FortranFixedLexer(RegexLexer):$/;"	c
@@ -2533,6 +2549,8 @@ RefreshBuffer	plugged/vim-rails/autoload/rails.vim	/^function! s:RefreshBuffer()
 RegeditLexer	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/lexers/configs.py	/^class RegeditLexer(RegexLexer):$/;"	c
 RegexLexer	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/lexer.py	/^class RegexLexer(Lexer):$/;"	c
 RegexLexerMeta	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/lexer.py	/^class RegexLexerMeta(LexerMeta):$/;"	c
+RegexpQuote	plugged/auto-pairs/plugin/auto-pairs.vim	/^func! s:RegexpQuote(str)$/;"	f
+RegexpQuoteInSquare	plugged/auto-pairs/plugin/auto-pairs.vim	/^func! s:RegexpQuoteInSquare(str)$/;"	f
 RegisterJobOutput	plugged/neomake/autoload/neomake.vim	/^function! s:RegisterJobOutput(jobinfo, lines, source) abort$/;"	f
 RehighlightBlame	plugged/vim-fugitive/plugin/fugitive.vim	/^function! s:RehighlightBlame() abort$/;"	f
 Related	plugged/vim-rails/autoload/rails.vim	/^function! s:Related(cmd,line1,line2,count,...)$/;"	f
@@ -4940,7 +4958,7 @@ add_text	plugged/vim-wakatime/plugin/packages/wakatime/packages/argparse.py	/^  
 add_to_method_dropdown	plugged/ri.vim/plugin/ri_vim.rb	/^  def add_to_method_dropdown classname, store, methods, name$/;"	f	class:RIVim.ancestors_of.display_class.display_class_symbols
 add_unredirected_header	plugged/vim-wakatime/plugin/packages/wakatime/packages/requests/cookies.py	/^    def add_unredirected_header(self, name, value):$/;"	m	class:MockRequest
 add_usage	plugged/vim-wakatime/plugin/packages/wakatime/packages/argparse.py	/^    def add_usage(self, usage, actions, groups, prefix=None):$/;"	m	class:HelpFormatter
-addfilecmds	plugged/vim-rails/autoload/rails.vim	/^function! s:addfilecmds(type)$/;"	f
+addfilecmds	plugged/vim-rails/autoload/rails.vim	/^function! s:addfilecmds(type) abort$/;"	f
 additionProvider	plugged/vim-test/spec/fixtures/dusk/BrowserTest.php	/^    public function additionProvider()$/;"	f
 additionProvider	plugged/vim-test/spec/fixtures/phpunit/NormalTest.php	/^    public function additionProvider()$/;"	f
 address_in_network	plugged/vim-wakatime/plugin/packages/wakatime/packages/requests/utils.py	/^def address_in_network(ip, net):$/;"	f
@@ -7196,7 +7214,6 @@ delimiter	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/lexers
 delimiter	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/lexers/graphics.py	/^    delimiter = r'()<>\\[\\]{}\/%\\s'$/;"	v	class:PostScriptLexer
 delimiter_end	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/lexers/forth.py	/^    delimiter_end = r'(?=[%s])' % delimiter$/;"	v	class:ForthLexer
 delimiter_end	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/lexers/graphics.py	/^    delimiter_end = r'(?=[%s])' % delimiter$/;"	v	class:PostScriptLexer
-deprecate	plugged/vim-rails/autoload/rails.vim	/^function! s:deprecate(old, new, ...) abort$/;"	f
 deregister_hook	plugged/vim-wakatime/plugin/packages/wakatime/packages/requests/models.py	/^    def deregister_hook(self, event, hook):$/;"	m	class:RequestHooksMixin
 des_SPtrans	plugged/vim-wakatime/plugin/packages/wakatime/packages/ntlm_auth/des_data.py	/^    [$/;"	v
 des_c_obj	plugged/vim-wakatime/plugin/packages/wakatime/packages/ntlm_auth/des.py	/^    des_c_obj = None$/;"	v	class:DES
@@ -7969,6 +7986,7 @@ filter	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/filters/_
 filter	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/filters/__init__.py	/^    def filter(self, lexer, stream):$/;"	m	class:VisibleWhitespaceFilter
 filter_high_bit_only	plugged/vim-wakatime/plugin/packages/wakatime/packages/requests/packages/chardet/charsetprober.py	/^    def filter_high_bit_only(self, aBuf):$/;"	m	class:CharSetProber
 filter_methods	plugged/ri.vim/plugin/ri_vim.rb	/^  def filter_methods found, name$/;"	f	class:RIVim.ancestors_of.display_class
+filter_py_warnings	plugged/neomake/autoload/neomake/makers/ft/python.vim	/^function! s:filter_py_warnings(v) abort$/;"	f
 filter_with_english_letters	plugged/vim-wakatime/plugin/packages/wakatime/packages/requests/packages/chardet/charsetprober.py	/^    def filter_with_english_letters(self, aBuf):$/;"	m	class:CharSetProber
 filter_without_english_letters	plugged/vim-wakatime/plugin/packages/wakatime/packages/requests/packages/chardet/charsetprober.py	/^    def filter_without_english_letters(self, aBuf):$/;"	m	class:CharSetProber
 final_argument_whitespace	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/sphinxext.py	/^    final_argument_whitespace = False$/;"	v	class:PygmentsDoc
@@ -8349,6 +8367,23 @@ fzf#vim#with_preview	plugged/fzf.vim/autoload/fzf/vim.vim	/^function! fzf#vim#wi
 fzf_buffers	plugged/fzf.vim/plugin/fzf.vim	/^augroup fzf_buffers$/;"	a
 fzf_restore_colors	plugged/fzf.vim/plugin/fzf.vim	/^  function! s:fzf_restore_colors()$/;"	f
 fzf_vim_term	plugged/fzf.vim/plugin/fzf.vim	/^  function! s:fzf_vim_term()$/;"	f
+g:AutoPairs	plugged/auto-pairs/plugin/auto-pairs.vim	/^  let g:AutoPairs = {'(':')', '[':']', '{':'}',"'":"'",'"':'"', '`':'`'}$/;"	v
+g:AutoPairsCenterLine	plugged/auto-pairs/plugin/auto-pairs.vim	/^  let g:AutoPairsCenterLine = 1$/;"	v
+g:AutoPairsClosedPairs	plugged/auto-pairs/plugin/auto-pairs.vim	/^let g:AutoPairsClosedPairs = {}$/;"	v
+g:AutoPairsFlyMode	plugged/auto-pairs/plugin/auto-pairs.vim	/^  let g:AutoPairsFlyMode = 0$/;"	v
+g:AutoPairsLoaded	plugged/auto-pairs/plugin/auto-pairs.vim	/^let g:AutoPairsLoaded = 1$/;"	v
+g:AutoPairsMapBS	plugged/auto-pairs/plugin/auto-pairs.vim	/^  let g:AutoPairsMapBS = 1$/;"	v
+g:AutoPairsMapCR	plugged/auto-pairs/plugin/auto-pairs.vim	/^  let g:AutoPairsMapCR = 1$/;"	v
+g:AutoPairsMapCh	plugged/auto-pairs/plugin/auto-pairs.vim	/^  let g:AutoPairsMapCh = 1$/;"	v
+g:AutoPairsMapSpace	plugged/auto-pairs/plugin/auto-pairs.vim	/^  let g:AutoPairsMapSpace = 1$/;"	v
+g:AutoPairsMoveCharacter	plugged/auto-pairs/plugin/auto-pairs.vim	/^  let g:AutoPairsMoveCharacter = "()[]{}\\"'"$/;"	v
+g:AutoPairsMultilineClose	plugged/auto-pairs/plugin/auto-pairs.vim	/^  let g:AutoPairsMultilineClose = 1$/;"	v
+g:AutoPairsParens	plugged/auto-pairs/plugin/auto-pairs.vim	/^  let g:AutoPairsParens = {'(':')', '[':']', '{':'}'}$/;"	v
+g:AutoPairsShortcutBackInsert	plugged/auto-pairs/plugin/auto-pairs.vim	/^  let g:AutoPairsShortcutBackInsert = '<M-b>'$/;"	v
+g:AutoPairsShortcutFastWrap	plugged/auto-pairs/plugin/auto-pairs.vim	/^  let g:AutoPairsShortcutFastWrap = '<M-e>'$/;"	v
+g:AutoPairsShortcutJump	plugged/auto-pairs/plugin/auto-pairs.vim	/^  let g:AutoPairsShortcutJump = '<M-n>'$/;"	v
+g:AutoPairsShortcutToggle	plugged/auto-pairs/plugin/auto-pairs.vim	/^  let g:AutoPairsShortcutToggle = '<M-p>'$/;"	v
+g:AutoPairsSmartQuotes	plugged/auto-pairs/plugin/auto-pairs.vim	/^  let g:AutoPairsSmartQuotes = 1$/;"	v
 g:LatexBox_Folding	plugged/vim-polyglot/ftplugin/latex-box/folding.vim	/^	let g:LatexBox_Folding=0$/;"	v
 g:LatexBox_autojump	plugged/vim-polyglot/ftplugin/latex-box/latexmk.vim	/^	let g:LatexBox_autojump = 0$/;"	v
 g:LatexBox_bibtex_wild_spaces	plugged/vim-polyglot/ftplugin/latex-box/complete.vim	/^	let g:LatexBox_bibtex_wild_spaces = 1$/;"	v
@@ -13627,6 +13662,8 @@ g:mako_detect_lang_from_ext	plugged/vim-polyglot/ftdetect/polyglot.vim	/^  let g
 g:mustache_operators	plugged/vim-polyglot/ftplugin/mustache.vim	/^  let g:mustache_operators = 1$/;"	v
 g:neomake	plugged/neomake/autoload/neomake/configure.vim	/^let g:neomake = get(g:, 'neomake', {})$/;"	v
 g:neomake	plugged/neomake/autoload/neomake/configure.vim	/^let g:neomake.automake = get(g:neomake, 'automake', {})$/;"	v
+g:neomake#compat#dev_null	plugged/neomake/autoload/neomake/compat.vim	/^    let g:neomake#compat#dev_null = 'NUL'$/;"	v
+g:neomake#compat#dev_null	plugged/neomake/autoload/neomake/compat.vim	/^    let g:neomake#compat#dev_null = '\/dev\/null'$/;"	v
 g:neomake#config#undefined	plugged/neomake/autoload/neomake/config.vim	/^let g:neomake#config#undefined = {}$/;"	v
 g:neomake#core#command_maker_base	plugged/neomake/autoload/neomake/core.vim	/^let g:neomake#core#command_maker_base = {}$/;"	v
 g:neomake#makers#ft#c#project_root_files	plugged/neomake/autoload/neomake/makers/ft/c.vim	/^let g:neomake#makers#ft#c#project_root_files = ['configure', 'CMakeLists.txt']$/;"	v
@@ -15908,7 +15945,7 @@ g:xmldata_html5	plugged/vim-polyglot/autoload/xml/html5.vim	/^let g:xmldata_html
 gc	plugged/vim-commentary/plugin/commentary.vim	/^  nmap gc  <Plug>Commentary$/;"	m
 gc	plugged/vim-commentary/plugin/commentary.vim	/^  omap gc  <Plug>Commentary$/;"	m
 gc	plugged/vim-polyglot/ftplugin/crystal.vim	/^  nmap <buffer>gc <Plug>(crystal-show-context)$/;"	m
-gcc	plugged/vim-commentary/plugin/commentary.vim	/^  nmap gcc <Plug>CommentaryLine$/;"	m
+gcc	plugged/vim-commentary/plugin/commentary.vim	/^  nmap gcc <Plug>Commentary_$/;"	m
 gcu	plugged/vim-commentary/plugin/commentary.vim	/^  nmap gcu <Plug>Commentary<Plug>Commentary$/;"	m
 gd	plugged/vim-polyglot/ftplugin/crystal.vim	/^  nmap <buffer>gd <Plug>(crystal-jump-to-definition)$/;"	m
 gem	plugged/ri.vim/plugin/ri.vim	/^function! s:gem()$/;"	f
@@ -16303,7 +16340,7 @@ globdirs	plugged/ctrlp.vim/autoload/ctrlp/dir.vim	/^fu! s:globdirs(dirs, depth)$
 gm2_additional_builtins	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/lexers/modula2.py	/^    gm2_additional_builtins = ($/;"	v	class:Modula2Lexer
 gm2_additional_pseudo_builtins	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/lexers/modula2.py	/^    gm2_additional_pseudo_builtins = ($/;"	v	class:Modula2Lexer
 gm2_additional_reserved_words	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/lexers/modula2.py	/^    gm2_additional_reserved_words = ($/;"	v	class:Modula2Lexer
-go	plugged/vim-commentary/plugin/commentary.vim	/^function! s:go(type,...) abort$/;"	f
+go	plugged/vim-commentary/plugin/commentary.vim	/^function! s:go(...) abort$/;"	f
 gobble	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/filters/__init__.py	/^    def gobble(self, value, left):$/;"	m	class:GobbleFilter
 gofiletype_post	plugged/vim-polyglot/ftdetect/polyglot.vim	/^function! s:gofiletype_post()$/;"	f
 gofiletype_pre	plugged/vim-polyglot/ftdetect/polyglot.vim	/^function! s:gofiletype_pre(type)$/;"	f
@@ -16399,11 +16436,15 @@ handle_redirect	plugged/vim-wakatime/plugin/packages/wakatime/packages/requests/
 has	plugged/vim-polyglot/autoload/vital/_crystal/Data/List.vim	/^function! s:has(list, value) abort$/;"	f
 has_common_items	plugged/vim-polyglot/autoload/vital/_crystal/Data/List.vim	/^function! s:has_common_items(list1, list2) abort$/;"	f
 has_content	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/sphinxext.py	/^    has_content = False$/;"	v	class:PygmentsDoc
+has_custom_scm	plugged/vim-airline/autoload/airline/extensions/branch.vim	/^function! s:has_custom_scm()$/;"	f
 has_fresh_changes	plugged/vim-gitgutter/autoload/gitgutter.vim	/^function! s:has_fresh_changes(bufnr) abort$/;"	f
+has_fugitive	plugged/vim-airline/autoload/airline/extensions/branch.vim	/^function! s:has_fugitive()$/;"	f
 has_header	plugged/vim-wakatime/plugin/packages/wakatime/packages/requests/cookies.py	/^    def has_header(self, name):$/;"	m	class:MockRequest
 has_index	plugged/vim-polyglot/autoload/vital/_crystal/Data/List.vim	/^function! s:has_index(list, index) abort$/;"	f
+has_lawrencium	plugged/vim-airline/autoload/airline/extensions/branch.vim	/^function! s:has_lawrencium()$/;"	f
 has_option	plugged/vim-wakatime/plugin/packages/wakatime/packages/configparser/__init__.py	/^    def has_option(self, section, option):$/;"	m	class:RawConfigParser
 has_section	plugged/vim-wakatime/plugin/packages/wakatime/packages/configparser/__init__.py	/^    def has_section(self, section):$/;"	m	class:RawConfigParser
+has_vcscommand	plugged/vim-airline/autoload/airline/extensions/branch.vim	/^function! s:has_vcscommand()$/;"	f
 has_vimproc	plugged/vim-polyglot/autoload/vital/_crystal/Process.vim	/^function! s:has_vimproc() abort$/;"	f
 has_webapi	plugged/vim-polyglot/autoload/rust.vim	/^function! s:has_webapi()$/;"	f
 hash	plugged/vim-polyglot/autoload/vital/_crystal/Data/String.vim	/^function! s:hash(str) abort$/;"	f
@@ -17046,6 +17087,7 @@ lod_ft	autoload/plug.vim	/^function! s:lod_ft(pat, names)$/;"	f
 lod_map	autoload/plug.vim	/^function! s:lod_map(map, names, with_prefix, prefix)$/;"	f
 log	autoload/plug.vim	/^function! s:log(bullet, name, lines)$/;"	f
 log	plugged/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:log(m)$/;"	f
+log	plugged/neomake/autoload/neomake/log.vim	/^function! s:log(level, msg, ...) abort$/;"	f
 log	plugged/vim-wakatime/plugin/packages/wakatime/dependencies/__init__.py	/^log = logging.getLogger('WakaTime')$/;"	v
 log	plugged/vim-wakatime/plugin/packages/wakatime/main.py	/^log = logging.getLogger('WakaTime')$/;"	v
 log	plugged/vim-wakatime/plugin/packages/wakatime/offlinequeue.py	/^log = logging.getLogger('WakaTime')$/;"	v
@@ -18183,6 +18225,12 @@ neomake#highlights#ResetFile	plugged/neomake/autoload/neomake/highlights.vim	/^f
 neomake#highlights#ResetProject	plugged/neomake/autoload/neomake/highlights.vim	/^function! neomake#highlights#ResetProject(buf) abort$/;"	f
 neomake#highlights#ShowHighlights	plugged/neomake/autoload/neomake/highlights.vim	/^    function! neomake#highlights#ShowHighlights() abort$/;"	f
 neomake#highlights#_get	plugged/neomake/autoload/neomake/highlights.vim	/^function! neomake#highlights#_get() abort$/;"	f
+neomake#log#debug	plugged/neomake/autoload/neomake/log.vim	/^function! neomake#log#debug(...) abort$/;"	f
+neomake#log#debug_obj	plugged/neomake/autoload/neomake/log.vim	/^function! neomake#log#debug_obj(msg, obj) abort$/;"	f
+neomake#log#error	plugged/neomake/autoload/neomake/log.vim	/^function! neomake#log#error(...) abort$/;"	f
+neomake#log#exception	plugged/neomake/autoload/neomake/log.vim	/^function! neomake#log#exception(error, ...) abort$/;"	f
+neomake#log#info	plugged/neomake/autoload/neomake/log.vim	/^function! neomake#log#info(...) abort$/;"	f
+neomake#log#warning	plugged/neomake/autoload/neomake/log.vim	/^function! neomake#log#warning(...) abort$/;"	f
 neomake#makers#cabal#cabal	plugged/neomake/autoload/neomake/makers/cabal.vim	/^function! neomake#makers#cabal#cabal() abort$/;"	f
 neomake#makers#clippy#clippy	plugged/neomake/autoload/neomake/makers/clippy.vim	/^function! neomake#makers#clippy#clippy() abort$/;"	f
 neomake#makers#ft#ada#EnabledMakers	plugged/neomake/autoload/neomake/makers/ft/ada.vim	/^function! neomake#makers#ft#ada#EnabledMakers() abort$/;"	f
@@ -18368,6 +18416,7 @@ neomake#makers#ft#purescript#PSProcessOutput	plugged/neomake/autoload/neomake/ma
 neomake#makers#ft#purescript#pulp	plugged/neomake/autoload/neomake/makers/ft/purescript.vim	/^function! neomake#makers#ft#purescript#pulp() abort$/;"	f
 neomake#makers#ft#python#DetectPythonVersion	plugged/neomake/autoload/neomake/makers/ft/python.vim	/^function! neomake#makers#ft#python#DetectPythonVersion() abort$/;"	f
 neomake#makers#ft#python#EnabledMakers	plugged/neomake/autoload/neomake/makers/ft/python.vim	/^function! neomake#makers#ft#python#EnabledMakers() abort$/;"	f
+neomake#makers#ft#python#FilterPythonWarnings	plugged/neomake/autoload/neomake/makers/ft/python.vim	/^function! neomake#makers#ft#python#FilterPythonWarnings(lines, context) abort$/;"	f
 neomake#makers#ft#python#Flake8EntryProcess	plugged/neomake/autoload/neomake/makers/ft/python.vim	/^function! neomake#makers#ft#python#Flake8EntryProcess(entry) abort$/;"	f
 neomake#makers#ft#python#Pep8EntryProcess	plugged/neomake/autoload/neomake/makers/ft/python.vim	/^function! neomake#makers#ft#python#Pep8EntryProcess(entry) abort$/;"	f
 neomake#makers#ft#python#PylamaEntryProcess	plugged/neomake/autoload/neomake/makers/ft/python.vim	/^function! neomake#makers#ft#python#PylamaEntryProcess(entry) abort$/;"	f
@@ -18526,10 +18575,6 @@ neomake#statusline#get_s	plugged/neomake/autoload/neomake/statusline.vim	/^funct
 neomake#statusline#get_status	plugged/neomake/autoload/neomake/statusline.vim	/^function! neomake#statusline#get_status(bufnr, options) abort$/;"	f
 neomake#statusline#make_finished	plugged/neomake/autoload/neomake/statusline.vim	/^function! neomake#statusline#make_finished(make_info) abort$/;"	f
 neomake#utils#CompressWhitespace	plugged/neomake/autoload/neomake/utils.vim	/^function! neomake#utils#CompressWhitespace(entry) abort$/;"	f
-neomake#utils#DebugMessage	plugged/neomake/autoload/neomake/utils.vim	/^function! neomake#utils#DebugMessage(...) abort$/;"	f
-neomake#utils#DebugObject	plugged/neomake/autoload/neomake/utils.vim	/^function! neomake#utils#DebugObject(msg, obj) abort$/;"	f
-neomake#utils#DevNull	plugged/neomake/autoload/neomake/utils.vim	/^function! neomake#utils#DevNull() abort$/;"	f
-neomake#utils#ErrorMessage	plugged/neomake/autoload/neomake/utils.vim	/^function! neomake#utils#ErrorMessage(...) abort$/;"	f
 neomake#utils#Exists	plugged/neomake/autoload/neomake/utils.vim	/^function! neomake#utils#Exists(exe) abort$/;"	f
 neomake#utils#ExpandArgs	plugged/neomake/autoload/neomake/utils.vim	/^function! neomake#utils#ExpandArgs(args) abort$/;"	f
 neomake#utils#FindGlobFile	plugged/neomake/autoload/neomake/utils.vim	/^function! neomake#utils#FindGlobFile(glob, ...) abort$/;"	f
@@ -18538,10 +18583,7 @@ neomake#utils#GetSetting	plugged/neomake/autoload/neomake/utils.vim	/^function! 
 neomake#utils#GetSupersetOf	plugged/neomake/autoload/neomake/utils.vim	/^function! neomake#utils#GetSupersetOf(ft) abort$/;"	f
 neomake#utils#IsRunningWindows	plugged/neomake/autoload/neomake/utils.vim	/^function! neomake#utils#IsRunningWindows() abort$/;"	f
 neomake#utils#JSONdecode	plugged/neomake/autoload/neomake/utils.vim	/^function! neomake#utils#JSONdecode(json) abort$/;"	f
-neomake#utils#LogMessage	plugged/neomake/autoload/neomake/utils.vim	/^function! neomake#utils#LogMessage(level, msg, ...) abort$/;"	f
-neomake#utils#LoudMessage	plugged/neomake/autoload/neomake/utils.vim	/^function! neomake#utils#LoudMessage(...) abort$/;"	f
 neomake#utils#MakerFromCommand	plugged/neomake/autoload/neomake/utils.vim	/^function! neomake#utils#MakerFromCommand(command) abort$/;"	f
-neomake#utils#QuietMessage	plugged/neomake/autoload/neomake/utils.vim	/^function! neomake#utils#QuietMessage(...) abort$/;"	f
 neomake#utils#ReverseSynIDattr	plugged/neomake/autoload/neomake/utils.vim	/^function! neomake#utils#ReverseSynIDattr(attr) abort$/;"	f
 neomake#utils#Slash	plugged/neomake/autoload/neomake/utils.vim	/^function! neomake#utils#Slash() abort$/;"	f
 neomake#utils#Stringify	plugged/neomake/autoload/neomake/utils.vim	/^function! neomake#utils#Stringify(obj) abort$/;"	f
@@ -18558,7 +18600,6 @@ neomake#utils#highlight_is_defined	plugged/neomake/autoload/neomake/utils.vim	/^
 neomake#utils#hook	plugged/neomake/autoload/neomake/utils.vim	/^function! neomake#utils#hook(event, context, ...) abort$/;"	f
 neomake#utils#load_ft_makers	plugged/neomake/autoload/neomake/utils.vim	/^function! neomake#utils#load_ft_makers(ft) abort$/;"	f
 neomake#utils#load_global_makers	plugged/neomake/autoload/neomake/utils.vim	/^function! neomake#utils#load_global_makers() abort$/;"	f
-neomake#utils#log_exception	plugged/neomake/autoload/neomake/utils.vim	/^function! neomake#utils#log_exception(error, ...) abort$/;"	f
 neomake#utils#parse_highlight	plugged/neomake/autoload/neomake/utils.vim	/^function! neomake#utils#parse_highlight(group) abort$/;"	f
 neomake#utils#path_sep	plugged/neomake/autoload/neomake/utils.vim	/^function! neomake#utils#path_sep() abort$/;"	f
 neomake#utils#redir	plugged/neomake/autoload/neomake/utils.vim	/^function! neomake#utils#redir(cmd) abort$/;"	f
@@ -19074,7 +19115,6 @@ r	plugged/vim-polyglot/ftplugin/r.vim	/^vnoremap <buffer> r :w >> ~\/.r-pipe<CR>
 r	plugged/vim-polyglot/ftplugin/rhelp.vim	/^vnoremap <buffer> r :w >> ~\/.r-pipe<CR>$/;"	m
 r	plugged/vim-polyglot/ftplugin/rnoweb.vim	/^vnoremap <buffer> r :w >> ~\/.r-pipe<CR>$/;"	m
 r_comment	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/lexers/make.py	/^    r_comment = re.compile(r'^\\s*@?#')$/;"	v	class:MakefileLexer
-r_error	plugged/vim-rails/autoload/rails.vim	/^function! s:r_error(cmd, impl) abort$/;"	f
 r_special	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/lexers/make.py	/^    r_special = re.compile($/;"	v	class:MakefileLexer
 rails#app	plugged/vim-rails/autoload/rails.vim	/^function! rails#app(...) abort$/;"	f
 rails#asset_cfile	plugged/vim-rails/autoload/rails.vim	/^function! rails#asset_cfile(...) abort$/;"	f
@@ -19216,7 +19256,7 @@ reload_log	plugged/vim-rails/autoload/rails.vim	/^function! s:reload_log() abort
 reload_module	plugged/vim-wakatime/plugin/packages/wakatime/packages/simplejson/compat.py	/^    reload_module = reload$/;"	v
 reload_plugins	autoload/plug.vim	/^function! s:reload_plugins()$/;"	f
 relrev	plugged/vim-polyglot/autoload/xml/html5.vim	/^    let relrev = ['chapter', 'contents', 'copyright', 'first', 'glossary', 'help', 'icon', 'index', 'last', 'license', 'meta', 'next', 'p3pv1', 'prev', 'role', 'section', 'stylesheet', 'subsection', 'start', 'top', 'up']$/;"	v
-reltime_lastmsg	plugged/neomake/autoload/neomake/utils.vim	/^function! s:reltime_lastmsg() abort$/;"	f
+reltime_lastmsg	plugged/neomake/autoload/neomake/log.vim	/^function! s:reltime_lastmsg() abort$/;"	f
 remarksigns	plugged/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:remarksigns()$/;"	f
 remove_ansi_sequences	plugged/vim-polyglot/autoload/vital/_crystal/Data/String.vim	/^function! s:remove_ansi_sequences(text) abort$/;"	f
 remove_cookie_by_name	plugged/vim-wakatime/plugin/packages/wakatime/packages/requests/cookies.py	/^def remove_cookie_by_name(cookiejar, name, domain=None, path=None):$/;"	f
@@ -19509,6 +19549,8 @@ s:ER	plugged/vim-airline-themes/autoload/airline/themes/minimalist.vim	/^let s:E
 s:FALSE	plugged/vim-polyglot/indent/autohotkey.vim	/^let s:FALSE = 0$/;"	v
 s:FUNCTION	plugged/vim-polyglot/indent/coffee.vim	/^let s:FUNCTION = '[-=]>$'$/;"	v
 s:FUNCTION_IMPL_TABLE	plugged/vim-textobj-user/autoload/textobj/user.vim	/^let s:FUNCTION_IMPL_TABLE = {$/;"	v
+s:Go	plugged/auto-pairs/plugin/auto-pairs.vim	/^  let s:Go = ""$/;"	v
+s:Go	plugged/auto-pairs/plugin/auto-pairs.vim	/^  let s:Go = "\\<C-G>U"$/;"	v
 s:I1	plugged/vim-airline-themes/autoload/airline/themes/alduin.vim	/^let s:I1 = [s:guiWhite, s:gui0B, s:ctermWhite, s:cterm0B]$/;"	v
 s:I1	plugged/vim-airline-themes/autoload/airline/themes/angr.vim	/^let s:I1 = [s:gui_med_gray_hi, s:gui_blue, s:cterm_med_gray_hi, s:cterm_blue]$/;"	v
 s:I1	plugged/vim-airline-themes/autoload/airline/themes/aurora.vim	/^let s:I1 = [ '#ffffff' , '#005fff' , 231 , 27  ]$/;"	v
@@ -19990,6 +20032,7 @@ s:IRight	plugged/nord-vim/autoload/airline/themes/nord.vim	/^let s:IRight = [s:n
 s:J	plugged/vim-polyglot/autoload/crystal_lang.vim	/^    let s:J = s:V.import('Web.JSON')$/;"	v
 s:KEYWORD_PAIRS	plugged/vim-polyglot/indent/coffee.vim	/^let s:KEYWORD_PAIRS = [$/;"	v
 s:LabelCache	plugged/vim-polyglot/ftplugin/latex-box/complete.vim	/^let s:LabelCache = {}$/;"	v
+s:Left	plugged/auto-pairs/plugin/auto-pairs.vim	/^let s:Left = s:Go."\\<LEFT>"$/;"	v
 s:MAX_LOOKBACK	plugged/vim-polyglot/indent/coffee.vim	/^let s:MAX_LOOKBACK = 50$/;"	v
 s:MAX_LOOKBACK	plugged/vim-polyglot/indent/ls.vim	/^let s:MAX_LOOKBACK = 50$/;"	v
 s:N1	plugged/vim-airline-themes/autoload/airline/themes/alduin.vim	/^let s:N1 = [s:gui07, s:gui0D, s:cterm07, s:cterm0D]$/;"	v
@@ -20481,6 +20524,7 @@ s:RE	plugged/vim-airline-themes/autoload/airline/themes/violet.vim	/^let s:RE = 
 s:RMain	plugged/nord-vim/autoload/airline/themes/nord.vim	/^let s:RMain = [s:nord1_gui, s:nord14_gui, s:nord1_term, s:nord14_term]$/;"	v
 s:RMiddle	plugged/nord-vim/autoload/airline/themes/nord.vim	/^let s:RMiddle = [s:nord4_gui, s:nord3_gui, s:nord4_term, s:nord3_term]$/;"	v
 s:RRight	plugged/nord-vim/autoload/airline/themes/nord.vim	/^let s:RRight = [s:nord1_gui, s:nord9_gui, s:nord1_term, s:nord9_term]$/;"	v
+s:Right	plugged/auto-pairs/plugin/auto-pairs.vim	/^let s:Right = s:Go."\\<RIGHT>"$/;"	v
 s:SID	plugged/vim-polyglot/ftplugin/latex-box/complete.vim	/^let s:SID = s:GetSID()$/;"	v
 s:SINGLE_LINE_ELSE	plugged/vim-polyglot/indent/coffee.vim	/^let s:SINGLE_LINE_ELSE = '\\C^else\\s\\+\\%(\\<\\%(if\\|unless\\)\\>\\)\\@!'$/;"	v
 s:SINGLE_LINE_ELSE	plugged/vim-polyglot/indent/ls.vim	/^let s:SINGLE_LINE_ELSE = '^else\\s\\+\\%(\\<\\%(if\\|unless\\)\\>\\)\\@!'$/;"	v
@@ -24185,6 +24229,7 @@ s:directives_start	plugged/vim-polyglot/indent/blade.vim	/^let s:directives_star
 s:done	plugged/vim-gitgutter/test/runner.vim	/^  let s:done += 1$/;"	v
 s:done	plugged/vim-gitgutter/test/runner.vim	/^let s:done = 0$/;"	v
 s:dot_continuation_regex	plugged/vim-polyglot/indent/ruby.vim	/^let s:dot_continuation_regex = '%\\@<!\\.\\s*\\%(#.*\\)\\=$'$/;"	v
+s:ds_pattern	plugged/auto-pairs/plugin/auto-pairs.vim	/^let s:ds_pattern = '\\v"'  . s:string_chunk . '"'$/;"	v
 s:dummy_sign_id	plugged/vim-gitgutter/autoload/gitgutter/sign.vim	/^let s:dummy_sign_id = s:first_sign_id - 1$/;"	v
 s:echorizer	plugged/vim-polyglot/autoload/vital/_crystal/ColorEcho.vim	/^let s:echorizer = {$/;"	v
 s:ed	plugged/vim-polyglot/syntax/tt2.vim	/^        let s:ed = strpart(s:str,0,stridx(s:str,' '))$/;"	v
@@ -26830,14 +26875,11 @@ s:guibg2	plugged/vim-airline-themes/autoload/airline/themes/simple.vim	/^let s:g
 s:guisep	plugged/vim-airline-themes/autoload/airline/themes/serene.vim	/^let s:guisep = '#303030'$/;"	v
 s:hack_keep_refs_for_profiling	plugged/neomake/autoload/neomake.vim	/^let s:hack_keep_refs_for_profiling = []$/;"	v
 s:has_ant	plugged/neomake/autoload/neomake/makers/ft/java.vim	/^let s:has_ant = executable(expand(g:neomake_java_ant_executable, 1))$/;"	v
-s:has_fugitive	plugged/vim-airline/autoload/airline/extensions/branch.vim	/^let s:has_fugitive = exists('*fugitive#head')$/;"	v
 s:has_getcmdwintype	plugged/neomake/autoload/neomake.vim	/^let s:has_getcmdwintype = exists('*getcmdwintype')$/;"	v
 s:has_gradle	plugged/neomake/autoload/neomake/makers/ft/java.vim	/^let s:has_gradle = executable(expand(g:neomake_java_gradle_executable, 1))$/;"	v
-s:has_lawrencium	plugged/vim-airline/autoload/airline/extensions/branch.vim	/^let s:has_lawrencium = exists('*lawrencium#statusline')$/;"	v
 s:has_maven	plugged/neomake/autoload/neomake/makers/ft/java.vim	/^let s:has_maven = executable(expand(g:neomake_java_maven_executable, 1))$/;"	v
 s:has_projections	plugged/vim-rails/autoload/rails.vim	/^let s:has_projections = {$/;"	v
 s:has_reltime	plugged/vim-wakatime/plugin/wakatime.vim	/^    let s:has_reltime = has('reltime') && localtime() - 1 < split(split(reltimestr(reltime()))[0], '\\.')[0]$/;"	v
-s:has_vcscommand	plugged/vim-airline/autoload/airline/extensions/branch.vim	/^let s:has_vcscommand = get(g:, 'airline#extensions#branch#use_vcscommand', 0) && exists('*VCSCommandGetStatusLine')$/;"	v
 s:hash_colors	plugged/vim-fugitive/plugin/fugitive.vim	/^let s:hash_colors = {}$/;"	v
 s:head_format	plugged/vim-airline/autoload/airline/extensions/branch.vim	/^let s:head_format = get(g:, 'airline#extensions#branch#format', 0)$/;"	v
 s:heartbeats_buffer	plugged/vim-wakatime/plugin/wakatime.vim	/^    let s:heartbeats_buffer = []$/;"	v
@@ -26911,7 +26953,7 @@ s:is_enabled	plugged/neomake/autoload/neomake/quickfix.vim	/^let s:is_enabled = 
 s:is_good	plugged/vim-airline/autoload/airline/extensions/cursormode.vim	/^let s:is_good = !has('gui_running') && !s:is_win && !s:is_AppleTerminal$/;"	v
 s:is_iTerm	plugged/vim-airline/autoload/airline/extensions/cursormode.vim	/^let s:is_iTerm = exists('$TERM_PROGRAM') && $TERM_PROGRAM =~# 'iTerm.app'$/;"	v
 s:is_testing	plugged/neomake/autoload/neomake.vim	/^let s:is_testing = exists('g:neomake_test_messages')$/;"	v
-s:is_testing	plugged/neomake/autoload/neomake/utils.vim	/^let s:is_testing = exists('g:neomake_test_messages')$/;"	v
+s:is_testing	plugged/neomake/autoload/neomake/log.vim	/^let s:is_testing = exists('g:neomake_test_messages')$/;"	v
 s:is_unix	plugged/vim-polyglot/autoload/vital/_crystal/Process.vim	/^let s:is_unix = has('unix')$/;"	v
 s:is_vital_vim	plugged/vim-polyglot/autoload/vital/crystal.vim	/^let s:is_vital_vim = s:plugin_name is# 'vital'$/;"	v
 s:is_win	autoload/plug.vim	/^let s:is_win = has('win32') || has('win64')$/;"	v
@@ -26972,7 +27014,7 @@ s:leading_operator_regex	plugged/vim-polyglot/indent/crystal.vim	/^let s:leading
 s:leading_operator_regex	plugged/vim-polyglot/indent/ruby.vim	/^let s:leading_operator_regex = '^\\s*[.]'$/;"	v
 s:letlim	plugged/vim-polyglot/indent/ocaml.vim	/^let s:letlim = '\\(\\<\\(sig\\|struct\\)\\|;;\\)\\s*$'$/;"	v
 s:letpat	plugged/vim-polyglot/indent/ocaml.vim	/^let s:letpat = '^\\s*\\(let\\|type\\|module\\|class\\|open\\|exception\\|val\\|include\\|external\\)\\>'$/;"	v
-s:level_to_name	plugged/neomake/autoload/neomake/utils.vim	/^let s:level_to_name = {0: 'error  ', 1: 'warning', 2: 'verbose', 3: 'debug  '}$/;"	v
+s:level_to_name	plugged/neomake/autoload/neomake/log.vim	/^let s:level_to_name = {0: 'error  ', 1: 'warning', 2: 'verbose', 3: 'debug  '}$/;"	v
 s:light_blue	plugged/vim-airline-themes/autoload/airline/themes/vice.vim	/^let s:light_blue = [159, "#afffff"]$/;"	v
 s:light_pink	plugged/vim-airline-themes/autoload/airline/themes/vice.vim	/^let s:light_pink = [218, "#ffafdf"]$/;"	v
 s:light_yellow	plugged/vim-airline-themes/autoload/airline/themes/vice.vim	/^let s:light_yellow = [229, "#ffffaf"]$/;"	v
@@ -27038,6 +27080,7 @@ s:modified	plugged/vim-airline-themes/autoload/airline/themes/vice.vim	/^let s:m
 s:module	plugged/vim-polyglot/indent/ocaml.vim	/^let s:module = '\\<\\%(begin\\|sig\\|struct\\|object\\)\\>'$/;"	v
 s:mq_jobs	plugged/vim-airline/autoload/airline/async.vim	/^let s:mq_jobs        = {}$/;"	v
 s:msl_regex	plugged/vim-polyglot/indent/solidity.vim	/^let s:msl_regex = '\\%([\\\\*+\/.:([]\\|\\%(<%\\)\\@<![=-]\\|\\W[|&?]\\|||\\|&&\\)' . s:line_term$/;"	v
+s:name_to_level	plugged/neomake/autoload/neomake/log.vim	/^let s:name_to_level = {'error': 0, 'warning': 1, 'verbose': 2, 'debug': 3}$/;"	v
 s:named_module_entry	plugged/vim-polyglot/indent/ansible.vim	/^let s:named_module_entry = '\\v^\\s*-\\s*(name|hosts|role):\\s*\\S' " - name: 'do stuff'$/;"	v
 s:names	plugged/vim-airline/autoload/airline/extensions/branch.vim	/^let s:names = {'0': 'index', '1': 'orig', '2':'fetch', '3':'merge'}$/;"	v
 s:nbs	plugged/fzf.vim/autoload/fzf/vim.vim	/^let s:nbs = nr2char(0x2007)$/;"	v
@@ -27318,7 +27361,7 @@ s:selectionPrompt	plugged/ri.vim/plugin/ri.vim	/^let s:selectionPrompt = ""$/;"	
 s:separators	plugged/vim-airline/autoload/airline/highlighter.vim	/^let s:separators = {}$/;"	v
 s:sha1size	plugged/vim-airline/autoload/airline/extensions/branch.vim	/^let s:sha1size = get(g:, 'airline#extensions#branch#sha1_len', 7)$/;"	v
 s:shell_argv	plugged/neomake/tests/include/init.vim	/^let s:shell_argv = split(&shell) + split(&shellcmdflag)$/;"	v
-s:short_level_to_name	plugged/neomake/autoload/neomake/utils.vim	/^let s:short_level_to_name = {0: 'E', 1: 'W', 2: 'V', 3: 'D'}$/;"	v
+s:short_level_to_name	plugged/neomake/autoload/neomake/log.vim	/^let s:short_level_to_name = {0: 'E', 1: 'W', 2: 'V', 3: 'D'}$/;"	v
 s:show_buffers	plugged/vim-airline/autoload/airline/extensions/tabline/autoshow.vim	/^let s:show_buffers = get(g:, 'airline#extensions#tabline#show_buffers', 1)$/;"	v
 s:show_line_numbers	plugged/vim-airline/autoload/airline/extensions/ale.vim	/^let s:show_line_numbers = get(g:, 'airline#extensions#ale#show_line_numbers', 1)$/;"	v
 s:show_message	plugged/vim-airline/autoload/airline/extensions/whitespace.vim	/^let s:show_message = get(g:, 'airline#extensions#whitespace#show_message', 1)$/;"	v
@@ -27368,6 +27411,7 @@ s:spc	plugged/vim-airline/autoload/airline/util.vim	/^let s:spc = g:airline_symb
 s:spell_cluster	plugged/vim-polyglot/syntax/ruby.vim	/^let s:spell_cluster = exists('ruby_spellcheck_strings') ? ',@Spell' : ''$/;"	v
 s:splat_regex	plugged/vim-polyglot/indent/crystal.vim	/^let s:splat_regex = '[[,(]\\s*\\*\\s*\\%(#.*\\)\\=$'$/;"	v
 s:splat_regex	plugged/vim-polyglot/indent/ruby.vim	/^let s:splat_regex = '[[,(]\\s*\\*\\s*\\%(#.*\\)\\=$'$/;"	v
+s:ss_pattern	plugged/auto-pairs/plugin/auto-pairs.vim	/^let s:ss_pattern = '\\v''' . s:string_chunk . ''''$/;"	v
 s:st	plugged/vim-polyglot/syntax/tt2.vim	/^        let s:st = strpart(s:str,0,stridx(s:str,' '))$/;"	v
 s:start_pattern	plugged/vim-textobj-rubyblock/plugin/textobj/rubyblock.vim	/^let s:start_pattern = s:comment_escape . s:block_openers$/;"	v
 s:stop_statement	plugged/vim-polyglot/indent/cython.vim	/^let s:stop_statement = '^\\s*\\(break\\|continue\\|raise\\|return\\|pass\\)\\>'$/;"	v
@@ -27377,6 +27421,7 @@ s:str	plugged/vim-polyglot/syntax/tt2.vim	/^    let s:str = b:tt2_syn_tags . ' '
 s:str	plugged/vim-polyglot/syntax/tt2.vim	/^    let s:str = substitute(s:str,' \\+',' ','g')$/;"	v
 s:str	plugged/vim-polyglot/syntax/tt2.vim	/^    let s:str = substitute(s:str,'^ \\+','','g')$/;"	v
 s:strchars	plugged/vim-polyglot/autoload/vital/_crystal/Data/String.vim	/^  let s:strchars = function('strchars')$/;"	v
+s:string_chunk	plugged/auto-pairs/plugin/auto-pairs.vim	/^let s:string_chunk = '\\v%(\\\\\\_.|[^\\1]|[\\r\\n]){-}'$/;"	v
 s:subtype	plugged/vim-polyglot/syntax/liquid.vim	/^  let s:subtype = exists('b:liquid_subtype') ? b:liquid_subtype : ''$/;"	v
 s:suite	plugged/vim-test/spec/fixtures/themis/math.vim	/^let s:suite = themis#suite("math")$/;"	v
 s:super_ft_cache	plugged/neomake/autoload/neomake/utils.vim	/^let s:super_ft_cache = {}$/;"	v
