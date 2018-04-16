@@ -158,10 +158,6 @@ let g:airline_section_y=""
 let g:airline_section_z="%l/%L %-3.c"
 let g:airline_theme="nord"
 
-" Reek
-let g:reek_on_loading = 0
-let g:reek_line_limit = 1000 " Don't check files with more than 1000 lines
-
 " Nvim Terminal
 " Make escape work in the Neovim terminal.
 tnoremap <Esc> <C-\><C-n>
