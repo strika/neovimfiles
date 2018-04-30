@@ -55,15 +55,14 @@ set expandtab                           " use spaces, not tabs
 set ignorecase                          " searches are case insensitive...
 set smartcase                           " ... unless they contain at least one capital letter
 
+let mapleader=" "
+
 function s:setupWrappingAndSpellcheck()
   set wrap
   set wrapmargin=2
   set textwidth=80
   set spell
 endfunction
-
-" Toggle relative numbers
-nnoremap <C-n> :let &rnu=!&rnu<CR>
 
 augroup vimrc
   " Remove all vimrc autocommands
@@ -103,10 +102,11 @@ augroup vimrc
   autocmd FileType fzf tnoremap <buffer> <C-k> <Up>
 augroup END
 
-" clear the search buffer when hitting return
-:nnoremap <CR> :nohlsearch<cr>
+" Toggle relative numbers
+nnoremap <C-n> :let &rnu=!&rnu<CR>
 
-let mapleader=" "
+" clear the search buffer when hitting return
+nnoremap <CR> :nohlsearch<cr>
 
 inoremap jj <Esc>
 

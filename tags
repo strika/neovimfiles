@@ -35,6 +35,7 @@ $PYTHONWARNINGS	plugged/vim-polyglot/compiler/python.vim	/^  let $PYTHONWARNINGS
 <C-f>	plugged/comfortable-motion.vim/plugin/comfortable_motion.vim	/^  nnoremap <silent> <C-f> :call comfortable_motion#flick(200)<CR>$/;"	m
 <C-n>	init.vim	/^nnoremap <C-n> :let &rnu=!&rnu<CR>$/;"	m
 <C-u>	plugged/comfortable-motion.vim/plugin/comfortable_motion.vim	/^  nnoremap <silent> <C-u> :call comfortable_motion#flick(-100)<CR>$/;"	m
+<CR>	init.vim	/^nnoremap <CR> :nohlsearch<cr>$/;"	m
 <CR>	plugged/vim-endwise/plugin/endwise.vim	/^    imap <CR> <CR><Plug>DiscretionaryEnd$/;"	m
 <CR>	plugged/vim-polyglot/ftplugin/latextoc.vim	/^nnoremap <buffer> <silent> <CR> :call <SID>TOCActivate(1)<CR>$/;"	m
 <D-R>	plugged/vim-polyglot/ftplugin/rust.vim	/^nnoremap <buffer> <D-R> :RustRun! <C-r>=join(b:rust_last_rustc_args)<CR><C-\\>erust#AppendCmdLine(' -- ' . join(b:rust_last_args))<CR>$/;"	m
