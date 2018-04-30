@@ -79,9 +79,6 @@ augroup vimrc
   " Spellcheck
   autocmd BufRead,BufNewFile *.feature setlocal spell
 
-  " Treat JSON files like JavaScript
-  autocmd BufNewFile,BufRead *.json set ft=javascript
-
   " Remember last location in file, but not for commit messages.
   " see :help last-position-jump
   autocmd BufReadPost * if &filetype !~ '^git\c' && line("'\"") > 0 && line("'\"") <= line("$")
