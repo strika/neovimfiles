@@ -27,8 +27,6 @@ Plug 'vim-airline/vim-airline'
 
 call plug#end()
 
-runtime macros/matchit.vim              " Enables % to cycle through `if/else/endif`, recognizing Ruby blocks, etc.
-
 set number
 set ruler                               " Show the cursor position all the time
 set colorcolumn=80                      " Show vertical bar at column 80

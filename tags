@@ -13711,6 +13711,7 @@ g:neomake#compat#dev_null	plugged/neomake/autoload/neomake/compat.vim	/^    let 
 g:neomake#config#undefined	plugged/neomake/autoload/neomake/config.vim	/^let g:neomake#config#undefined = {}$/;"	v
 g:neomake#core#command_maker_base	plugged/neomake/autoload/neomake/core.vim	/^let g:neomake#core#command_maker_base = {}$/;"	v
 g:neomake#makers#ft#c#project_root_files	plugged/neomake/autoload/neomake/makers/ft/c.vim	/^let g:neomake#makers#ft#c#project_root_files = ['configure', 'CMakeLists.txt']$/;"	v
+g:neomake#statusline#_s	plugged/neomake/autoload/neomake/statusline.vim	/^let g:neomake#statusline#_s = s:$/;"	v
 g:neomake_erlang_erlc_target_dir	plugged/neomake/autoload/neomake/makers/ft/erlang.vim	/^    let g:neomake_erlang_erlc_target_dir = tempname()$/;"	v
 g:neomake_java_ant_executable	plugged/neomake/autoload/neomake/makers/ft/java.vim	/^let g:neomake_java_ant_executable =$/;"	v
 g:neomake_java_checker_home	plugged/neomake/autoload/neomake/makers/ft/java.vim	/^let g:neomake_java_checker_home = fnamemodify(expand('<sfile>'), ':p:h:gs?\\\\?\/?')$/;"	v
@@ -18625,8 +18626,7 @@ neomake#statusline#ResetCountsForBuf	plugged/neomake/autoload/neomake/statusline
 neomake#statusline#ResetCountsForProject	plugged/neomake/autoload/neomake/statusline.vim	/^function! neomake#statusline#ResetCountsForProject(...) abort$/;"	f
 neomake#statusline#clear_cache	plugged/neomake/autoload/neomake/statusline.vim	/^function! neomake#statusline#clear_cache() abort$/;"	f
 neomake#statusline#get	plugged/neomake/autoload/neomake/statusline.vim	/^function! neomake#statusline#get(bufnr, options) abort$/;"	f
-neomake#statusline#get_counts	plugged/neomake/autoload/neomake/statusline.vim	/^function! neomake#statusline#get_counts(bufnr) abort$/;"	f
-neomake#statusline#get_s	plugged/neomake/autoload/neomake/statusline.vim	/^function! neomake#statusline#get_s() abort$/;"	f
+neomake#statusline#get_counts	plugged/neomake/autoload/neomake/statusline.vim	/^function! neomake#statusline#get_counts(...) abort$/;"	f
 neomake#statusline#get_status	plugged/neomake/autoload/neomake/statusline.vim	/^function! neomake#statusline#get_status(bufnr, options) abort$/;"	f
 neomake#statusline#make_finished	plugged/neomake/autoload/neomake/statusline.vim	/^function! neomake#statusline#make_finished(make_info) abort$/;"	f
 neomake#utils#CompressWhitespace	plugged/neomake/autoload/neomake/utils.vim	/^function! neomake#utils#CompressWhitespace(entry) abort$/;"	f
@@ -21075,6 +21075,7 @@ s:continuation_regex	plugged/vim-polyglot/indent/ruby.vim	/^let s:continuation_r
 s:continuation_regex	plugged/vim-polyglot/indent/solidity.vim	/^let s:continuation_regex = '\\%([\\\\*+\/.:]\\|\\%(<%\\)\\@<![=-]\\|\\W[|&?]\\|||\\|&&\\)' . s:line_term$/;"	v
 s:core_funcrefs	plugged/vim-airline/autoload/airline.vim	/^let s:core_funcrefs = [$/;"	v
 s:counter	plugged/vim-textobj-user/t/script-local.vim	/^let s:counter = [0]$/;"	v
+s:counts	plugged/neomake/autoload/neomake/statusline.vim	/^let s:counts = {}$/;"	v
 s:cpo_orig	plugged/vim-polyglot/syntax/plantuml.vim	/^let s:cpo_orig=&cpo$/;"	v
 s:cpo_sav	plugged/vim-polyglot/indent/eruby.vim	/^let s:cpo_sav = &cpo$/;"	v
 s:cpo_sav	plugged/vim-polyglot/syntax/clojure.vim	/^let s:cpo_sav = &cpo$/;"	v
@@ -27092,7 +27093,6 @@ s:loaded	plugged/vim-polyglot/autoload/vital/crystal.vim	/^let s:loaded = {}$/;"
 s:loaded_ft_maker_runtime	plugged/neomake/autoload/neomake/utils.vim	/^let s:loaded_ft_maker_runtime = []$/;"	v
 s:loaded_global_maker_runtime	plugged/neomake/autoload/neomake/utils.vim	/^let s:loaded_global_maker_runtime = 0$/;"	v
 s:local_cache_expire	plugged/vim-wakatime/plugin/wakatime.vim	/^    let s:local_cache_expire = 10  " seconds between reading s:data_file$/;"	v
-s:loclist_counts	plugged/neomake/autoload/neomake/statusline.vim	/^let s:loclist_counts = {}$/;"	v
 s:log_file	plugged/vim-gitgutter/autoload/gitgutter/debug.vim	/^let s:log_file    = s:plugin_dir.'gitgutter.log'$/;"	v
 s:m	plugged/vim-polyglot/ftplugin/ocaml.vim	/^let s:m = matchstr(s:modeline,'default\\s*=\\s*\\d\\+')$/;"	v
 s:m	plugged/vim-polyglot/ftplugin/ocaml.vim	/^let s:m = matchstr(s:modeline,'struct\\s*=\\s*\\d\\+')$/;"	v
@@ -27147,7 +27147,6 @@ s:neomake_elixir_credo_config_typemap	plugged/neomake/autoload/neomake/makers/ft
 s:neomake_root	plugged/neomake/autoload/neomake/makers/ft/help.vim	/^    let s:neomake_root = expand('<sfile>:p:h:h:h:h:h', 1)$/;"	v
 s:new_log_session	plugged/vim-gitgutter/autoload/gitgutter/debug.vim	/^let s:new_log_session = 1$/;"	v
 s:next_sign_id	plugged/vim-gitgutter/autoload/gitgutter/sign.vim	/^let s:next_sign_id  = s:first_sign_id$/;"	v
-s:no_loclist_counts	plugged/neomake/autoload/neomake/statusline.vim	/^let s:no_loclist_counts = {}$/;"	v
 s:no_tags	plugged/vim-polyglot/indent/html.vim	/^let s:no_tags = []$/;"	v
 s:nomacro	plugged/vim-polyglot/ftplugin/julia.vim	/^  let s:nomacro = '\\%(' . s:macro_regex . '\\)\\@<!'$/;"	v
 s:nomodeline	plugged/vim-gitgutter/autoload/gitgutter/diff.vim	/^let s:nomodeline = (v:version > 703 || (v:version == 703 && has('patch442'))) ? '<nomodeline>' : ''$/;"	v
@@ -27346,7 +27345,6 @@ s:psep	plugged/neomake/autoload/neomake/makers/ft/java.vim	/^    let s:psep = '\
 s:purple	plugged/gruvbox/colors/gruvbox.vim	/^  let s:purple = s:gb.bright_purple$/;"	v
 s:purple	plugged/gruvbox/colors/gruvbox.vim	/^  let s:purple = s:gb.faded_purple$/;"	v
 s:purple	plugged/gruvbox/colors/gruvbox.vim	/^  let s:purple[1] = 13$/;"	v
-s:qflist_counts	plugged/neomake/autoload/neomake/statusline.vim	/^let s:qflist_counts = {}$/;"	v
 s:quotable	plugged/vim-polyglot/syntax/julia.vim	/^let s:quotable = '\\%(' . s:idregex . '\\|?\\|' . s:operators . '\\|' . s:float_regex . '\\|' . s:int_regex . '\\)'$/;"	v
 s:quoting_colon	plugged/vim-polyglot/syntax/julia.vim	/^let s:quoting_colon = '\\%(\\%(^\\s*\\|\\s\\{6,\\}\\|[' . s:nonid_chars . s:uniop_chars . s:binop_chars . '?]\\s*\\)\\@'.s:d(6).'<=\\|\\%(\\<\\%(return\\|if\\|else\\%(if\\)\\?\\|while\\|try\\|begin\\)\\s*\\)\\@'.s:d(9).'<=\\)\\zs:'$/;"	v
 s:quoting_colonS	plugged/vim-polyglot/syntax/julia.vim	/^let s:quoting_colonS = '\\s\\@'.s:d(1).'<=:'$/;"	v
@@ -27570,6 +27568,7 @@ s:uniop_chars	plugged/vim-polyglot/autoload/julia.vim	/^let s:uniop_chars = "+\\
 s:uniop_chars	plugged/vim-polyglot/syntax/julia.vim	/^let s:uniop_chars = "+\\\\U2D~¬√∛∜"$/;"	v
 s:unix_redir	plugged/vim-gutentags/autoload/gutentags/cscope.vim	/^let s:unix_redir = (&shellredir =~# '%s') ? &shellredir : &shellredir . ' %s'$/;"	v
 s:unix_redir	plugged/vim-gutentags/autoload/gutentags/ctags.vim	/^let s:unix_redir = (&shellredir =~# '%s') ? &shellredir : &shellredir . ' %s'$/;"	v
+s:unknown_counts	plugged/neomake/autoload/neomake/statusline.vim	/^let s:unknown_counts = {}$/;"	v
 s:unset	plugged/neomake/autoload/neomake/utils.vim	/^let s:unset = {}  " Sentinel.$/;"	v
 s:unset_dict	plugged/neomake/autoload/neomake.vim	/^let s:unset_dict = {}$/;"	v
 s:unset_list	plugged/neomake/autoload/neomake.vim	/^let s:unset_list = []$/;"	v
