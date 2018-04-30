@@ -121,7 +121,7 @@ $PYTHONWARNINGS	plugged/vim-polyglot/compiler/python.vim	/^  let $PYTHONWARNINGS
 <Plug>Commentary	plugged/vim-commentary/plugin/commentary.vim	/^nnoremap <expr>   <Plug>Commentary     <SID>go()$/;"	m
 <Plug>Commentary	plugged/vim-commentary/plugin/commentary.vim	/^onoremap <silent> <Plug>Commentary        :<C-U>call <SID>textobject(0)<CR>$/;"	m
 <Plug>CommentaryLine	plugged/vim-commentary/plugin/commentary.vim	/^nnoremap <expr>   <Plug>CommentaryLine <SID>go() . '_'$/;"	m
-<Plug>CommentaryUndo	plugged/vim-commentary/plugin/commentary.vim	/^nmap <silent> <Plug>CommentaryUndo <Plug>Commentary<Plug>Commentary$/;"	m
+<Plug>CommentaryUndo	plugged/vim-commentary/plugin/commentary.vim	/^nmap <silent> <Plug>CommentaryUndo :echoerr "Change your <Plug>CommentaryUndo map to <Plug>Commentary<Plug>Commentary"<CR>$/;"	m
 <Plug>Csurround	plugged/vim-surround/plugin/surround.vim	/^nnoremap <silent> <Plug>Csurround  :<C-U>call <SID>changesurround()<CR>$/;"	m
 <Plug>DiscretionaryEnd	plugged/vim-endwise/plugin/endwise.vim	/^  imap    <script> <Plug>DiscretionaryEnd <SID>DiscretionaryEnd$/;"	m
 <Plug>Dsurround	plugged/vim-surround/plugin/surround.vim	/^nnoremap <silent> <Plug>Dsurround  :<C-U>call <SID>dosurround(<SID>inputtarget())<CR>$/;"	m
@@ -2177,6 +2177,7 @@ NeomakeStatus	plugged/neomake/plugin/neomake.vim	/^command! NeomakeStatus call s
 NeomakeTestsCommandMaker	plugged/neomake/tests/include/init.vim	/^function! NeomakeTestsCommandMaker(name, cmd)$/;"	f
 NeomakeTestsCreateExe	plugged/neomake/tests/include/init.vim	/^function! g:NeomakeTestsCreateExe(name, ...)$/;"	f
 NeomakeTestsFakeJobinfo	plugged/neomake/tests/include/init.vim	/^function! NeomakeTestsFakeJobinfo() abort$/;"	f
+NeomakeTestsFixtureMaker	plugged/neomake/tests/include/init.vim	/^function! NeomakeTestsFixtureMaker(func, fname) abort$/;"	f
 NeomakeTestsGetMakerWithOutput	plugged/neomake/tests/include/init.vim	/^function! NeomakeTestsGetMakerWithOutput(func, lines) abort$/;"	f
 NeomakeTestsGetSigns	plugged/neomake/tests/include/init.vim	/^function! NeomakeTestsGetSigns()$/;"	f
 NeomakeTestsGetVimMessages	plugged/neomake/tests/include/init.vim	/^function! NeomakeTestsGetVimMessages()$/;"	f
@@ -2811,6 +2812,7 @@ SplitDelimTest	plugged/tabular/autoload/tabular.vim	/^function! s:SplitDelimTest
 SplitList	plugged/splitjoin.vim/autoload/sj/js.vim	/^function! s:SplitList(delimiter)$/;"	f
 SplitList	plugged/splitjoin.vim/autoload/sj/php.vim	/^function! s:SplitList(start_char, end_char)$/;"	f
 SplitList	plugged/splitjoin.vim/autoload/sj/python.vim	/^function! s:SplitList(regex, opening_char, closing_char)$/;"	f
+SplitNextArrow	plugged/splitjoin.vim/autoload/sj/php.vim	/^function! s:SplitNextArrow()$/;"	f
 SplitPattern	plugged/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:SplitPattern(str)$/;"	f
 SplitjoinJoin	plugged/splitjoin.vim/plugin/splitjoin.vim	/^command! SplitjoinJoin  call s:Join()$/;"	c
 SplitjoinSplit	plugged/splitjoin.vim/plugin/splitjoin.vim	/^command! SplitjoinSplit call s:Split()$/;"	c
@@ -3274,6 +3276,8 @@ _ELSE_DO_PATTERN	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments
 _ESCAPE_LIME	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/styles/lovelace.py	/^    _ESCAPE_LIME =   '#709030'$/;"	v	class:LovelaceStyle
 _EXCEPT_YELLOW	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/styles/lovelace.py	/^    _EXCEPT_YELLOW = '#908828'$/;"	v	class:LovelaceStyle
 _FAILEDTELL	plugged/vim-wakatime/plugin/packages/wakatime/packages/requests/packages/urllib3/util/request.py	/^_FAILEDTELL = object()$/;"	v
+_FIXTURES_INPUT	plugged/neomake/Makefile	/^_FIXTURES_INPUT:=$(wildcard tests\/fixtures\/input\/*\/*)$/;"	m
+_FIXTURES_OUTPUT	plugged/neomake/Makefile	/^_FIXTURES_OUTPUT:=$(patsubst tests\/fixtures\/input\/%,tests\/fixtures\/output\/%,$(addsuffix .stdout,$(_FIXTURES_INPUT)) $(addsuffix .stderr,$(_FIXTURES_INPUT)))$/;"	m
 _FUNCTIONS	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/lexers/modeling.py	/^    _FUNCTIONS = ($/;"	v	class:BugsLexer
 _FUNCTIONS	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/lexers/modeling.py	/^    _FUNCTIONS = ($/;"	v	class:JagsLexer
 _FUN_BROWN	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/styles/lovelace.py	/^    _FUN_BROWN =     '#785840'$/;"	v	class:LovelaceStyle
@@ -8349,6 +8353,7 @@ fugitive_remove	plugged/vim-fugitive/plugin/fugitive.vim	/^augroup fugitive_remo
 fugitive_status	plugged/vim-fugitive/plugin/fugitive.vim	/^augroup fugitive_status$/;"	a
 fugitive_statusline	plugged/vim-fugitive/plugin/fugitive.vim	/^augroup fugitive_statusline$/;"	a
 fugitive_temp	plugged/vim-fugitive/plugin/fugitive.vim	/^augroup fugitive_temp$/;"	a
+func-generate-fixture	plugged/neomake/Makefile	/^define func-generate-fixture$/;"	m
 func-run-vim	plugged/neomake/Makefile	/^define func-run-vim$/;"	m
 function	plugged/fzf.vim/autoload/fzf/vim.vim	/^  function! s:function(name)$/;"	f
 function	plugged/fzf.vim/autoload/fzf/vim/complete.vim	/^  function! s:function(name)$/;"	f
@@ -13706,6 +13711,7 @@ g:neomake#compat#dev_null	plugged/neomake/autoload/neomake/compat.vim	/^    let 
 g:neomake#config#undefined	plugged/neomake/autoload/neomake/config.vim	/^let g:neomake#config#undefined = {}$/;"	v
 g:neomake#core#command_maker_base	plugged/neomake/autoload/neomake/core.vim	/^let g:neomake#core#command_maker_base = {}$/;"	v
 g:neomake#makers#ft#c#project_root_files	plugged/neomake/autoload/neomake/makers/ft/c.vim	/^let g:neomake#makers#ft#c#project_root_files = ['configure', 'CMakeLists.txt']$/;"	v
+g:neomake_erlang_erlc_target_dir	plugged/neomake/autoload/neomake/makers/ft/erlang.vim	/^    let g:neomake_erlang_erlc_target_dir = tempname()$/;"	v
 g:neomake_java_ant_executable	plugged/neomake/autoload/neomake/makers/ft/java.vim	/^let g:neomake_java_ant_executable =$/;"	v
 g:neomake_java_checker_home	plugged/neomake/autoload/neomake/makers/ft/java.vim	/^let g:neomake_java_checker_home = fnamemodify(expand('<sfile>'), ':p:h:gs?\\\\?\/?')$/;"	v
 g:neomake_java_checkstyle_executable	plugged/neomake/autoload/neomake/makers/ft/java.vim	/^let g:neomake_java_checkstyle_executable =$/;"	v
@@ -15982,7 +15988,7 @@ g:xmldata_html5	plugged/vim-polyglot/autoload/xml/html5.vim	/^let g:xmldata_html
 gc	plugged/vim-commentary/plugin/commentary.vim	/^  nmap gc  <Plug>Commentary$/;"	m
 gc	plugged/vim-commentary/plugin/commentary.vim	/^  omap gc  <Plug>Commentary$/;"	m
 gc	plugged/vim-polyglot/ftplugin/crystal.vim	/^  nmap <buffer>gc <Plug>(crystal-show-context)$/;"	m
-gcc	plugged/vim-commentary/plugin/commentary.vim	/^  nmap gcc <Plug>Commentary_$/;"	m
+gcc	plugged/vim-commentary/plugin/commentary.vim	/^  nmap gcc <Plug>CommentaryLine$/;"	m
 gcu	plugged/vim-commentary/plugin/commentary.vim	/^  nmap gcu <Plug>Commentary<Plug>Commentary$/;"	m
 gd	plugged/vim-polyglot/ftplugin/crystal.vim	/^  nmap <buffer>gd <Plug>(crystal-jump-to-definition)$/;"	m
 gem	plugged/ri.vim/plugin/ri.vim	/^function! s:gem()$/;"	f
@@ -18228,6 +18234,7 @@ neomake#compat#get_argv	plugged/neomake/autoload/neomake/compat.vim	/^    functi
 neomake#compat#get_mode	plugged/neomake/autoload/neomake/compat.vim	/^    function! neomake#compat#get_mode() abort$/;"	f
 neomake#compat#getbufvar	plugged/neomake/autoload/neomake/compat.vim	/^    function! neomake#compat#getbufvar(buf, key, def) abort$/;"	f
 neomake#compat#gettabwinvar	plugged/neomake/autoload/neomake/compat.vim	/^    function! neomake#compat#gettabwinvar(t, w, v, d) abort$/;"	f
+neomake#compat#glob_list	plugged/neomake/autoload/neomake/compat.vim	/^function! neomake#compat#glob_list(pattern) abort$/;"	f
 neomake#compat#globpath_list	plugged/neomake/autoload/neomake/compat.vim	/^function! neomake#compat#globpath_list(path, pattern, suf) abort$/;"	f
 neomake#compat#in_completion	plugged/neomake/autoload/neomake/compat.vim	/^function! neomake#compat#in_completion() abort$/;"	f
 neomake#compat#json_decode	plugged/neomake/autoload/neomake/compat.vim	/^      function! neomake#compat#json_decode(json) abort$/;"	f
@@ -18258,6 +18265,7 @@ neomake#core#create_jobs	plugged/neomake/autoload/neomake/core.vim	/^function! n
 neomake#debug#_get_info_lines	plugged/neomake/autoload/neomake/debug.vim	/^function! neomake#debug#_get_info_lines() abort$/;"	f
 neomake#debug#display_info	plugged/neomake/autoload/neomake/debug.vim	/^function! neomake#debug#display_info(...) abort$/;"	f
 neomake#debug#validate_maker	plugged/neomake/autoload/neomake/debug.vim	/^function! neomake#debug#validate_maker(maker) abort$/;"	f
+neomake#get_nearest_error	plugged/neomake/autoload/neomake.vim	/^function! neomake#get_nearest_error() abort$/;"	f
 neomake#has_async_support	plugged/neomake/autoload/neomake.vim	/^function! neomake#has_async_support() abort$/;"	f
 neomake#highlights#AddHighlight	plugged/neomake/autoload/neomake/highlights.vim	/^function! neomake#highlights#AddHighlight(entry, type) abort$/;"	f
 neomake#highlights#DefineHighlights	plugged/neomake/autoload/neomake/highlights.vim	/^function! neomake#highlights#DefineHighlights() abort$/;"	f
@@ -18326,6 +18334,8 @@ neomake#makers#ft#d#EnabledMakers	plugged/neomake/autoload/neomake/makers/ft/d.v
 neomake#makers#ft#d#dmd	plugged/neomake/autoload/neomake/makers/ft/d.vim	/^function! neomake#makers#ft#d#dmd() abort$/;"	f
 neomake#makers#ft#d#gdmd	plugged/neomake/autoload/neomake/makers/ft/d.vim	/^function! neomake#makers#ft#d#gdmd() abort$/;"	f
 neomake#makers#ft#d#ldmd	plugged/neomake/autoload/neomake/makers/ft/d.vim	/^function! neomake#makers#ft#d#ldmd() abort$/;"	f
+neomake#makers#ft#docbk#EnabledMakers	plugged/neomake/autoload/neomake/makers/ft/docbk.vim	/^function! neomake#makers#ft#docbk#EnabledMakers() abort$/;"	f
+neomake#makers#ft#docbk#xmllint	plugged/neomake/autoload/neomake/makers/ft/docbk.vim	/^function! neomake#makers#ft#docbk#xmllint() abort$/;"	f
 neomake#makers#ft#elixir#EnabledMakers	plugged/neomake/autoload/neomake/makers/ft/elixir.vim	/^function! neomake#makers#ft#elixir#EnabledMakers() abort$/;"	f
 neomake#makers#ft#elixir#PostprocessCredo	plugged/neomake/autoload/neomake/makers/ft/elixir.vim	/^function! neomake#makers#ft#elixir#PostprocessCredo(entry) abort$/;"	f
 neomake#makers#ft#elixir#PostprocessEnforceMaxBufferLine	plugged/neomake/autoload/neomake/makers/ft/elixir.vim	/^function! neomake#makers#ft#elixir#PostprocessEnforceMaxBufferLine(entry) abort$/;"	f
@@ -18337,6 +18347,7 @@ neomake#makers#ft#elm#ElmMakeProcessOutput	plugged/neomake/autoload/neomake/make
 neomake#makers#ft#elm#EnabledMakers	plugged/neomake/autoload/neomake/makers/ft/elm.vim	/^function! neomake#makers#ft#elm#EnabledMakers() abort$/;"	f
 neomake#makers#ft#elm#elmMake	plugged/neomake/autoload/neomake/makers/ft/elm.vim	/^function! neomake#makers#ft#elm#elmMake() abort$/;"	f
 neomake#makers#ft#erlang#EnabledMakers	plugged/neomake/autoload/neomake/makers/ft/erlang.vim	/^function! neomake#makers#ft#erlang#EnabledMakers() abort$/;"	f
+neomake#makers#ft#erlang#GlobPaths	plugged/neomake/autoload/neomake/makers/ft/erlang.vim	/^function! neomake#makers#ft#erlang#GlobPaths() abort$/;"	f
 neomake#makers#ft#erlang#erlc	plugged/neomake/autoload/neomake/makers/ft/erlang.vim	/^function! neomake#makers#ft#erlang#erlc() abort$/;"	f
 neomake#makers#ft#fish#EnabledMakers	plugged/neomake/autoload/neomake/makers/ft/fish.vim	/^function! neomake#makers#ft#fish#EnabledMakers() abort$/;"	f
 neomake#makers#ft#fish#fish	plugged/neomake/autoload/neomake/makers/ft/fish.vim	/^function! neomake#makers#ft#fish#fish() abort$/;"	f
@@ -18563,6 +18574,10 @@ neomake#makers#ft#vue#eslint	plugged/neomake/autoload/neomake/makers/ft/vue.vim	
 neomake#makers#ft#vue#eslint_d	plugged/neomake/autoload/neomake/makers/ft/vue.vim	/^function! neomake#makers#ft#vue#eslint_d() abort$/;"	f
 neomake#makers#ft#vue#semistandard	plugged/neomake/autoload/neomake/makers/ft/vue.vim	/^function! neomake#makers#ft#vue#semistandard() abort$/;"	f
 neomake#makers#ft#vue#standard	plugged/neomake/autoload/neomake/makers/ft/vue.vim	/^function! neomake#makers#ft#vue#standard() abort$/;"	f
+neomake#makers#ft#xml#EnabledMakers	plugged/neomake/autoload/neomake/makers/ft/xml.vim	/^function! neomake#makers#ft#xml#EnabledMakers() abort$/;"	f
+neomake#makers#ft#xml#xmllint	plugged/neomake/autoload/neomake/makers/ft/xml.vim	/^function! neomake#makers#ft#xml#xmllint() abort$/;"	f
+neomake#makers#ft#xslt#EnabledMakers	plugged/neomake/autoload/neomake/makers/ft/xslt.vim	/^function! neomake#makers#ft#xslt#EnabledMakers() abort$/;"	f
+neomake#makers#ft#xslt#xmllint	plugged/neomake/autoload/neomake/makers/ft/xslt.vim	/^function! neomake#makers#ft#xslt#xmllint() abort$/;"	f
 neomake#makers#ft#yacc#EnabledMakers	plugged/neomake/autoload/neomake/makers/ft/yacc.vim	/^function! neomake#makers#ft#yacc#EnabledMakers() abort$/;"	f
 neomake#makers#ft#yacc#bison	plugged/neomake/autoload/neomake/makers/ft/yacc.vim	/^function! neomake#makers#ft#yacc#bison() abort$/;"	f
 neomake#makers#ft#yaml#EnabledMakers	plugged/neomake/autoload/neomake/makers/ft/yaml.vim	/^function! neomake#makers#ft#yaml#EnabledMakers() abort$/;"	f
@@ -27400,6 +27415,7 @@ s:selectionPrompt	plugged/ri.vim/plugin/ri.vim	/^let s:selectionPrompt = ""$/;"	
 s:separators	plugged/vim-airline/autoload/airline/highlighter.vim	/^let s:separators = {}$/;"	v
 s:sha1size	plugged/vim-airline/autoload/airline/extensions/branch.vim	/^let s:sha1size = get(g:, 'airline#extensions#branch#sha1_len', 7)$/;"	v
 s:shell_argv	plugged/neomake/tests/include/init.vim	/^let s:shell_argv = split(&shell) + split(&shellcmdflag)$/;"	v
+s:shellcheck	plugged/neomake/autoload/neomake/makers/ft/sh.vim	/^let s:shellcheck = {$/;"	v
 s:short_level_to_name	plugged/neomake/autoload/neomake/log.vim	/^let s:short_level_to_name = {0: 'E', 1: 'W', 2: 'V', 3: 'D'}$/;"	v
 s:show_buffers	plugged/vim-airline/autoload/airline/extensions/tabline/autoshow.vim	/^let s:show_buffers = get(g:, 'airline#extensions#tabline#show_buffers', 1)$/;"	v
 s:show_line_numbers	plugged/vim-airline/autoload/airline/extensions/ale.vim	/^let s:show_line_numbers = get(g:, 'airline#extensions#ale#show_line_numbers', 1)$/;"	v
@@ -28062,6 +28078,8 @@ stepmatch	plugged/vim-polyglot/ftplugin/cucumber.vim	/^function! s:stepmatch(rec
 steps	plugged/vim-polyglot/ftplugin/cucumber.vim	/^function! s:steps(lnum)$/;"	f
 stl	plugged/vim-airline/t/builder.vim	/^    let stl = s:builder.build()$/;"	v
 stl	plugged/vim-airline/t/extensions_default.vim	/^    let stl = s:builder.build()$/;"	v
+stop_timer	plugged/neomake/autoload/neomake/configure.vim	/^function! s:stop_timer(timer) abort$/;"	f
+stop_timers	plugged/neomake/autoload/neomake/configure.vim	/^function! s:stop_timers() abort$/;"	f
 store_indent	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/lexers/clean.py	/^    def store_indent(lexer, match, ctx):$/;"	m	class:CleanLexer
 str	plugged/vim-wakatime/plugin/packages/wakatime/packages/configparser/helpers.py	/^str = type('str')$/;"	v
 str	plugged/vim-wakatime/plugin/packages/wakatime/packages/requests/compat.py	/^    str = str$/;"	v
@@ -29155,6 +29173,7 @@ vim_output_handler	plugged/neomake/autoload/neomake.vim	/^function! s:vim_output
 vim_output_handler_stderr	plugged/neomake/autoload/neomake.vim	/^function! s:vim_output_handler_stderr(channel, output) abort$/;"	f
 vim_output_handler_stdout	plugged/neomake/autoload/neomake.vim	/^function! s:vim_output_handler_stdout(channel, output) abort$/;"	f
 vim_version	plugged/vim-gitgutter/autoload/gitgutter/debug.vim	/^function! s:vim_version()$/;"	f
+vimrc	init.vim	/^augroup vimrc$/;"	a
 vital#	plugged/vim-polyglot/autoload/vital/_crystal.vim	/^function! vital#{s:_plugin_name}#function(funcname) abort$/;"	f
 vital#	plugged/vim-polyglot/autoload/vital/_crystal.vim	/^function! vital#{s:_plugin_name}#new() abort$/;"	f
 vital#	plugged/vim-polyglot/autoload/vital/crystal.vim	/^function! vital#{s:plugin_name}#import(...) abort$/;"	f

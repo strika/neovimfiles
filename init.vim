@@ -67,33 +67,46 @@ endfunction
 " Toggle relative numbers
 nnoremap <C-n> :let &rnu=!&rnu<CR>
 
-if has("autocmd")
+augroup vimrc
+  " Remove all vimrc autocommands
+  autocmd! vimrc
+
   " Delete empty space from the end of lines on every save
-  au BufWritePre * :%s/\s\+$//e
+  autocmd BufWritePre * :%s/\s\+$//e
 
   " Make sure all markdown files have the correct filetype set and setup
   " wrapping and spell check
-  au BufRead,BufNewFile *.{md,md.erb,markdown,mdown,mkd,mkdn,txt} setf markdown | call s:setupWrappingAndSpellcheck()
+  autocmd BufRead,BufNewFile *.{md,md.erb,markdown,mdown,mkd,mkdn,txt} setf markdown | call s:setupWrappingAndSpellcheck()
 
   " Spellcheck
-  au BufRead,BufNewFile *.feature setlocal spell
+  autocmd BufRead,BufNewFile *.feature setlocal spell
 
   " Treat JSON files like JavaScript
-  au BufNewFile,BufRead *.json set ft=javascript
+  autocmd BufNewFile,BufRead *.json set ft=javascript
 
   " Remember last location in file, but not for commit messages.
   " see :help last-position-jump
-  au BufReadPost * if &filetype !~ '^git\c' && line("'\"") > 0 && line("'\"") <= line("$")
+  autocmd BufReadPost * if &filetype !~ '^git\c' && line("'\"") > 0 && line("'\"") <= line("$")
     \| exe "normal! g`\"" | endif
 
   " Encrypted Yaml
-  au BufRead,BufNewFile *.{yml.enc} setlocal filetype=yaml
+  autocmd BufRead,BufNewFile *.{yml.enc} setlocal filetype=yaml
 
-  au BufRead,BufNewFile *.{inky} setlocal filetype=html
+  autocmd BufRead,BufNewFile *.{inky} setlocal filetype=html
 
   " Git
-  au Filetype gitcommit setlocal spell textwidth=72
-endif
+  autocmd Filetype gitcommit setlocal spell textwidth=72
+
+  " I like relative numbering when in normal mode.
+  autocmd TermOpen * setlocal conceallevel=0 colorcolumn=0 relativenumber
+
+  " Prefer Neovim terminal insert mode to normal mode.
+  autocmd BufEnter term://* startinsert
+
+  " FZF
+  autocmd FileType fzf tnoremap <buffer> <C-j> <Down>
+  autocmd FileType fzf tnoremap <buffer> <C-k> <Up>
+augroup END
 
 " clear the search buffer when hitting return
 :nnoremap <CR> :nohlsearch<cr>
@@ -168,18 +181,10 @@ tnoremap <C-j> <C-\><C-N><C-w>j
 tnoremap <C-k> <C-\><C-N><C-w>k
 tnoremap <C-l> <C-\><C-N><C-w>l
 
-" I like relative numbering when in normal mode.
-autocmd TermOpen * setlocal conceallevel=0 colorcolumn=0 relativenumber
-
-" Prefer Neovim terminal insert mode to normal mode.
-autocmd BufEnter term://* startinsert
-
 " Ruby on Rails
 let g:rubycomplete_rails = 1
 
 " FZF
-autocmd FileType fzf tnoremap <buffer> <C-j> <Down>
-autocmd FileType fzf tnoremap <buffer> <C-k> <Up>
 let g:fzf_colors =
 \ { 'fg':      ['fg', 'Normal'],
   \ 'bg':      ['bg', 'Normal'],
