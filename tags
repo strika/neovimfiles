@@ -60,9 +60,6 @@ $PYTHONWARNINGS	plugged/vim-polyglot/compiler/python.vim	/^  let $PYTHONWARNINGS
 <Leader>fr	plugged/vim-polyglot/ftplugin/scala.vim	/^      nnoremap <buffer> <silent> <Leader>fr :FufFile <c-r>=scala#GetRootDirForFuzzyFinder('%:p:h')<cr><cr>$/;"	m
 <Leader>fs	plugged/vim-polyglot/ftplugin/scala.vim	/^      nnoremap <buffer> <silent> <Leader>fs :FufFile <c-r>=scala#GetMainDirForFuzzyFinder('%:p:h')<cr><cr>$/;"	m
 <Leader>ft	plugged/vim-polyglot/ftplugin/scala.vim	/^      nnoremap <buffer> <silent> <Leader>ft :FufFile <c-r>=scala#GetTestDirForFuzzyFinder('%:p:h')<cr><cr>$/;"	m
-<Leader>hp	plugged/vim-gitgutter/plugin/gitgutter.vim	/^    nmap <Leader>hp <Plug>GitGutterPreviewHunk$/;"	m
-<Leader>hs	plugged/vim-gitgutter/plugin/gitgutter.vim	/^    nmap <Leader>hs <Plug>GitGutterStageHunk$/;"	m
-<Leader>hu	plugged/vim-gitgutter/plugin/gitgutter.vim	/^    nmap <Leader>hu <Plug>GitGutterUndoHunk$/;"	m
 <Leader>rf	plugged/vim-polyglot/ftplugin/textile.vim	/^noremap <buffer> <Leader>rf :TextileRenderFile<CR>$/;"	m
 <Leader>rp	plugged/vim-polyglot/ftplugin/textile.vim	/^noremap <buffer> <Leader>rp :TextilePreview<CR>$/;"	m
 <Leader>rt	plugged/vim-polyglot/ftplugin/textile.vim	/^noremap <buffer> <Leader>rt :TextileRenderTab<CR>$/;"	m
@@ -197,32 +194,32 @@ $PYTHONWARNINGS	plugged/vim-polyglot/compiler/python.vim	/^  let $PYTHONWARNINGS
 <leader>R	plugged/ri.vim/plugin/ri.vim	/^  nnoremap <silent> <leader>R :call ri#OpenSearchPrompt(1)<cr>$/;"	m
 <leader>T	init.vim	/^nmap <silent> <leader>T :TestFile<CR>$/;"	m
 <leader>a	init.vim	/^nmap <leader>a :Ack ""<Left>$/;"	m
-<leader>b	init.vim	/^map <leader>b :Buffers<cr>$/;"	m
+<leader>b	init.vim	/^nmap <leader>b :Buffers<cr>$/;"	m
 <leader>cd2	plugged/vim-airline/autoload/airline/extensions/tabline/xtabline.vim	/^        map <unique> <leader>cd2 <Plug>XTablineCdDown2$/;"	m
 <leader>cd3	plugged/vim-airline/autoload/airline/extensions/tabline/xtabline.vim	/^        map <unique> <leader>cd3 <Plug>XTablineCdDown3$/;"	m
 <leader>cdc	plugged/vim-airline/autoload/airline/extensions/tabline/xtabline.vim	/^        map <unique> <leader>cdc <Plug>XTablineCdCurrent$/;"	m
 <leader>cdd	plugged/vim-airline/autoload/airline/extensions/tabline/xtabline.vim	/^        map <unique> <leader>cdd <Plug>XTablineCdDown1$/;"	m
 <leader>cdh	plugged/vim-airline/autoload/airline/extensions/tabline/xtabline.vim	/^        map <unique> <leader>cdh <Plug>XTablineCdHome$/;"	m
-<leader>f	init.vim	/^map <leader>f :Files .\/<cr>$/;"	m
-<leader>ga	init.vim	/^map <leader>ga :Files app<cr>$/;"	m
-<leader>gc	init.vim	/^map <leader>gc :Files app\/controllers<cr>$/;"	m
-<leader>gd	init.vim	/^map <leader>gd :e db\/schema.rb<cr>$/;"	m
-<leader>ge	init.vim	/^map <leader>ge :Files engines<cr>$/;"	m
-<leader>gf	init.vim	/^map <leader>gf :Files features<cr>$/;"	m
-<leader>gg	init.vim	/^map <leader>gg :e Gemfile<cr>$/;"	m
-<leader>gh	init.vim	/^map <leader>gh :Files app\/helpers<cr>$/;"	m
-<leader>gj	init.vim	/^map <leader>gj :Files app\/assets\/javascripts<cr>$/;"	m
-<leader>gl	init.vim	/^map <leader>gl :Files lib<cr>$/;"	m
-<leader>gm	init.vim	/^map <leader>gm :Files app\/models<cr>$/;"	m
-<leader>gr	init.vim	/^map <leader>gr :e config\/routes.rb<cr>$/;"	m
-<leader>gs	init.vim	/^map <leader>gs :Files spec<cr>$/;"	m
-<leader>gt	init.vim	/^map <leader>gt :Files test<cr>$/;"	m
-<leader>gv	init.vim	/^map <leader>gv :Files app\/views<cr>$/;"	m
+<leader>f	init.vim	/^nmap <leader>f :Files .\/<cr>$/;"	m
+<leader>ga	init.vim	/^nmap <leader>ga :Files app<cr>$/;"	m
+<leader>gc	init.vim	/^nmap <leader>gc :Files app\/controllers<cr>$/;"	m
+<leader>gd	init.vim	/^nmap <leader>gd :e db\/schema.rb<cr>$/;"	m
+<leader>ge	init.vim	/^nmap <leader>ge :Files engines<cr>$/;"	m
+<leader>gf	init.vim	/^nmap <leader>gf :Files features<cr>$/;"	m
+<leader>gg	init.vim	/^nmap <leader>gg :e Gemfile<cr>$/;"	m
+<leader>gh	init.vim	/^nmap <leader>gh :Files app\/helpers<cr>$/;"	m
+<leader>gj	init.vim	/^nmap <leader>gj :Files app\/assets\/javascripts<cr>$/;"	m
+<leader>gl	init.vim	/^nmap <leader>gl :Files lib<cr>$/;"	m
+<leader>gm	init.vim	/^nmap <leader>gm :Files app\/models<cr>$/;"	m
+<leader>gr	init.vim	/^nmap <leader>gr :e config\/routes.rb<cr>$/;"	m
+<leader>gs	init.vim	/^nmap <leader>gs :Files spec<cr>$/;"	m
+<leader>gt	init.vim	/^nmap <leader>gt :Files test<cr>$/;"	m
+<leader>gv	init.vim	/^nmap <leader>gv :Files app\/views<cr>$/;"	m
 <leader>l	init.vim	/^nmap <silent> <leader>l :TestLast<CR>$/;"	m
 <leader>r	plugged/ri.vim/plugin/ri.vim	/^  nnoremap <silent> <leader>r :call ri#OpenSearchPrompt(0)<cr>$/;"	m
-<leader>s	init.vim	/^map <leader>s :A<CR>$/;"	m
+<leader>s	init.vim	/^nmap <leader>s :A<CR>$/;"	m
 <leader>t	init.vim	/^nmap <silent> <leader>t :TestNearest<CR>$/;"	m
-<leader>v	init.vim	/^map <leader>v :AV<CR>$/;"	m
+<leader>v	init.vim	/^nmap <leader>v :AV<CR>$/;"	m
 <leftrelease>	plugged/vim-polyglot/ftplugin/latextoc.vim	/^nnoremap <buffer> <silent> <leftrelease> :call <SID>TOCActivate(0)<cr>$/;"	m
 <localleader>a	plugged/vim-polyglot/ftplugin/mail_vifm.vim	/^nnoremap <buffer> <silent> <localleader>a :call <sid>AddMailAttachments()<cr>$/;"	m
 <plug>(-fzf-vim-do)	plugged/fzf.vim/autoload/fzf/vim.vim	/^nnoremap <plug>(-fzf-vim-do) :execute g:__fzf_command<cr>$/;"	m
@@ -289,9 +286,11 @@ ActionScript3Lexer	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygmen
 ActionScriptLexer	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/lexers/actionscript.py	/^class ActionScriptLexer(RegexLexer):$/;"	c
 AdaLexer	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/lexers/pascal.py	/^class AdaLexer(RegexLexer):$/;"	c
 Add	plugged/vim-polyglot/syntax/cucumber.vim	/^function! s:Add(name)$/;"	f
+AddBlockTag	plugged/vim-polyglot/indent/html.vim	/^func! s:AddBlockTag(tag, id, ...)$/;"	f
 AddBracketExpand	plugged/vim-rails/autoload/rails.vim	/^function! s:AddBracketExpand(abbr,expn)$/;"	f
 AddColonExpand	plugged/vim-rails/autoload/rails.vim	/^function! s:AddColonExpand(abbr,expn)$/;"	f
 AddExprCallback	plugged/neomake/autoload/neomake.vim	/^function! s:AddExprCallback(jobinfo, prev_list) abort$/;"	f
+AddITags	plugged/vim-polyglot/indent/html.vim	/^func! s:AddITags(tags, taglist)$/;"	f
 AddIndentByInd	plugged/vim-polyglot/indent/autohotkey.vim	/^function! AddIndentByInd(indent)$/;"	f
 AddMailAttachments	plugged/vim-polyglot/ftplugin/mail_vifm.vim	/^function! s:AddMailAttachments()$/;"	f
 AddParenExpand	plugged/vim-rails/autoload/rails.vim	/^function! s:AddParenExpand(abbr,expn,...)$/;"	f
@@ -319,6 +318,11 @@ AirlineToggle	plugged/vim-airline/plugin/airline.vim	/^command! -bar AirlineTogg
 AirlineToggleWhitespace	plugged/vim-airline/plugin/airline.vim	/^command! -bar AirlineToggleWhitespace call airline#extensions#whitespace#toggle()$/;"	c
 AlgolStyle	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/styles/algol.py	/^class AlgolStyle(Style):$/;"	c
 Algol_NuStyle	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/styles/algol_nu.py	/^class Algol_NuStyle(Style):$/;"	c
+Alien2	plugged/vim-polyglot/indent/html.vim	/^func! s:Alien2()$/;"	f
+Alien3	plugged/vim-polyglot/indent/html.vim	/^func! s:Alien3()$/;"	f
+Alien4	plugged/vim-polyglot/indent/html.vim	/^func! s:Alien4()$/;"	f
+Alien5	plugged/vim-polyglot/indent/html.vim	/^func! s:Alien5()$/;"	f
+Alien6	plugged/vim-polyglot/indent/html.vim	/^func! s:Alien6()$/;"	f
 Align	plugged/splitjoin.vim/autoload/sj.vim	/^function! s:Align(from, to, type)$/;"	f
 Align	plugged/vim-gitgutter/test/runner.vim	/^function Align(left, right)$/;"	f
 AllLinesStartWithWhen	plugged/splitjoin.vim/autoload/sj/ruby.vim	/^function! s:AllLinesStartWithWhen(lines)$/;"	f
@@ -354,6 +358,8 @@ ArgumentParser	plugged/vim-wakatime/plugin/packages/wakatime/packages/argparse.p
 ArgumentTypeError	plugged/vim-wakatime/plugin/packages/wakatime/packages/argparse.py	/^class ArgumentTypeError(Exception):$/;"	c
 ArrayLiteralClosingBracket	plugged/splitjoin.vim/autoload/sj/ruby.vim	/^function! s:ArrayLiteralClosingBracket(opening_bracket)$/;"	f
 AspectJLexer	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/lexers/jvm.py	/^class AspectJLexer(JavaLexer):$/;"	c
+AssertEqualQf	plugged/neomake/tests/include/init.vim	/^command! -nargs=1 AssertEqualQf call s:AssertEqualQf(<args>)$/;"	c
+AssertEqualQf	plugged/neomake/tests/include/init.vim	/^function! s:AssertEqualQf(actual, expected, ...) abort$/;"	f
 AssertNeomakeMessage	plugged/neomake/tests/include/init.vim	/^command! -nargs=+ AssertNeomakeMessage call s:AssertNeomakeMessage(<args>)$/;"	c
 AssertNeomakeMessage	plugged/neomake/tests/include/init.vim	/^function! s:AssertNeomakeMessage(msg, ...)$/;"	f
 AssertNeomakeMessageAbsent	plugged/neomake/tests/include/init.vim	/^command! -nargs=+ AssertNeomakeMessageAbsent call s:AssertNeomakeMessageAbsent(<args>)$/;"	c
@@ -620,6 +626,7 @@ CSCOPE_ARGS	plugged/vim-gutentags/plat/win32/update_scopedb.cmd	/^    set CSCOPE
 CSCOPE_ARGS	plugged/vim-gutentags/plat/win32/update_scopedb.cmd	/^set CSCOPE_ARGS=$/;"	v
 CSCOPE_EXE	plugged/vim-gutentags/plat/win32/update_scopedb.cmd	/^    set CSCOPE_EXE=%~2$/;"	v
 CSCOPE_EXE	plugged/vim-gutentags/plat/win32/update_scopedb.cmd	/^set CSCOPE_EXE=cscope$/;"	v
+CSSIndent	plugged/vim-polyglot/indent/html.vim	/^func! s:CSSIndent()$/;"	f
 CS_ESCAPE	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/regexopt.py	/^CS_ESCAPE = re.compile(r'[\\^\\\\\\-\\]]')$/;"	v
 CSharpAspxLexer	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/lexers/dotnet.py	/^class CSharpAspxLexer(DelegatingLexer):$/;"	c
 CSharpLexer	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/lexers/dotnet.py	/^class CSharpLexer(RegexLexer):$/;"	c
@@ -665,9 +672,12 @@ CharSetGroupProber	plugged/vim-wakatime/plugin/packages/wakatime/packages/reques
 CharSetProber	plugged/vim-wakatime/plugin/packages/wakatime/packages/requests/packages/chardet/charsetprober.py	/^class CharSetProber:$/;"	c
 CharacterwiseSelectA	plugged/vim-textobj-user/t/selection.vim	/^function! CharacterwiseSelectA()$/;"	f
 CharacterwiseSelectI	plugged/vim-textobj-user/t/selection.vim	/^function! CharacterwiseSelectI()$/;"	f
+CheckBlockTag	plugged/vim-polyglot/indent/html.vim	/^func! s:CheckBlockTag(blocktag, ind)$/;"	f
+CheckCustomTag	plugged/vim-polyglot/indent/html.vim	/^func! s:CheckCustomTag(ctag)$/;"	f
 CheckDefined	plugged/vim-airline/autoload/airline/highlighter.vim	/^function! s:CheckDefined(colors)$/;"	f
 CheckForFunctions	plugged/vim-polyglot/syntax/octave.vim	/^function! s:CheckForFunctions()$/;"	f
 CheckStackMakerAsync	plugged/neomake/autoload/neomake/makers/ft/haskell.vim	/^function! s:CheckStackMakerAsync(job_id, data, event) dict abort$/;"	f
+CheckTag	plugged/vim-polyglot/indent/html.vim	/^func! s:CheckTag(itag)$/;"	f
 CheetahHtmlLexer	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/lexers/templates.py	/^class CheetahHtmlLexer(DelegatingLexer):$/;"	c
 CheetahHtmlParser	plugged/vim-wakatime/plugin/packages/wakatime/dependencies/templates.py	/^class CheetahHtmlParser(HtmlDjangoParser):$/;"	c
 CheetahJavascriptLexer	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/lexers/templates.py	/^class CheetahJavascriptLexer(DelegatingLexer):$/;"	c
@@ -798,7 +808,9 @@ ConvertBack	plugged/vim-polyglot/ftplugin/latex-box/motion.vim	/^function! s:Con
 ConverterMapping	plugged/vim-wakatime/plugin/packages/wakatime/packages/configparser/__init__.py	/^class ConverterMapping(MutableMapping):$/;"	c
 CookieConflictError	plugged/vim-wakatime/plugin/packages/wakatime/packages/requests/cookies.py	/^class CookieConflictError(RuntimeError):$/;"	c
 CoqLexer	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/lexers/theorem.py	/^class CoqLexer(RegexLexer):$/;"	c
+CountITags	plugged/vim-polyglot/indent/html.vim	/^func! s:CountITags(text)$/;"	f
 CountMatches	plugged/vim-polyglot/indent/tex.vim	/^function! s:CountMatches(str, pat)$/;"	f
+CountTagsAndState	plugged/vim-polyglot/indent/html.vim	/^func! s:CountTagsAndState(text)$/;"	f
 CppLexer	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/lexers/c_cpp.py	/^class CppLexer(CFamilyLexer):$/;"	c
 CppObjdumpLexer	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/lexers/asm.py	/^class CppObjdumpLexer(DelegatingLexer):$/;"	c
 CppParser	plugged/vim-wakatime/plugin/packages/wakatime/dependencies/c_cpp.py	/^class CppParser(CParser):$/;"	c
@@ -824,10 +836,13 @@ CsoundOrchestraLexer	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygm
 CsoundScoreLexer	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/lexers/csound.py	/^class CsoundScoreLexer(CsoundLexer):$/;"	c
 CssDjangoLexer	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/lexers/templates.py	/^class CssDjangoLexer(DelegatingLexer):$/;"	c
 CssErbLexer	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/lexers/templates.py	/^class CssErbLexer(DelegatingLexer):$/;"	c
+CssFirstUnfinished	plugged/vim-polyglot/indent/html.vim	/^func! s:CssFirstUnfinished(lnum, min_lnum)$/;"	f
 CssGenshiLexer	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/lexers/templates.py	/^class CssGenshiLexer(DelegatingLexer):$/;"	c
 CssLexer	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/lexers/css.py	/^class CssLexer(RegexLexer):$/;"	c
 CssPhpLexer	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/lexers/templates.py	/^class CssPhpLexer(DelegatingLexer):$/;"	c
+CssPrevNonComment	plugged/vim-polyglot/indent/html.vim	/^func! s:CssPrevNonComment(lnum, stopline)$/;"	f
 CssSmartyLexer	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/lexers/templates.py	/^class CssSmartyLexer(DelegatingLexer):$/;"	c
+CssUnfinished	plugged/vim-polyglot/indent/html.vim	/^func! s:CssUnfinished(text)$/;"	f
 CtrlP	plugged/ctrlp.vim/plugin/ctrlp.vim	/^com! -n=? -com=dir CtrlP         cal ctrlp#init(0, { 'dir': <q-args> })$/;"	c
 CtrlPAug	plugged/ctrlp.vim/autoload/ctrlp.vim	/^	aug CtrlPAug$/;"	a
 CtrlPBookmarkDir	plugged/ctrlp.vim/plugin/ctrlp.vim	/^com! -bar CtrlPBookmarkDir cal ctrlp#init(ctrlp#bookmarkdir#id())$/;"	c
@@ -902,7 +917,7 @@ DOCKER_RUN	plugged/neomake/Makefile	/^docker_make: DOCKER_RUN=make $(DOCKER_MAKE
 DOCKER_STREAMS	plugged/neomake/Makefile	/^DOCKER_STREAMS:=-ti$/;"	m
 DOCKER_STREAMS	plugged/neomake/Makefile	/^docker_test: DOCKER_STREAMS:=-t$/;"	m
 DOCKER_STREAMS	plugged/neomake/Makefile	/^docker_test_interactive: DOCKER_STREAMS:=-ti$/;"	m
-DOCKER_TAG	plugged/neomake/Makefile	/^DOCKER_TAG:=24$/;"	m
+DOCKER_TAG	plugged/neomake/Makefile	/^DOCKER_TAG:=25$/;"	m
 DOCKER_VIM	plugged/neomake/Makefile	/^_docker_test: DOCKER_VIM:=vim-master$/;"	m
 DOCKER_VIMS	plugged/neomake/Makefile	/^DOCKER_VIMS:=vim73 vim74-trusty vim74-xenial vim-8.0.586 vim-master neovim-v0.1.7 neovim-v0.2.0 neovim-v0.2.1 neovim-v0.2.2 neovim-master$/;"	m
 DONT_KNOW	plugged/vim-wakatime/plugin/packages/wakatime/packages/requests/packages/chardet/jpcntx.py	/^DONT_KNOW = -1$/;"	v
@@ -1088,7 +1103,6 @@ ExtendedInterpolation	plugged/vim-wakatime/plugin/packages/wakatime/packages/con
 ExtendedRegexLexer	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/lexer.py	/^class ExtendedRegexLexer(RegexLexer):$/;"	c
 ExtraBrackets	plugged/vim-polyglot/indent/crystal.vim	/^function s:ExtraBrackets(lnum)$/;"	f
 ExtraBrackets	plugged/vim-polyglot/indent/ruby.vim	/^function! s:ExtraBrackets(lnum) abort$/;"	f
-Extract	plugged/vim-rails/autoload/rails.vim	/^function! s:Extract(bang, mods, ...) range abort$/;"	f
 ExtractInputs	plugged/vim-polyglot/ftplugin/latex-box/complete.vim	/^function! s:ExtractInputs()$/;"	f
 ExtractLabels	plugged/vim-polyglot/ftplugin/latex-box/complete.vim	/^function! s:ExtractLabels()$/;"	f
 EzhilLexer	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/lexers/ezhil.py	/^class EzhilLexer(RegexLexer):$/;"	c
@@ -1179,6 +1193,7 @@ ForthLexer	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/lexer
 FortranFixedLexer	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/lexers/fortran.py	/^class FortranFixedLexer(RegexLexer):$/;"	c
 FortranLexer	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/lexers/fortran.py	/^class FortranLexer(RegexLexer):$/;"	c
 FoxProLexer	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/lexers/foxpro.py	/^class FoxProLexer(RegexLexer):$/;"	c
+FreshState	plugged/vim-polyglot/indent/html.vim	/^func! s:FreshState(lnum)$/;"	f
 FriendlyName	plugged/vim-gitgutter/test/runner.vim	/^function FriendlyName(test_name)$/;"	f
 FriendlyStyle	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/styles/friendly.py	/^class FriendlyStyle(Style):$/;"	c
 FruityStyle	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/styles/fruity.py	/^class FruityStyle(Style):$/;"	c
@@ -1221,6 +1236,7 @@ GenshiTextLexer	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/
 Get	plugged/vim-airline/autoload/airline/highlighter.vim	/^function! s:Get(dict, key, prefix)$/;"	f
 GetAnsibleIndent	plugged/vim-polyglot/indent/ansible.vim	/^function GetAnsibleIndent(lnum)$/;"	f
 GetAntClasspath	plugged/neomake/autoload/neomake/makers/ft/java.vim	/^function! s:GetAntClasspath() abort$/;"	f
+GetAppleScriptIndent	plugged/vim-polyglot/indent/applescript.vim	/^func! GetAppleScriptIndent()$/;"	f
 GetAutoHotkeyIndent	plugged/vim-polyglot/indent/autohotkey.vim	/^function! GetAutoHotkeyIndent()$/;"	f
 GetBladeIndent	plugged/vim-polyglot/indent/blade.vim	/^function! GetBladeIndent()$/;"	f
 GetBufferRubyClass	plugged/vim-polyglot/autoload/rubycomplete.vim	/^function! s:GetBufferRubyClass(name, ...)$/;"	f
@@ -1248,6 +1264,7 @@ GetFsharpIndent	plugged/vim-polyglot/indent/fsharp.vim	/^function! GetFsharpInde
 GetGitconfigIndent	plugged/vim-polyglot/indent/gitconfig.vim	/^function! GetGitconfigIndent()$/;"	f
 GetGoHTMLTmplIndent	plugged/vim-polyglot/indent/gohtmltmpl.vim	/^function! GetGoHTMLTmplIndent(lnum)$/;"	f
 GetGradleClasspath	plugged/neomake/autoload/neomake/makers/ft/java.vim	/^function! s:GetGradleClasspath() abort$/;"	f
+GetGraphQLIndent	plugged/vim-polyglot/indent/graphql.vim	/^function GetGraphQLIndent()$/;"	f
 GetHamlIndent	plugged/vim-polyglot/indent/haml.vim	/^function! GetHamlIndent()$/;"	f
 GetHandlebarsIndent	plugged/vim-polyglot/indent/handlebars.vim	/^function! GetHandlebarsIndent(...)$/;"	f
 GetHaskellIndent	plugged/vim-polyglot/indent/haskell.vim	/^function! GetHaskellIndent()$/;"	f
@@ -1308,6 +1325,7 @@ GetRubyVarType	plugged/vim-polyglot/autoload/rubycomplete.vim	/^function! s:GetR
 GetRustIndent	plugged/vim-polyglot/indent/rust.vim	/^function GetRustIndent(lnum)$/;"	f
 GetSID	plugged/vim-polyglot/ftplugin/latex-box/complete.vim	/^function! s:GetSID()$/;"	f
 GetScalaIndent	plugged/vim-polyglot/indent/scala.vim	/^function! GetScalaIndent()$/;"	f
+GetScriptType	plugged/vim-polyglot/indent/html.vim	/^func! s:GetScriptType(str)$/;"	f
 GetSlimIndent	plugged/vim-polyglot/indent/slim.vim	/^function! GetSlimIndent()$/;"	f
 GetSlimeIndent	plugged/vim-polyglot/indent/slime.vim	/^function! GetSlimeIndent()$/;"	f
 GetSolidityIndent	plugged/vim-polyglot/indent/solidity.vim	/^function GetSolidityIndent()$/;"	f
@@ -1423,9 +1441,7 @@ HandlebarsHtmlParser	plugged/vim-wakatime/plugin/packages/wakatime/dependencies/
 HandlebarsLexer	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/lexers/templates.py	/^class HandlebarsLexer(RegexLexer):$/;"	c
 HandlerParams	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/lexers/scripting.py	/^    HandlerParams = ('about', 'above', 'against', 'apart from', 'around',$/;"	v	class:AppleScriptLexer
 HasSyntax	plugged/vim-polyglot/ftplugin/latex-box/motion.vim	/^function! s:HasSyntax(syntaxName, ...)$/;"	f
-HaskellFormatImport	plugged/vim-polyglot/ftplugin/haskell.vim	/^command! -buffer -range HaskellFormatImport call haskell#formatImport(<line1>, <line2>)$/;"	c
 HaskellLexer	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/lexers/haskell.py	/^class HaskellLexer(RegexLexer):$/;"	c
-HaskellSortImports	plugged/vim-polyglot/ftplugin/haskell.vim	/^command! -buffer -range HaskellSortImports call haskell#sortImports(<line1>, <line2>)$/;"	c
 HaxeHiLink	plugged/vim-polyglot/syntax/haxe.vim	/^  command! -nargs=+ HaxeHiLink hi def link <args>$/;"	c
 HaxeHiLink	plugged/vim-polyglot/syntax/haxe.vim	/^  command! -nargs=+ HaxeHiLink hi link <args>$/;"	c
 HaxeLexer	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/lexers/haxe.py	/^class HaxeLexer(ExtendedRegexLexer):$/;"	c
@@ -1450,10 +1466,11 @@ HiLink	plugged/vim-polyglot/syntax/fsharp.vim	/^        command -nargs=+ HiLink 
 HiLink	plugged/vim-polyglot/syntax/fsharp.vim	/^        command -nargs=+ HiLink hi link <args>$/;"	c
 HiLink	plugged/vim-polyglot/syntax/gnuplot.vim	/^    command -nargs=+ HiLink hi def link <args>$/;"	c
 HiLink	plugged/vim-polyglot/syntax/gnuplot.vim	/^    command -nargs=+ HiLink hi link <args>$/;"	c
+HiLink	plugged/vim-polyglot/syntax/haproxy.vim	/^  command -nargs=+ HiLink hi def link <args>$/;"	c
+HiLink	plugged/vim-polyglot/syntax/haproxy.vim	/^  command -nargs=+ HiLink hi link <args>$/;"	c
 HiLink	plugged/vim-polyglot/syntax/javascript.vim	/^    command -nargs=+ HiLink hi def link <args>$/;"	c
 HiLink	plugged/vim-polyglot/syntax/javascript.vim	/^    command -nargs=+ HiLink hi link <args>$/;"	c
-HiLink	plugged/vim-polyglot/syntax/jinja2.vim	/^    command -nargs=+ HiLink hi def link <args>$/;"	c
-HiLink	plugged/vim-polyglot/syntax/jinja2.vim	/^    command -nargs=+ HiLink hi link <args>$/;"	c
+HiLink	plugged/vim-polyglot/syntax/jinja2.vim	/^  command -nargs=+ HiLink hi def link <args>$/;"	c
 HiLink	plugged/vim-polyglot/syntax/lua.vim	/^    command -nargs=+ HiLink hi def link <args>$/;"	c
 HiLink	plugged/vim-polyglot/syntax/lua.vim	/^    command -nargs=+ HiLink hi link <args>$/;"	c
 HiLink	plugged/vim-polyglot/syntax/mako.vim	/^    com -nargs=+ HiLink hi def link <args>$/;"	c
@@ -1507,20 +1524,19 @@ HtmlHiLink	plugged/vim-polyglot/syntax/markdown.vim	/^  command! -nargs=+ HtmlHi
 HtmlHiLink	plugged/vim-polyglot/syntax/markdown.vim	/^  command! -nargs=+ HtmlHiLink hi link <args>$/;"	c
 HtmlHiLink	plugged/vim-polyglot/syntax/mustache.vim	/^  command! -nargs=+ HtmlHiLink hi def link <args>$/;"	c
 HtmlHiLink	plugged/vim-polyglot/syntax/mustache.vim	/^  command! -nargs=+ HtmlHiLink hi link <args>$/;"	c
-HtmlIndentClose	plugged/vim-polyglot/indent/html.vim	/^fun! <SID>HtmlIndentClose(lnum, pattern)$/;"	f
+HtmlIndent	plugged/vim-polyglot/indent/html.vim	/^func! HtmlIndent()$/;"	f
 HtmlIndentClose	plugged/vim-polyglot/indent/mako.vim	/^fun! <SID>HtmlIndentClose(lnum)$/;"	f
-HtmlIndentCloseAlt	plugged/vim-polyglot/indent/html.vim	/^fun! <SID>HtmlIndentCloseAlt(lnum)$/;"	f
 HtmlIndentCloseAlt	plugged/vim-polyglot/indent/mako.vim	/^fun! <SID>HtmlIndentCloseAlt(lnum)$/;"	f
-HtmlIndentGet	plugged/vim-polyglot/indent/html.vim	/^fun! HtmlIndentGet(lnum)$/;"	f
-HtmlIndentOpen	plugged/vim-polyglot/indent/html.vim	/^fun! <SID>HtmlIndentOpen(lnum, pattern)$/;"	f
 HtmlIndentOpen	plugged/vim-polyglot/indent/mako.vim	/^fun! <SID>HtmlIndentOpen(lnum)$/;"	f
-HtmlIndentOpenAlt	plugged/vim-polyglot/indent/html.vim	/^fun! <SID>HtmlIndentOpenAlt(lnum)$/;"	f
 HtmlIndentOpenAlt	plugged/vim-polyglot/indent/mako.vim	/^fun! <SID>HtmlIndentOpenAlt(lnum)$/;"	f
-HtmlIndentPatternCount	plugged/vim-polyglot/indent/html.vim	/^func! <SID>HtmlIndentPatternCount(content, pattern)$/;"	f
 HtmlIndentPush	plugged/vim-polyglot/indent/mako.vim	/^fun! <SID>HtmlIndentPush(tag)$/;"	f
-HtmlIndentSelfClose	plugged/vim-polyglot/indent/html.vim	/^fun! <SID>HtmlIndentSelfClose(lnum, pattern)$/;"	f
-HtmlIndentSum	plugged/vim-polyglot/indent/html.vim	/^fun! <SID>HtmlIndentSum(lnum, style)$/;"	f
 HtmlIndentSum	plugged/vim-polyglot/indent/mako.vim	/^fun! <SID>HtmlIndentSum(lnum, style)$/;"	f
+HtmlIndent_CheckUserSettings	plugged/vim-polyglot/indent/html.vim	/^func! HtmlIndent_CheckUserSettings()$/;"	f
+HtmlIndent_CountBraces	plugged/vim-polyglot/indent/html.vim	/^func! HtmlIndent_CountBraces(lnum)$/;"	f
+HtmlIndent_FindStartTag	plugged/vim-polyglot/indent/html.vim	/^func! HtmlIndent_FindStartTag()$/;"	f
+HtmlIndent_FindTagEnd	plugged/vim-polyglot/indent/html.vim	/^func! HtmlIndent_FindTagEnd()$/;"	f
+HtmlIndent_FindTagStart	plugged/vim-polyglot/indent/html.vim	/^func! HtmlIndent_FindTagStart(lnum)$/;"	f
+HtmlIndent_IsOpenTag	plugged/vim-polyglot/indent/html.vim	/^func! HtmlIndent_IsOpenTag(tagname)$/;"	f
 HtmlLexer	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/lexers/html.py	/^class HtmlLexer(RegexLexer):$/;"	c
 HtmlPhpLexer	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/lexers/templates.py	/^class HtmlPhpLexer(DelegatingLexer):$/;"	c
 HtmlPhpParser	plugged/vim-wakatime/plugin/packages/wakatime/dependencies/templates.py	/^class HtmlPhpParser(HtmlDjangoParser):$/;"	c
@@ -1576,6 +1592,7 @@ ImageFormatter	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/f
 ImportSetting	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/lexers/robotframework.py	/^class ImportSetting(Tokenizer):$/;"	c
 InMultiVarStatement	plugged/vim-polyglot/indent/solidity.vim	/^function s:InMultiVarStatement(lnum)$/;"	f
 InOneLineScope	plugged/vim-polyglot/indent/solidity.vim	/^function s:InOneLineScope(lnum)$/;"	f
+InString	plugged/vim-polyglot/indent/graphql.vim	/^function s:InString(lnum, col)$/;"	f
 IncMakerArgs	plugged/neomake/tests/include/init.vim	/^function! s:IncMakerArgs()$/;"	f
 IncompleteRead	plugged/vim-wakatime/plugin/packages/wakatime/packages/requests/packages/urllib3/exceptions.py	/^class IncompleteRead(HTTPError, httplib_IncompleteRead):$/;"	c
 IncompleteTaskText	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/lexers/textfmts.py	/^    IncompleteTaskText = Text    # Incomplete tasks should look like plain text$/;"	v	class:TodotxtLexer
@@ -1598,6 +1615,7 @@ InitCwds	plugged/vim-airline/autoload/airline/extensions/tabline/xtabline.vim	/^
 InitPureScript	plugged/vim-polyglot/ftplugin/purescript.vim	/^fun! InitPureScript()$/;"	f
 InsecurePlatformWarning	plugged/vim-wakatime/plugin/packages/wakatime/packages/requests/packages/urllib3/exceptions.py	/^class InsecurePlatformWarning(SecurityWarning):$/;"	c
 InsecureRequestWarning	plugged/vim-wakatime/plugin/packages/wakatime/packages/requests/packages/urllib3/exceptions.py	/^class InsecureRequestWarning(SecurityWarning):$/;"	c
+InsideTag	plugged/vim-polyglot/indent/html.vim	/^func! s:InsideTag(foundHtmlString)$/;"	f
 Interpolation	plugged/vim-wakatime/plugin/packages/wakatime/packages/configparser/__init__.py	/^class Interpolation(object):$/;"	c
 InterpolationDepthError	plugged/vim-wakatime/plugin/packages/wakatime/packages/configparser/__init__.py	/^class InterpolationDepthError(InterpolationError):$/;"	c
 InterpolationError	plugged/vim-wakatime/plugin/packages/wakatime/packages/configparser/__init__.py	/^class InterpolationError(Error):$/;"	c
@@ -1662,6 +1680,7 @@ IsStartingDelimiter	plugged/vim-polyglot/indent/blade.vim	/^function! s:IsStarti
 IsString	plugged/vim-polyglot/indent/coffee.vim	/^function! s:IsString(lnum, col)$/;"	f
 IsString	plugged/vim-polyglot/indent/ls.vim	/^function! s:IsString(linenum, col)$/;"	f
 IsSwitch	plugged/vim-polyglot/indent/javascript.vim	/^function s:IsSwitch()$/;"	f
+IsSyntaxNameExcludedFromIndent	plugged/vim-polyglot/indent/swift.vim	/^function! s:IsSyntaxNameExcludedFromIndent(name)$/;"	f
 IsWindows	plugged/vim-wakatime/plugin/wakatime.vim	/^    function! s:IsWindows()$/;"	f
 IsabelleLexer	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/lexers/theorem.py	/^class IsabelleLexer(RegexLexer):$/;"	c
 Iterator	plugged/vim-wakatime/plugin/packages/wakatime/packages/requests/packages/urllib3/packages/six.py	/^    Iterator = object$/;"	v
@@ -2055,7 +2074,7 @@ MonokaiStyle	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/sty
 MonteLexer	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/lexers/monte.py	/^class MonteLexer(RegexLexer):$/;"	c
 MoonScriptLexer	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/lexers/scripting.py	/^class MoonScriptLexer(LuaLexer):$/;"	c
 Mountain	plugged/vim-wakatime/plugin/packages/wakatime/packages/pytz/reference.py	/^Mountain = USTimeZone(-7, "Mountain", "MST", "MDT")$/;"	v
-Move	plugged/vim-fugitive/plugin/fugitive.vim	/^function! s:Move(force,destination) abort$/;"	f
+Move	plugged/vim-fugitive/plugin/fugitive.vim	/^function! s:Move(force, rename, destination) abort$/;"	f
 MoveComplete	plugged/vim-fugitive/plugin/fugitive.vim	/^function! s:MoveComplete(A,L,P) abort$/;"	f
 Move_N	plugged/vim-textobj-user/t/move.vim	/^function! Move_N()$/;"	f
 Move_P	plugged/vim-textobj-user/t/move.vim	/^function! Move_P()$/;"	f
@@ -2179,7 +2198,7 @@ NeomakeTestsCommandMaker	plugged/neomake/tests/include/init.vim	/^function! Neom
 NeomakeTestsCreateExe	plugged/neomake/tests/include/init.vim	/^function! g:NeomakeTestsCreateExe(name, ...)$/;"	f
 NeomakeTestsFakeJobinfo	plugged/neomake/tests/include/init.vim	/^function! NeomakeTestsFakeJobinfo() abort$/;"	f
 NeomakeTestsFixtureMaker	plugged/neomake/tests/include/init.vim	/^function! NeomakeTestsFixtureMaker(func, fname) abort$/;"	f
-NeomakeTestsGetMakerWithOutput	plugged/neomake/tests/include/init.vim	/^function! NeomakeTestsGetMakerWithOutput(func, lines) abort$/;"	f
+NeomakeTestsGetMakerWithOutput	plugged/neomake/tests/include/init.vim	/^function! NeomakeTestsGetMakerWithOutput(func, lines_or_file) abort$/;"	f
 NeomakeTestsGetSigns	plugged/neomake/tests/include/init.vim	/^function! NeomakeTestsGetSigns()$/;"	f
 NeomakeTestsGetVimMessages	plugged/neomake/tests/include/init.vim	/^function! NeomakeTestsGetVimMessages()$/;"	f
 NeomakeTestsGlobalAfter	plugged/neomake/tests/include/init.vim	/^command! NeomakeTestsGlobalAfter call s:After()$/;"	c
@@ -2582,9 +2601,11 @@ RehighlightBlame	plugged/vim-fugitive/plugin/fugitive.vim	/^function! s:Rehighli
 Related	plugged/vim-rails/autoload/rails.vim	/^function! s:Related(cmd,line1,line2,count,...) abort$/;"	f
 RemoteComplete	plugged/vim-fugitive/plugin/fugitive.vim	/^function! s:RemoteComplete(A, L, P) abort$/;"	f
 Remove	plugged/vim-fugitive/plugin/fugitive.vim	/^function! s:Remove(after, force) abort$/;"	f
+RemoveITags	plugged/vim-polyglot/indent/html.vim	/^func! s:RemoveITags(tags, taglist)$/;"	f
 RemoveTrailingComments	plugged/vim-polyglot/indent/solidity.vim	/^function s:RemoveTrailingComments(content)$/;"	f
 Rename	plugged/rename.vim/plugin/rename.vim	/^command! -nargs=* -complete=customlist,SiblingFiles -bang Rename :call Rename("<args>", "<bang>")$/;"	c
 Rename	plugged/rename.vim/plugin/rename.vim	/^function! Rename(name, bang)$/;"	f
+RenameComplete	plugged/vim-fugitive/plugin/fugitive.vim	/^function! s:RenameComplete(A,L,P) abort$/;"	f
 Render	plugged/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:Render(lines, pat)$/;"	f
 ReplaceCmd	plugged/vim-fugitive/plugin/fugitive.vim	/^function! s:ReplaceCmd(cmd,...) abort$/;"	f
 Request	plugged/vim-wakatime/plugin/packages/wakatime/packages/requests/models.py	/^class Request(RequestHooksMixin):$/;"	c
@@ -2976,6 +2997,7 @@ Test_around_text_object	plugged/vim-gitgutter/test/test_gitgutter.vim	/^function
 Test_edit_file_with_same_name_as_a_branch	plugged/vim-gitgutter/test/test_gitgutter.vim	/^function Test_edit_file_with_same_name_as_a_branch()$/;"	f
 Test_encoding	plugged/vim-gitgutter/test/test_gitgutter.vim	/^function Test_encoding()$/;"	f
 Test_file_added_to_git	plugged/vim-gitgutter/test/test_gitgutter.vim	/^function Test_file_added_to_git()$/;"	f
+Test_filename_leading_dash	plugged/vim-gitgutter/test/test_gitgutter.vim	/^function Test_filename_leading_dash()$/;"	f
 Test_filename_with_equals	plugged/vim-gitgutter/test/test_gitgutter.vim	/^function Test_filename_with_equals()$/;"	f
 Test_filename_with_square_brackets	plugged/vim-gitgutter/test/test_gitgutter.vim	/^function Test_filename_with_square_brackets()$/;"	f
 Test_fix_file_references	plugged/vim-gitgutter/test/test_gitgutter.vim	/^function Test_fix_file_references()$/;"	f
@@ -3139,6 +3161,7 @@ VelocityXmlLexer	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments
 VerifiedHTTPSConnection	plugged/vim-wakatime/plugin/packages/wakatime/packages/requests/packages/urllib3/connection.py	/^class VerifiedHTTPSConnection(HTTPSConnection):$/;"	c
 VerilogLexer	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/lexers/hdl.py	/^class VerilogLexer(RegexLexer):$/;"	c
 VhdlLexer	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/lexers/hdl.py	/^class VhdlLexer(RegexLexer):$/;"	c
+ViewExtract	plugged/vim-rails/autoload/rails.vim	/^function! s:ViewExtract(bang, mods, first, last, file) abort$/;"	f
 VifmRenameAutoCmds	plugged/vim-polyglot/ftplugin/vifm-rename.vim	/^augroup VifmRenameAutoCmds$/;"	a
 Vim	plugged/splitjoin.vim/spec/support/vim.rb	/^  module Vim$/;"	m	class:Support
 VimLexer	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/lexers/textedit.py	/^class VimLexer(RegexLexer):$/;"	c
@@ -3211,7 +3234,6 @@ Zs	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/unistring.py	
 []	plugged/vim-polyglot/ftplugin/latex-box/mappings.vim	/^vnoremap <buffer> <silent> [] :<c-u>call <SID>LatexBoxNextSection(1,1,1)<CR>$/;"	m
 []	plugged/vim-polyglot/ftplugin/ruby.vim	/^  nnoremap <silent> <buffer> [] :<C-U>call <SID>searchsyn('\\<end\\>',['rubyModule','rubyClass'],'b','n')<CR>$/;"	m
 []	plugged/vim-polyglot/ftplugin/vue.vim	/^  nnoremap <silent> <buffer> [] :call search('^<\/\\(template\\<Bar>script\\<Bar>style\\)', 'bW')<CR>$/;"	m
-[c	plugged/vim-gitgutter/plugin/gitgutter.vim	/^    nmap [c <Plug>GitGutterPrevHunk$/;"	m
 [d	plugged/vim-polyglot/ftplugin/cucumber.vim	/^  nnoremap <silent> <script> <buffer> [d          :<C-U>exe <SID>jump('pedit',v:count)<CR>$/;"	m
 [m	plugged/vim-polyglot/ftplugin/ruby.vim	/^  nnoremap <silent> <buffer> [m :<C-U>call <SID>searchsyn('\\<def\\>',['rubyDefine'],'b','n')<CR>$/;"	m
 ]"	plugged/vim-polyglot/ftplugin/vifm.vim	/^nnoremap <silent><buffer> ]" :call search('^\\(\\s*".*\\n\\)\\@<!\\(\\s*"\\)', "W")<CR>$/;"	m
@@ -3234,7 +3256,6 @@ Zs	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/unistring.py	
 ]]	plugged/vim-polyglot/ftplugin/rust.vim	/^onoremap <silent> <buffer> ]] :call rust#Jump('o', 'Forward')<CR>$/;"	m
 ]]	plugged/vim-polyglot/ftplugin/scala.vim	/^noremap <script> <buffer> <silent> ]] :call <SID>NextSection(0)<cr>$/;"	m
 ]]	plugged/vim-polyglot/ftplugin/vue.vim	/^  nnoremap <silent> <buffer> ]] :call search('^<\\(template\\<Bar>script\\<Bar>style\\)', 'W')<CR>$/;"	m
-]c	plugged/vim-gitgutter/plugin/gitgutter.vim	/^    nmap ]c <Plug>GitGutterNextHunk$/;"	m
 ]d	plugged/vim-polyglot/ftplugin/cucumber.vim	/^  nnoremap <silent> <script> <buffer> ]d          :<C-U>exe <SID>jump('pedit',v:count)<CR>$/;"	m
 ]m	plugged/vim-polyglot/ftplugin/ruby.vim	/^  nnoremap <silent> <buffer> ]m :<C-U>call <SID>searchsyn('\\<def\\>',['rubyDefine'],'','n')<CR>$/;"	m
 _	plugged/vim-test/spec/fixtures/ginkgo/mypackage/normal_test.go	/^var _ = Describe("posts API", func() {$/;"	v
@@ -4937,7 +4958,6 @@ abstract_role	plugged/vim-polyglot/autoload/xml/aria.vim	/^let abstract_role['st
 abstract_role	plugged/vim-polyglot/autoload/xml/aria.vim	/^let abstract_role['widget'] = abstract_role['roletype']$/;"	v
 abstract_role	plugged/vim-polyglot/autoload/xml/aria.vim	/^let abstract_role['window'] = abstract_role['roletype'] + ['aria-expanded']$/;"	v
 abutton_dec	plugged/vim-polyglot/autoload/xml/html5.vim	/^let abutton_dec = 'details\\\\|embed\\\\|iframe\\\\|keygen\\\\|label\\\\|menu\\\\|select\\\\|textarea'$/;"	v
-ac	plugged/vim-gitgutter/plugin/gitgutter.vim	/^    omap ac <Plug>GitGutterTextObjectOuterPending$/;"	m
 ack#Ack	plugged/ack.vim/autoload/ack.vim	/^function! ack#Ack(cmd, args) "{{{$/;"	f
 ack#AckFromSearch	plugged/ack.vim/autoload/ack.vim	/^function! ack#AckFromSearch(cmd, args) "{{{$/;"	f
 ack#AckHelp	plugged/ack.vim/autoload/ack.vim	/^function! ack#AckHelp(cmd, args) "{{{$/;"	f
@@ -4950,6 +4970,7 @@ action_for	plugged/fzf.vim/autoload/fzf/vim.vim	/^function! s:action_for(key, ..
 actions	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/lexers/configs.py	/^    actions = ($/;"	v	class:SquidConfLexer
 actions_log	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/lexers/configs.py	/^    actions_log = ("status", "enable", "disable", "clear")$/;"	v	class:SquidConfLexer
 actions_stats	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/lexers/configs.py	/^    actions_stats = ($/;"	v	class:SquidConfLexer
+active	plugged/vim-rails/autoload/rails.vim	/^function! s:active() abort$/;"	f
 actual	plugged/vim-test/spec/dotnet_spec.vim	/^    let actual = s:remove_path(g:test#last_command)$/;"	v
 actual	plugged/vim-test/spec/dotnet_xunit_spec.vim	/^    let actual = s:remove_path(g:test#last_command)$/;"	v
 add	plugged/vim-wakatime/plugin/packages/wakatime/packages/requests/packages/urllib3/_collections.py	/^    def add(self, key, val):$/;"	m	class:HTTPHeaderDict
@@ -5251,6 +5272,7 @@ airline#update_statusline	plugged/vim-airline/autoload/airline.vim	/^function! a
 airline#util#append	plugged/vim-airline/autoload/airline/util.vim	/^function! airline#util#append(text, minwidth)$/;"	f
 airline#util#exec_funcrefs	plugged/vim-airline/autoload/airline/util.vim	/^  function! airline#util#exec_funcrefs(list, ...)$/;"	f
 airline#util#getwinvar	plugged/vim-airline/autoload/airline/util.vim	/^  function! airline#util#getwinvar(winnr, key, def)$/;"	f
+airline#util#ignore_buf	plugged/vim-airline/autoload/airline/util.vim	/^function! airline#util#ignore_buf(name)$/;"	f
 airline#util#prepend	plugged/vim-airline/autoload/airline/util.vim	/^function! airline#util#prepend(text, minwidth)$/;"	f
 airline#util#shorten	plugged/vim-airline/autoload/airline/util.vim	/^function! airline#util#shorten(text, winwidth, minwidth, ...)$/;"	f
 airline#util#strchars	plugged/vim-airline/autoload/airline/util.vim	/^function! airline#util#strchars(str)$/;"	f
@@ -6036,15 +6058,14 @@ b:current_syntax	plugged/vim-polyglot/after/syntax/coffee.vim	/^  let b:current_
 b:current_syntax	plugged/vim-polyglot/after/syntax/haml.vim	/^  let b:current_syntax = s:current_syntax_save$/;"	v
 b:current_syntax	plugged/vim-polyglot/after/syntax/html.vim	/^   let b:current_syntax = s:pre_less_cur_syn$/;"	v
 b:current_syntax	plugged/vim-polyglot/after/syntax/html.vim	/^  let b:current_syntax = s:current_syntax_save$/;"	v
+b:current_syntax	plugged/vim-polyglot/after/syntax/javascript/graphql.vim	/^  let b:current_syntax = s:current_syntax$/;"	v
 b:current_syntax	plugged/vim-polyglot/after/syntax/jsx.vim	/^  let b:current_syntax=s:current_syntax$/;"	v
 b:current_syntax	plugged/vim-polyglot/after/syntax/rspec.vim	/^let b:current_syntax = 'rspec'$/;"	v
+b:current_syntax	plugged/vim-polyglot/after/syntax/typescript/graphql.vim	/^  let b:current_syntax = s:current_syntax$/;"	v
 b:current_syntax	plugged/vim-polyglot/syntax/Jenkinsfile.vim	/^let b:current_syntax = "Jenkinsfile"$/;"	v
+b:current_syntax	plugged/vim-polyglot/syntax/ansible.vim	/^  let b:current_syntax=s:current_syntax$/;"	v
 b:current_syntax	plugged/vim-polyglot/syntax/ansible.vim	/^let b:current_syntax = "ansible"$/;"	v
-b:current_syntax	plugged/vim-polyglot/syntax/ansible.vim	/^let b:current_syntax = ''$/;"	v
 b:current_syntax	plugged/vim-polyglot/syntax/ansible_hosts.vim	/^let b:current_syntax = "ansible_hosts"$/;"	v
-b:current_syntax	plugged/vim-polyglot/syntax/ansible_template.vim	/^    let b:current_syntax = ''$/;"	v
-b:current_syntax	plugged/vim-polyglot/syntax/ansible_template.vim	/^let b:current_syntax = "ansible_template"$/;"	v
-b:current_syntax	plugged/vim-polyglot/syntax/ansible_template.vim	/^let b:current_syntax = ''$/;"	v
 b:current_syntax	plugged/vim-polyglot/syntax/apiblueprint.vim	/^let b:current_syntax = 'apiblueprint'$/;"	v
 b:current_syntax	plugged/vim-polyglot/syntax/applescript.vim	/^let b:current_syntax = "applescript"$/;"	v
 b:current_syntax	plugged/vim-polyglot/syntax/asciidoc.vim	/^let b:current_syntax = "asciidoc"$/;"	v
@@ -6082,16 +6103,22 @@ b:current_syntax	plugged/vim-polyglot/syntax/glsl.vim	/^  let b:current_syntax =
 b:current_syntax	plugged/vim-polyglot/syntax/gmpl.vim	/^let b:current_syntax = "gmpl"$/;"	v
 b:current_syntax	plugged/vim-polyglot/syntax/gnuplot.vim	/^let b:current_syntax = "gnuplot"$/;"	v
 b:current_syntax	plugged/vim-polyglot/syntax/go.vim	/^let b:current_syntax = "go"$/;"	v
+b:current_syntax	plugged/vim-polyglot/syntax/godebugoutput.vim	/^let b:current_syntax = "godebugoutput"$/;"	v
+b:current_syntax	plugged/vim-polyglot/syntax/godebugstacktrace.vim	/^let b:current_syntax = "godebugoutput"$/;"	v
+b:current_syntax	plugged/vim-polyglot/syntax/godebugvariables.vim	/^let b:current_syntax = "godebugvariables"$/;"	v
 b:current_syntax	plugged/vim-polyglot/syntax/godefstack.vim	/^let b:current_syntax = "godefstack"$/;"	v
 b:current_syntax	plugged/vim-polyglot/syntax/gohtmltmpl.vim	/^let b:current_syntax = "gohtmltmpl"$/;"	v
 b:current_syntax	plugged/vim-polyglot/syntax/gotexttmpl.vim	/^let b:current_syntax = "gotexttmpl"$/;"	v
+b:current_syntax	plugged/vim-polyglot/syntax/graphql.vim	/^let b:current_syntax = 'graphql'$/;"	v
 b:current_syntax	plugged/vim-polyglot/syntax/groovy.vim	/^let b:current_syntax = "groovy"$/;"	v
 b:current_syntax	plugged/vim-polyglot/syntax/haml.vim	/^let b:current_syntax = "haml"$/;"	v
+b:current_syntax	plugged/vim-polyglot/syntax/haproxy.vim	/^let b:current_syntax = "haproxy"$/;"	v
 b:current_syntax	plugged/vim-polyglot/syntax/haskell.vim	/^let b:current_syntax = "haskell"$/;"	v
 b:current_syntax	plugged/vim-polyglot/syntax/haxe.vim	/^let b:current_syntax = "haxe"$/;"	v
 b:current_syntax	plugged/vim-polyglot/syntax/jasmine.vim	/^let b:current_syntax = "jasmine"$/;"	v
 b:current_syntax	plugged/vim-polyglot/syntax/javascript.vim	/^let b:current_syntax = "javascript"$/;"	v
-b:current_syntax	plugged/vim-polyglot/syntax/jinja2.vim	/^let b:current_syntax = "jinja"$/;"	v
+b:current_syntax	plugged/vim-polyglot/syntax/jinja2.vim	/^let b:current_syntax = "jinja2"$/;"	v
+b:current_syntax	plugged/vim-polyglot/syntax/jinja2.vim	/^let b:current_syntax = ''$/;"	v
 b:current_syntax	plugged/vim-polyglot/syntax/json.vim	/^let b:current_syntax = "json"$/;"	v
 b:current_syntax	plugged/vim-polyglot/syntax/json5.vim	/^  let b:current_syntax = 'json5'$/;"	v
 b:current_syntax	plugged/vim-polyglot/syntax/jst.vim	/^let b:current_syntax = 'jst'$/;"	v
@@ -6176,6 +6203,7 @@ b:did_ftplugin	plugged/vim-polyglot/ftplugin/git.vim	/^let b:did_ftplugin = 1$/;
 b:did_ftplugin	plugged/vim-polyglot/ftplugin/gitcommit.vim	/^let b:did_ftplugin = 1$/;"	v
 b:did_ftplugin	plugged/vim-polyglot/ftplugin/gitconfig.vim	/^let b:did_ftplugin = 1$/;"	v
 b:did_ftplugin	plugged/vim-polyglot/ftplugin/gitrebase.vim	/^let b:did_ftplugin = 1$/;"	v
+b:did_ftplugin	plugged/vim-polyglot/ftplugin/graphql.vim	/^let b:did_ftplugin = 1$/;"	v
 b:did_ftplugin	plugged/vim-polyglot/ftplugin/haml.vim	/^let b:did_ftplugin = 1$/;"	v
 b:did_ftplugin	plugged/vim-polyglot/ftplugin/julia.vim	/^let b:did_ftplugin = 1$/;"	v
 b:did_ftplugin	plugged/vim-polyglot/ftplugin/less.vim	/^let b:did_ftplugin = 1$/;"	v
@@ -6225,6 +6253,7 @@ b:did_indent	plugged/vim-polyglot/indent/eruby.vim	/^let b:did_indent = 1$/;"	v
 b:did_indent	plugged/vim-polyglot/indent/fsharp.vim	/^let b:did_indent = 1$/;"	v
 b:did_indent	plugged/vim-polyglot/indent/gitconfig.vim	/^let b:did_indent = 1$/;"	v
 b:did_indent	plugged/vim-polyglot/indent/go.vim	/^let b:did_indent = 1$/;"	v
+b:did_indent	plugged/vim-polyglot/indent/graphql.vim	/^let b:did_indent = 1$/;"	v
 b:did_indent	plugged/vim-polyglot/indent/haml.vim	/^let b:did_indent = 1$/;"	v
 b:did_indent	plugged/vim-polyglot/indent/handlebars.vim	/^let b:did_indent = 1$/;"	v
 b:did_indent	plugged/vim-polyglot/indent/haskell.vim	/^let b:did_indent = 1$/;"	v
@@ -6322,6 +6351,9 @@ b:git_dir	plugged/vim-polyglot/ftplugin/git.vim	/^    let b:git_dir = matchstr(e
 b:git_dir	plugged/vim-polyglot/ftplugin/git.vim	/^    let b:git_dir = substitute(b:git_dir,'\\\\','\/','g')$/;"	v
 b:git_dir	plugged/vim-polyglot/ftplugin/gitcommit.vim	/^  let b:git_dir = expand("%:p:h")$/;"	v
 b:handlebars_subtype_indentexpr	plugged/vim-polyglot/indent/handlebars.vim	/^let b:handlebars_subtype_indentexpr = &l:indentexpr$/;"	v
+b:hi_indent	plugged/vim-polyglot/indent/html.vim	/^let b:hi_indent = {"lnum": -1}$/;"	v
+b:hi_lasttick	plugged/vim-polyglot/indent/html.vim	/^let b:hi_lasttick = 0$/;"	v
+b:hi_newstate	plugged/vim-polyglot/indent/html.vim	/^let b:hi_newstate = {}$/;"	v
 b:html_indent_usestate	plugged/vim-polyglot/indent/eruby.vim	/^let b:html_indent_usestate = 0$/;"	v
 b:html_indent_usestate	plugged/vim-polyglot/indent/handlebars.vim	/^let b:html_indent_usestate = 0$/;"	v
 b:indent_use_syntax	plugged/vim-polyglot/indent/perl.vim	/^let b:indent_use_syntax = has("syntax")$/;"	v
@@ -6549,6 +6581,7 @@ b:undo_indent	plugged/vim-polyglot/indent/clojure.vim	/^let b:undo_indent = 'set
 b:undo_indent	plugged/vim-polyglot/indent/cucumber.vim	/^let b:undo_indent = 'setl ai< inde< indk<'$/;"	v
 b:undo_indent	plugged/vim-polyglot/indent/dart.vim	/^let b:undo_indent = 'setl cin< cino<'$/;"	v
 b:undo_indent	plugged/vim-polyglot/indent/gitconfig.vim	/^let b:undo_indent = 'setl ai< inde< indk<'$/;"	v
+b:undo_indent	plugged/vim-polyglot/indent/html.vim	/^let b:undo_indent = "setlocal inde< indk<"$/;"	v
 b:undo_indent	plugged/vim-polyglot/indent/javascript.vim	/^let b:undo_indent = 'setlocal indentexpr< smartindent< autoindent< indentkeys<'$/;"	v
 b:undo_indent	plugged/vim-polyglot/indent/proto.vim	/^let b:undo_indent = "setl cin<"$/;"	v
 b:undo_indent	plugged/vim-polyglot/indent/ps1.vim	/^let b:undo_indent = "setl si<"$/;"	v
@@ -6615,7 +6648,7 @@ binary_type	plugged/vim-wakatime/plugin/packages/wakatime/packages/simplejson/co
 binary_type	plugged/vim-wakatime/plugin/packages/wakatime/packages/six.py	/^    binary_type = bytes$/;"	v
 binary_type	plugged/vim-wakatime/plugin/packages/wakatime/packages/six.py	/^    binary_type = str$/;"	v
 bind	plugged/vim-wakatime/plugin/packages/wakatime/packages/socks.py	/^    def bind(self, *pos, **kw):$/;"	m	class:socksocket
-bind_makers_for_job	plugged/neomake/autoload/neomake/core.vim	/^function! s:bind_makers_for_job(options, makers, ...) abort$/;"	f
+bind_makers_for_job	plugged/neomake/autoload/neomake/core.vim	/^function! s:bind_makers_for_job(options, makers) abort$/;"	f
 binn	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/lexers/asm.py	/^    binn = r'[01]+b'$/;"	v	class:NasmLexer
 binn	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/lexers/asm.py	/^    binn = r'[01]+b'$/;"	v	class:TasmLexer
 binop	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/lexers/haxe.py	/^    binop = (r'(?:%=|&=|\\|=|\\^=|\\+=|\\-=|\\*=|\/=|<<=|>\\s*>\\s*=|>\\s*>\\s*>\\s*=|==|'$/;"	v	class:HaxeLexer
@@ -6995,6 +7028,7 @@ copy	plugged/vim-wakatime/plugin/packages/wakatime/packages/requests/packages/ur
 copy	plugged/vim-wakatime/plugin/packages/wakatime/packages/requests/structures.py	/^    def copy(self):$/;"	m	class:CaseInsensitiveDict
 copy	plugged/vim-wakatime/plugin/packages/wakatime/packages/simplejson/ordered_dict.py	/^    def copy(self):$/;"	m	class:OrderedDict
 copy_dir	plugged/vim-polyglot/build	/^copy_dir() {$/;"	f
+copy_file	plugged/vim-polyglot/build	/^copy_file() {$/;"	f
 core_attributes	plugged/vim-polyglot/autoload/xml/html5.vim	/^let core_attributes = {'accesskey': [], 'class': [], 'contenteditable': ['true', 'false', ''], 'contextmenu': [], 'dir': ['ltr', 'rtl'], 'draggable': ['true', 'false'], 'hidden': ['hidden', ''], 'id': [], 'is': [], 'lang': lang_tag, 'spellcheck': ['true', 'false', ''], 'style': [], 'tabindex': [], 'title': []}$/;"	v
 count	plugged/vim-polyglot/indent/liquid.vim	/^function! s:count(string,pattern)$/;"	f
 count	plugged/vim-test/spec/fixtures/peridot/arrayobject.spec.php	/^            $count = $this->arrayObject->count();$/;"	v
@@ -7160,6 +7194,7 @@ cycle	plugged/vim-polyglot/ftplugin/gitrebase.vim	/^function! s:cycle()$/;"	f
 cycle_until_end	plugged/vim-polyglot/autoload/julia_blocks.vim	/^function! s:cycle_until_end()$/;"	f
 d	plugged/vim-polyglot/syntax/julia.vim	/^  function! s:d(x)$/;"	f
 dark_colors	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/console.py	/^dark_colors = ["black", "darkred", "darkgreen", "brown", "darkblue",$/;"	v
+dart#ToggleFormatOnSave	plugged/vim-polyglot/autoload/dart.vim	/^function! dart#ToggleFormatOnSave() abort$/;"	f
 dart#analyzer	plugged/vim-polyglot/autoload/dart.vim	/^function! dart#analyzer(q_args) abort$/;"	f
 dart#fmt	plugged/vim-polyglot/autoload/dart.vim	/^function! dart#fmt(q_args) abort$/;"	f
 dart#resolveUri	plugged/vim-polyglot/autoload/dart.vim	/^function! dart#resolveUri(uri) abort$/;"	f
@@ -7282,7 +7317,6 @@ did_haxe_syn_inits	plugged/vim-polyglot/syntax/haxe.vim	/^    let did_haxe_syn_i
 did_javascript_syn_inits	plugged/vim-polyglot/extras/flow.vim	/^    let did_javascript_syn_inits = 1$/;"	v
 did_javascript_syn_inits	plugged/vim-polyglot/extras/jsdoc.vim	/^    let did_javascript_syn_inits = 1$/;"	v
 did_javascript_syn_inits	plugged/vim-polyglot/syntax/javascript.vim	/^    let did_javascript_syn_inits = 1$/;"	v
-did_jinja_syn_inits	plugged/vim-polyglot/syntax/jinja2.vim	/^    let did_jinja_syn_inits = 1$/;"	v
 did_lua_syn_inits	plugged/vim-polyglot/syntax/lua.vim	/^    let did_lua_syn_inits = 1$/;"	v
 did_mako_syn_inits	plugged/vim-polyglot/syntax/mako.vim	/^    let did_mako_syn_inits = 1$/;"	v
 did_mma_syn_inits	plugged/vim-polyglot/syntax/mma.vim	/^		let did_mma_syn_inits = 1$/;"	v
@@ -7360,11 +7394,12 @@ document_formatters	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygme
 document_lexers	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/sphinxext.py	/^    def document_lexers(self):$/;"	m	class:PygmentsDoc
 document_structure	plugged/vim-polyglot/autoload/xml/aria.vim	/^let document_structure = [$/;"	v
 document_structure	plugged/vim-polyglot/autoload/xml/html5.vim	/^    let document_structure = ['article', 'cell', 'columnheader', 'definition', 'directory', 'document', 'feed', 'figure', 'group', 'heading', 'img', 'list', 'listitem', 'math', 'none', 'note', 'presentation', 'region', 'row', 'rowheader', 'separator', 'table', 'term']$/;"	v
+doesOrderConnect	plugged/vim-polyglot/indent/applescript.vim	/^func! s:doesOrderConnect(text)$/;"	f
 dohighlight	plugged/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:dohighlight()$/;"	f
 dosigns	plugged/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:dosigns()$/;"	f
 dosurround	plugged/vim-surround/plugin/surround.vim	/^function! s:dosurround(...) " {{{1$/;"	f
 dot_relative	plugged/vim-rails/autoload/rails.vim	/^function! s:dot_relative(path) abort$/;"	f
-dotcmp	plugged/vim-rails/autoload/rails.vim	/^function! s:dotcmp(i1, i2)$/;"	f
+dotcmp	plugged/vim-rails/autoload/rails.vim	/^function! s:dotcmp(i1, i2) abort$/;"	f
 dotted_netmask	plugged/vim-wakatime/plugin/packages/wakatime/packages/requests/utils.py	/^def dotted_netmask(mask):$/;"	f
 download	plugged/vim-polyglot/build	/^download() {$/;"	f
 dprint	plugged/vim-polyglot/autoload/rubycomplete.vim	/^function! s:dprint(msg)$/;"	f
@@ -7566,6 +7601,7 @@ exit_handler	plugged/neomake/autoload/neomake.vim	/^function! s:exit_handler(job
 exp_part	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/lexers/data.py	/^    exp_part = r'[eE](\\+|-)?\\d+'$/;"	v	class:JsonLexer
 expand_placeholder	plugged/vim-rails/autoload/rails.vim	/^function! s:expand_placeholder(placeholder, expansions) abort$/;"	f
 expand_placeholders	plugged/vim-rails/autoload/rails.vim	/^function! s:expand_placeholders(string, placeholders) abort$/;"	f
+expand_url	plugged/vim-rails/autoload/rails.vim	/^function! s:expand_url(url, params) abort$/;"	f
 ext.add_inactive_statusline_func	plugged/vim-airline/autoload/airline/extensions.vim	/^function! s:ext.add_inactive_statusline_func(name) dict$/;"	f
 ext.add_statusline_func	plugged/vim-airline/autoload/airline/extensions.vim	/^function! s:ext.add_statusline_func(name) dict$/;"	f
 ext.add_statusline_funcref	plugged/vim-airline/autoload/airline/extensions.vim	/^function! s:ext.add_statusline_funcref(function) dict$/;"	f
@@ -8016,6 +8052,7 @@ fileno	plugged/vim-wakatime/plugin/packages/wakatime/packages/requests/packages/
 fileno	plugged/vim-wakatime/plugin/packages/wakatime/packages/requests/packages/urllib3/util/selectors.py	/^        def fileno(self):$/;"	m	class:.EpollSelector
 fileno	plugged/vim-wakatime/plugin/packages/wakatime/packages/requests/packages/urllib3/util/selectors.py	/^        def fileno(self):$/;"	m	class:.KqueueSelector
 filetypedetect	plugged/vim-polyglot/config.vim	/^augroup filetypedetect$/;"	a
+filetypedetect	plugged/vim-polyglot/ftdetect/polyglot.vim	/^  augroup filetypedetect$/;"	a
 filetypedetect	plugged/vim-polyglot/ftdetect/polyglot.vim	/^augroup filetypedetect$/;"	a
 filter	plugged/ctrlp.vim/autoload/ctrlp/tag.vim	/^fu! s:filter(tags)$/;"	f
 filter	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/filter.py	/^    def filter(self, lexer, stream):$/;"	m	class:Filter
@@ -13558,23 +13595,8 @@ g:gitgutter_grep	plugged/vim-gitgutter/plugin/gitgutter.vim	/^      let g:gitgut
 g:gitgutter_grep	plugged/vim-gitgutter/plugin/gitgutter.vim	/^    let g:gitgutter_grep = ''$/;"	v
 g:gitgutter_override_sign_column_highlight	plugged/gruvbox/colors/gruvbox.vim	/^  let g:gitgutter_override_sign_column_highlight = 0$/;"	v
 g:gitgutter_sign_column_always	plugged/vim-gitgutter/plugin/gitgutter.vim	/^  let g:gitgutter_sign_column_always = 0$/;"	v
-g:go_highlight_array_whitespace_error	plugged/vim-polyglot/syntax/go.vim	/^  let g:go_highlight_array_whitespace_error = 0$/;"	v
-g:go_highlight_build_constraints	plugged/vim-polyglot/syntax/go.vim	/^  let g:go_highlight_build_constraints = 0$/;"	v
-g:go_highlight_chan_whitespace_error	plugged/vim-polyglot/syntax/go.vim	/^  let g:go_highlight_chan_whitespace_error = 0$/;"	v
-g:go_highlight_extra_types	plugged/vim-polyglot/syntax/go.vim	/^  let g:go_highlight_extra_types = 0$/;"	v
-g:go_highlight_fields	plugged/vim-polyglot/syntax/go.vim	/^  let g:go_highlight_fields = 0$/;"	v
-g:go_highlight_format_strings	plugged/vim-polyglot/syntax/go.vim	/^  let g:go_highlight_format_strings = 1$/;"	v
-g:go_highlight_function_arguments	plugged/vim-polyglot/syntax/go.vim	/^  let g:go_highlight_function_arguments = 0$/;"	v
-g:go_highlight_function_calls	plugged/vim-polyglot/syntax/go.vim	/^  let g:go_highlight_function_calls = 0$/;"	v
-g:go_highlight_functions	plugged/vim-polyglot/syntax/go.vim	/^  let g:go_highlight_functions = 0$/;"	v
-g:go_highlight_generate_tags	plugged/vim-polyglot/syntax/go.vim	/^  let g:go_highlight_generate_tags = 0$/;"	v
-g:go_highlight_operators	plugged/vim-polyglot/syntax/go.vim	/^  let g:go_highlight_operators = 0$/;"	v
-g:go_highlight_space_tab_error	plugged/vim-polyglot/syntax/go.vim	/^  let g:go_highlight_space_tab_error = 0$/;"	v
-g:go_highlight_string_spellcheck	plugged/vim-polyglot/syntax/go.vim	/^  let g:go_highlight_string_spellcheck = 1$/;"	v
-g:go_highlight_trailing_whitespace_error	plugged/vim-polyglot/syntax/go.vim	/^  let g:go_highlight_trailing_whitespace_error = 0$/;"	v
-g:go_highlight_types	plugged/vim-polyglot/syntax/go.vim	/^  let g:go_highlight_types = 0$/;"	v
-g:go_highlight_variable_assignments	plugged/vim-polyglot/syntax/go.vim	/^  let g:go_highlight_variable_assignments = 0$/;"	v
-g:go_highlight_variable_declarations	plugged/vim-polyglot/syntax/go.vim	/^  let g:go_highlight_variable_declarations = 0$/;"	v
+g:graphql_javascript_tags	plugged/vim-polyglot/config.vim	/^  let g:graphql_javascript_tags = ['gql', 'graphql', 'Relay.QL']$/;"	v
+g:graphql_javascript_tags	plugged/vim-polyglot/ftdetect/polyglot.vim	/^  let g:graphql_javascript_tags = ['gql', 'graphql', 'Relay.QL']$/;"	v
 g:gruvbox_bold	plugged/gruvbox/colors/gruvbox.vim	/^  let g:gruvbox_bold=1$/;"	v
 g:gruvbox_contrast_dark	plugged/gruvbox/colors/gruvbox.vim	/^  let g:gruvbox_contrast_dark='medium'$/;"	v
 g:gruvbox_contrast_light	plugged/gruvbox/colors/gruvbox.vim	/^  let g:gruvbox_contrast_light='medium'$/;"	v
@@ -13655,11 +13677,9 @@ g:indentLine_color_gui	plugged/gruvbox/colors/gruvbox.vim	/^  let g:indentLine_c
 g:indentLine_color_term	plugged/gruvbox/colors/gruvbox.vim	/^  let g:indentLine_color_term = s:bg2[1]$/;"	v
 g:indent_guides_auto_colors	plugged/gruvbox/colors/gruvbox.vim	/^  let g:indent_guides_auto_colors = 0$/;"	v
 g:is_bash	init.vim	/^let g:is_bash=1                         " Default shell syntax$/;"	v
-g:jinja_syntax_html	plugged/vim-polyglot/syntax/jinja2.vim	/^   let g:jinja_syntax_html=1$/;"	v
 g:jst_default_subtype	plugged/vim-polyglot/syntax/jst.vim	/^  let g:jst_default_subtype = "html"$/;"	v
 g:jsx_ext_required	plugged/vim-polyglot/config.vim	/^  let g:jsx_ext_required = 0$/;"	v
 g:jsx_ext_required	plugged/vim-polyglot/ftdetect/polyglot.vim	/^  let g:jsx_ext_required = 0$/;"	v
-g:jsx_ext_required	plugged/vim-polyglot/ftdetect/polyglot.vim	/^  let g:jsx_ext_required = 1$/;"	v
 g:jsx_pragma_required	plugged/vim-polyglot/ftdetect/polyglot.vim	/^  let g:jsx_pragma_required = 0$/;"	v
 g:karma_runner	plugged/vim-test/spec/karma_spec.vim	/^    let g:karma_runner = 'node_modules\/karma-cli-runner\/karma-args'$/;"	v
 g:latexmk_running_pids	plugged/vim-polyglot/ftplugin/latex-box/latexmk.vim	/^	let g:latexmk_running_pids = {}$/;"	v
@@ -13687,8 +13707,6 @@ g:loaded_endwise	plugged/vim-endwise/plugin/endwise.vim	/^let g:loaded_endwise =
 g:loaded_fugitive	plugged/vim-fugitive/plugin/fugitive.vim	/^let g:loaded_fugitive = 1$/;"	v
 g:loaded_gitgutter	plugged/vim-gitgutter/plugin/gitgutter.vim	/^let g:loaded_gitgutter = 1$/;"	v
 g:loaded_gutentags	plugged/vim-gutentags/plugin/gutentags.vim	/^let g:loaded_gutentags = 1$/;"	v
-g:loaded_haskellvim_cabal	plugged/vim-polyglot/ftplugin/cabal.vim	/^let g:loaded_haskellvim_cabal = 1$/;"	v
-g:loaded_haskellvim_haskell	plugged/vim-polyglot/ftplugin/haskell.vim	/^let g:loaded_haskellvim_haskell = 1$/;"	v
 g:loaded_mustache_handlebars	plugged/vim-polyglot/ftplugin/mustache.vim	/^let g:loaded_mustache_handlebars = 1$/;"	v
 g:loaded_neomake	plugged/neomake/plugin/neomake.vim	/^let g:loaded_neomake = 1$/;"	v
 g:loaded_neomake_java_javac_maker	plugged/neomake/autoload/neomake/makers/ft/java.vim	/^let g:loaded_neomake_java_javac_maker = 1$/;"	v
@@ -16197,6 +16215,7 @@ get_style_defs	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/f
 get_style_defs	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/formatters/latex.py	/^    def get_style_defs(self, arg=''):$/;"	m	class:LatexFormatter
 get_subj_alt_name	plugged/vim-wakatime/plugin/packages/wakatime/packages/requests/packages/urllib3/contrib/pyopenssl.py	/^def get_subj_alt_name(peer_cert):$/;"	f
 get_syn	plugged/vim-airline/autoload/airline/highlighter.vim	/^function! s:get_syn(group, what)$/;"	f
+get_tag	plugged/vim-polyglot/indent/html.vim	/^func! s:get_tag(tagname)$/;"	f
 get_text	plugged/vim-airline/autoload/airline/extensions/quickfix.vim	/^function! s:get_text()$/;"	f
 get_tokendefs	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/lexer.py	/^    def get_tokendefs(cls):$/;"	m	class:RegexLexerMeta
 get_tokens	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/lexer.py	/^    def get_tokens(self, text, unfiltered=False):$/;"	m	class:Lexer
@@ -16387,12 +16406,103 @@ gm2_additional_builtins	plugged/vim-wakatime/plugin/packages/wakatime/packages/p
 gm2_additional_pseudo_builtins	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/lexers/modula2.py	/^    gm2_additional_pseudo_builtins = ($/;"	v	class:Modula2Lexer
 gm2_additional_reserved_words	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/lexers/modula2.py	/^    gm2_additional_reserved_words = ($/;"	v	class:Modula2Lexer
 go	plugged/vim-commentary/plugin/commentary.vim	/^function! s:go(...) abort$/;"	f
+go#config#AddtagsTransform	plugged/vim-polyglot/autoload/go/config.vim	/^function! go#config#AddtagsTransform() abort$/;"	f
+go#config#AlternateMode	plugged/vim-polyglot/autoload/go/config.vim	/^function! go#config#AlternateMode() abort$/;"	f
+go#config#AsmfmtAutosave	plugged/vim-polyglot/autoload/go/config.vim	/^function! go#config#AsmfmtAutosave() abort$/;"	f
+go#config#AutoSameids	plugged/vim-polyglot/autoload/go/config.vim	/^function! go#config#AutoSameids() abort$/;"	f
+go#config#AutoTypeInfo	plugged/vim-polyglot/autoload/go/config.vim	/^function! go#config#AutoTypeInfo() abort$/;"	f
+go#config#AutodetectGopath	plugged/vim-polyglot/autoload/go/config.vim	/^function! go#config#AutodetectGopath() abort$/;"	f
+go#config#BinPath	plugged/vim-polyglot/autoload/go/config.vim	/^function! go#config#BinPath() abort$/;"	f
+go#config#BuildTags	plugged/vim-polyglot/autoload/go/config.vim	/^function! go#config#BuildTags() abort$/;"	f
+go#config#Debug	plugged/vim-polyglot/autoload/go/config.vim	/^function! go#config#Debug() abort$/;"	f
+go#config#DebugAddress	plugged/vim-polyglot/autoload/go/config.vim	/^function! go#config#DebugAddress() abort$/;"	f
+go#config#DebugCommands	plugged/vim-polyglot/autoload/go/config.vim	/^function! go#config#DebugCommands() abort$/;"	f
+go#config#DebugWindows	plugged/vim-polyglot/autoload/go/config.vim	/^function! go#config#DebugWindows() abort$/;"	f
+go#config#DeclsIncludes	plugged/vim-polyglot/autoload/go/config.vim	/^function! go#config#DeclsIncludes() abort$/;"	f
+go#config#DeclsMode	plugged/vim-polyglot/autoload/go/config.vim	/^function! go#config#DeclsMode() abort$/;"	f
+go#config#DefMode	plugged/vim-polyglot/autoload/go/config.vim	/^function! go#config#DefMode() abort$/;"	f
+go#config#DefReuseBuffer	plugged/vim-polyglot/autoload/go/config.vim	/^function! go#config#DefReuseBuffer() abort$/;"	f
+go#config#DocCommand	plugged/vim-polyglot/autoload/go/config.vim	/^function! go#config#DocCommand() abort$/;"	f
+go#config#DocMaxHeight	plugged/vim-polyglot/autoload/go/config.vim	/^function! go#config#DocMaxHeight() abort$/;"	f
+go#config#DocUrl	plugged/vim-polyglot/autoload/go/config.vim	/^function! go#config#DocUrl() abort$/;"	f
+go#config#EchoCommandInfo	plugged/vim-polyglot/autoload/go/config.vim	/^function! go#config#EchoCommandInfo() abort$/;"	f
+go#config#ErrcheckBin	plugged/vim-polyglot/autoload/go/config.vim	/^function! go#config#ErrcheckBin() abort$/;"	f
+go#config#FmtAutosave	plugged/vim-polyglot/autoload/go/config.vim	/^function! go#config#FmtAutosave() abort$/;"	f
+go#config#FmtCommand	plugged/vim-polyglot/autoload/go/config.vim	/^function! go#config#FmtCommand() abort$/;"	f
+go#config#FmtExperimental	plugged/vim-polyglot/autoload/go/config.vim	/^function! go#config#FmtExperimental() abort$/;"	f
+go#config#FmtFailSilently	plugged/vim-polyglot/autoload/go/config.vim	/^function! go#config#FmtFailSilently() abort$/;"	f
+go#config#FmtOptions	plugged/vim-polyglot/autoload/go/config.vim	/^function! go#config#FmtOptions() abort$/;"	f
+go#config#FoldEnable	plugged/vim-polyglot/autoload/go/config.vim	/^function go#config#FoldEnable(...) abort$/;"	f
+go#config#GocodeAutobuild	plugged/vim-polyglot/autoload/go/config.vim	/^function! go#config#GocodeAutobuild() abort$/;"	f
+go#config#GocodeProposeBuiltins	plugged/vim-polyglot/autoload/go/config.vim	/^function! go#config#GocodeProposeBuiltins() abort$/;"	f
+go#config#GocodeSocketType	plugged/vim-polyglot/autoload/go/config.vim	/^function! go#config#GocodeSocketType() abort$/;"	f
+go#config#GocodeUnimportedPackages	plugged/vim-polyglot/autoload/go/config.vim	/^function! go#config#GocodeUnimportedPackages() abort$/;"	f
+go#config#GolintBin	plugged/vim-polyglot/autoload/go/config.vim	/^function! go#config#GolintBin() abort$/;"	f
+go#config#GorenameBin	plugged/vim-polyglot/autoload/go/config.vim	/^function! go#config#GorenameBin() abort$/;"	f
+go#config#GorenamePrefill	plugged/vim-polyglot/autoload/go/config.vim	/^function! go#config#GorenamePrefill() abort$/;"	f
+go#config#GuruScope	plugged/vim-polyglot/autoload/go/config.vim	/^function! go#config#GuruScope() abort$/;"	f
+go#config#HighlightArrayWhitespaceError	plugged/vim-polyglot/autoload/go/config.vim	/^function! go#config#HighlightArrayWhitespaceError() abort$/;"	f
+go#config#HighlightBuildConstraints	plugged/vim-polyglot/autoload/go/config.vim	/^function! go#config#HighlightBuildConstraints() abort$/;"	f
+go#config#HighlightChanWhitespaceError	plugged/vim-polyglot/autoload/go/config.vim	/^function! go#config#HighlightChanWhitespaceError() abort$/;"	f
+go#config#HighlightExtraTypes	plugged/vim-polyglot/autoload/go/config.vim	/^function! go#config#HighlightExtraTypes() abort$/;"	f
+go#config#HighlightFields	plugged/vim-polyglot/autoload/go/config.vim	/^function! go#config#HighlightFields() abort$/;"	f
+go#config#HighlightFormatStrings	plugged/vim-polyglot/autoload/go/config.vim	/^function! go#config#HighlightFormatStrings() abort$/;"	f
+go#config#HighlightFunctionArguments	plugged/vim-polyglot/autoload/go/config.vim	/^function! go#config#HighlightFunctionArguments() abort$/;"	f
+go#config#HighlightFunctionCalls	plugged/vim-polyglot/autoload/go/config.vim	/^function! go#config#HighlightFunctionCalls() abort$/;"	f
+go#config#HighlightFunctions	plugged/vim-polyglot/autoload/go/config.vim	/^function! go#config#HighlightFunctions() abort$/;"	f
+go#config#HighlightGenerateTags	plugged/vim-polyglot/autoload/go/config.vim	/^function! go#config#HighlightGenerateTags() abort$/;"	f
+go#config#HighlightOperators	plugged/vim-polyglot/autoload/go/config.vim	/^function! go#config#HighlightOperators() abort$/;"	f
+go#config#HighlightSpaceTabError	plugged/vim-polyglot/autoload/go/config.vim	/^function! go#config#HighlightSpaceTabError() abort$/;"	f
+go#config#HighlightStringSpellcheck	plugged/vim-polyglot/autoload/go/config.vim	/^function! go#config#HighlightStringSpellcheck() abort$/;"	f
+go#config#HighlightTrailingWhitespaceError	plugged/vim-polyglot/autoload/go/config.vim	/^function! go#config#HighlightTrailingWhitespaceError() abort$/;"	f
+go#config#HighlightTypes	plugged/vim-polyglot/autoload/go/config.vim	/^function! go#config#HighlightTypes() abort$/;"	f
+go#config#HighlightVariableAssignments	plugged/vim-polyglot/autoload/go/config.vim	/^function! go#config#HighlightVariableAssignments() abort$/;"	f
+go#config#HighlightVariableDeclarations	plugged/vim-polyglot/autoload/go/config.vim	/^function! go#config#HighlightVariableDeclarations() abort$/;"	f
+go#config#InfoMode	plugged/vim-polyglot/autoload/go/config.vim	/^function! go#config#InfoMode() abort$/;"	f
+go#config#ListAutoclose	plugged/vim-polyglot/autoload/go/config.vim	/^function! go#config#ListAutoclose() abort$/;"	f
+go#config#ListHeight	plugged/vim-polyglot/autoload/go/config.vim	/^function! go#config#ListHeight() abort$/;"	f
+go#config#ListType	plugged/vim-polyglot/autoload/go/config.vim	/^function! go#config#ListType() abort$/;"	f
+go#config#ListTypeCommands	plugged/vim-polyglot/autoload/go/config.vim	/^function! go#config#ListTypeCommands() abort$/;"	f
+go#config#MetalinterAutosave	plugged/vim-polyglot/autoload/go/config.vim	/^function! go#config#MetalinterAutosave() abort$/;"	f
+go#config#MetalinterAutosaveEnabled	plugged/vim-polyglot/autoload/go/config.vim	/^function! go#config#MetalinterAutosaveEnabled() abort$/;"	f
+go#config#MetalinterCommand	plugged/vim-polyglot/autoload/go/config.vim	/^function! go#config#MetalinterCommand() abort$/;"	f
+go#config#MetalinterDeadline	plugged/vim-polyglot/autoload/go/config.vim	/^function! go#config#MetalinterDeadline() abort$/;"	f
+go#config#MetalinterDisabled	plugged/vim-polyglot/autoload/go/config.vim	/^function! go#config#MetalinterDisabled() abort$/;"	f
+go#config#MetalinterEnabled	plugged/vim-polyglot/autoload/go/config.vim	/^function! go#config#MetalinterEnabled() abort$/;"	f
+go#config#PlayBrowserCommand	plugged/vim-polyglot/autoload/go/config.vim	/^function! go#config#PlayBrowserCommand() abort$/;"	f
+go#config#PlayOpenBrowser	plugged/vim-polyglot/autoload/go/config.vim	/^function! go#config#PlayOpenBrowser() abort$/;"	f
+go#config#SetAsmfmtAutosave	plugged/vim-polyglot/autoload/go/config.vim	/^function! go#config#SetAsmfmtAutosave(value) abort$/;"	f
+go#config#SetAutoSameids	plugged/vim-polyglot/autoload/go/config.vim	/^function! go#config#SetAutoSameids(value) abort$/;"	f
+go#config#SetAutoTypeInfo	plugged/vim-polyglot/autoload/go/config.vim	/^function! go#config#SetAutoTypeInfo(value) abort$/;"	f
+go#config#SetBuildTags	plugged/vim-polyglot/autoload/go/config.vim	/^function! go#config#SetBuildTags(value) abort$/;"	f
+go#config#SetDebugDiag	plugged/vim-polyglot/autoload/go/config.vim	/^function! go#config#SetDebugDiag(value) abort$/;"	f
+go#config#SetFmtAutosave	plugged/vim-polyglot/autoload/go/config.vim	/^function! go#config#SetFmtAutosave(value) abort$/;"	f
+go#config#SetGuruScope	plugged/vim-polyglot/autoload/go/config.vim	/^function! go#config#SetGuruScope(scope) abort$/;"	f
+go#config#SetMetalinterAutosave	plugged/vim-polyglot/autoload/go/config.vim	/^function! go#config#SetMetalinterAutosave(value) abort$/;"	f
+go#config#SetTemplateAutocreate	plugged/vim-polyglot/autoload/go/config.vim	/^function! go#config#SetTemplateAutocreate(value) abort$/;"	f
+go#config#SetTermEnabled	plugged/vim-polyglot/autoload/go/config.vim	/^function! go#config#SetTermEnabled(value) abort$/;"	f
+go#config#SnippetEngine	plugged/vim-polyglot/autoload/go/config.vim	/^function! go#config#SnippetEngine() abort$/;"	f
+go#config#StatuslineDuration	plugged/vim-polyglot/autoload/go/config.vim	/^function! go#config#StatuslineDuration() abort$/;"	f
+go#config#TemplateAutocreate	plugged/vim-polyglot/autoload/go/config.vim	/^function! go#config#TemplateAutocreate() abort$/;"	f
+go#config#TemplateFile	plugged/vim-polyglot/autoload/go/config.vim	/^function! go#config#TemplateFile() abort$/;"	f
+go#config#TemplateTestFile	plugged/vim-polyglot/autoload/go/config.vim	/^function! go#config#TemplateTestFile() abort$/;"	f
+go#config#TemplateUsePkg	plugged/vim-polyglot/autoload/go/config.vim	/^function! go#config#TemplateUsePkg() abort$/;"	f
+go#config#TermEnabled	plugged/vim-polyglot/autoload/go/config.vim	/^function! go#config#TermEnabled() abort$/;"	f
+go#config#TermHeight	plugged/vim-polyglot/autoload/go/config.vim	/^function! go#config#TermHeight() abort$/;"	f
+go#config#TermMode	plugged/vim-polyglot/autoload/go/config.vim	/^function! go#config#TermMode() abort$/;"	f
+go#config#TermWidth	plugged/vim-polyglot/autoload/go/config.vim	/^function! go#config#TermWidth() abort$/;"	f
+go#config#TestShowName	plugged/vim-polyglot/autoload/go/config.vim	/^function! go#config#TestShowName() abort$/;"	f
+go#config#TestTimeout	plugged/vim-polyglot/autoload/go/config.vim	/^function! go#config#TestTimeout() abort$/;"	f
+go#config#TextobjIncludeFunctionDoc	plugged/vim-polyglot/autoload/go/config.vim	/^function! go#config#TextobjIncludeFunctionDoc() abort$/;"	f
+go#config#TextobjIncludeVariable	plugged/vim-polyglot/autoload/go/config.vim	/^function! go#config#TextobjIncludeVariable() abort$/;"	f
+go#config#VersionWarning	plugged/vim-polyglot/autoload/go/config.vim	/^function! go#config#VersionWarning() abort$/;"	f
 gobble	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/filters/__init__.py	/^    def gobble(self, value, left):$/;"	m	class:GobbleFilter
 gofiletype_post	plugged/vim-polyglot/ftdetect/polyglot.vim	/^function! s:gofiletype_post()$/;"	f
 gofiletype_pre	plugged/vim-polyglot/ftdetect/polyglot.vim	/^function! s:gofiletype_pre(type)$/;"	f
 got_enough_data	plugged/vim-wakatime/plugin/packages/wakatime/packages/requests/packages/chardet/chardistribution.py	/^    def got_enough_data(self):$/;"	m	class:CharDistributionAnalysis
 got_enough_data	plugged/vim-wakatime/plugin/packages/wakatime/packages/requests/packages/chardet/jpcntx.py	/^    def got_enough_data(self):$/;"	m	class:JapaneseContextAnalysis
 gpos_to_spos	plugged/vim-textobj-user/autoload/textobj/user.vim	/^function! s:gpos_to_spos(gpos)$/;"	f
+graphic_role	plugged/vim-polyglot/autoload/xml/aria.vim	/^let graphic_role = [$/;"	v
 grep_version	plugged/vim-gitgutter/autoload/gitgutter/debug.vim	/^function! s:grep_version()$/;"	f
 groovy_minlines	plugged/vim-polyglot/syntax/groovy.vim	/^  let groovy_minlines = 10$/;"	v
 group	plugged/vim-airline-themes/autoload/airline/themes/deus.vim	/^let group = airline#themes#get_highlight('vimCommand')$/;"	v
@@ -16470,7 +16580,9 @@ gutentags_detect	plugged/vim-gutentags/plugin/gutentags.vim	/^augroup gutentags_
 h	plugged/vim-polyglot/syntax/julia.vim	/^  let h = b:julia_syntax_version <= 6 ? "Type" : "juliaDeprecated"$/;"	v
 h	plugged/vim-polyglot/syntax/julia.vim	/^  let h = b:julia_syntax_version == 5 ? "Type" : b:julia_syntax_version == 6 ? "juliaDeprecated" : "NONE"$/;"	v
 h	plugged/vim-polyglot/syntax/julia.vim	/^  let h = b:julia_syntax_version >= 6 ? "Type" : "NONE"$/;"	v
+h	plugged/vim-polyglot/syntax/julia.vim	/^  let h = b:julia_syntax_version >= 7 ? "Constant" : "NONE"$/;"	v
 h	plugged/vim-polyglot/syntax/julia.vim	/^  let h = b:julia_syntax_version >= 7 ? "Type" : "NONE"$/;"	v
+h	plugged/vim-polyglot/syntax/julia.vim	/^let h = b:julia_syntax_version < 7 ? "Constant" : "juliaDeprecated"$/;"	v
 h	plugged/vim-polyglot/syntax/julia.vim	/^let h = b:julia_syntax_version <= 6 ? "Constant" : "NONE"$/;"	v
 h	plugged/vim-polyglot/syntax/julia.vim	/^let h = b:julia_syntax_version >= 7 ? "Constant" : "NONE"$/;"	v
 handle_401	plugged/vim-wakatime/plugin/packages/wakatime/packages/requests/auth.py	/^    def handle_401(self, r, **kwargs):$/;"	m	class:HTTPDigestAuth
@@ -16495,8 +16607,6 @@ has_vimproc	plugged/vim-polyglot/autoload/vital/_crystal/Process.vim	/^function!
 has_webapi	plugged/vim-polyglot/autoload/rust.vim	/^function! s:has_webapi()$/;"	f
 hash	plugged/vim-polyglot/autoload/vital/_crystal/Data/String.vim	/^function! s:hash(str) abort$/;"	f
 hash_match	autoload/plug.vim	/^function! s:hash_match(a, b)$/;"	f
-haskell#formatImport	plugged/vim-polyglot/ftplugin/haskell.vim	/^function! haskell#formatImport(line1, line2)$/;"	f
-haskell#sortImports	plugged/vim-polyglot/ftplugin/haskell.vim	/^function! haskell#sortImports(line1, line2)$/;"	f
 haxe_minlines	plugged/vim-polyglot/syntax/haxe.vim	/^  let haxe_minlines = 5000$/;"	v
 hd	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/lexers/hexdump.py	/^    hd = r'[0-9A-Ha-h]'$/;"	v	class:HexdumpLexer
 head	plugged/vim-wakatime/plugin/packages/wakatime/packages/requests/api.py	/^def head(url, **kwargs):$/;"	f
@@ -16664,7 +16774,6 @@ i6t	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/lexers/int_f
 i6t	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/lexers/int_fiction.py	/^                                i6t='+i6t-not-inline'), Punctuation)),$/;"	v	class:Inform7Lexer
 i6t	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/lexers/int_fiction.py	/^                                i6t='+i6t-use-option'), Punctuation), '#pop'),$/;"	v	class:Inform7Lexer
 iM	plugged/vim-polyglot/ftplugin/ruby.vim	/^    onoremap <silent> <buffer> iM :<C-U>call <SID>wrap_i('[[','][')<CR>$/;"	m
-ic	plugged/vim-gitgutter/plugin/gitgutter.vim	/^    omap ic <Plug>GitGutterTextObjectInnerPending$/;"	m
 iconv	plugged/vim-polyglot/autoload/vital/_crystal/Data/String.vim	/^function! s:iconv(expr, from, to) abort$/;"	f
 iconv	plugged/vim-polyglot/autoload/vital/_crystal/Process.vim	/^function! s:iconv(expr, from, to) abort$/;"	f
 id_callback	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/lexers/ml.py	/^    def id_callback(self, match):$/;"	m	class:SMLLexer
@@ -17208,7 +17317,6 @@ main	plugged/vim-wakatime/plugin/packages/wakatime/packages/requests/packages/ch
 main	plugged/vim-wakatime/plugin/packages/wakatime/packages/simplejson/tool.py	/^def main():$/;"	f
 main_inner	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/cmdline.py	/^def main_inner(popts, args, usage):$/;"	f
 main_syntax	plugged/vim-polyglot/syntax/ansible.vim	/^  let main_syntax = 'yaml'$/;"	v
-main_syntax	plugged/vim-polyglot/syntax/ansible_template.vim	/^  let main_syntax = 'jinja2'$/;"	v
 main_syntax	plugged/vim-polyglot/syntax/blade.vim	/^    let main_syntax = 'blade'$/;"	v
 main_syntax	plugged/vim-polyglot/syntax/eelixir.vim	/^  let main_syntax = 'eelixir'$/;"	v
 main_syntax	plugged/vim-polyglot/syntax/emblem.vim	/^  let main_syntax = 'emblem'$/;"	v
@@ -17217,7 +17325,7 @@ main_syntax	plugged/vim-polyglot/syntax/groovy.vim	/^  let main_syntax='groovy'$
 main_syntax	plugged/vim-polyglot/syntax/haml.vim	/^  let main_syntax = 'haml'$/;"	v
 main_syntax	plugged/vim-polyglot/syntax/haxe.vim	/^  let main_syntax='haxe'$/;"	v
 main_syntax	plugged/vim-polyglot/syntax/javascript.vim	/^  let main_syntax = 'javascript'$/;"	v
-main_syntax	plugged/vim-polyglot/syntax/jinja2.vim	/^  let main_syntax = 'jinja'$/;"	v
+main_syntax	plugged/vim-polyglot/syntax/jinja2.vim	/^  let main_syntax = 'jinja2'$/;"	v
 main_syntax	plugged/vim-polyglot/syntax/json.vim	/^  let main_syntax = 'json'$/;"	v
 main_syntax	plugged/vim-polyglot/syntax/jst.vim	/^  let main_syntax = 'jst'$/;"	v
 main_syntax	plugged/vim-polyglot/syntax/liquid.vim	/^  let main_syntax = 'liquid'$/;"	v
@@ -17244,6 +17352,7 @@ makefile	plugged/vim-wakatime/plugin/packages/wakatime/packages/requests/package
 makefile	plugged/vim-wakatime/plugin/packages/wakatime/packages/requests/packages/urllib3/contrib/pyopenssl.py	/^    makefile = backport_makefile$/;"	v
 manual_update_tags	plugged/vim-gutentags/autoload/gutentags.vim	/^function! s:manual_update_tags(bang) abort$/;"	f
 map	plugged/vim-airline/t/themes.vim	/^    let map = airline#themes#generate_color_map($/;"	v
+map	plugged/vim-fugitive/plugin/fugitive.vim	/^function! s:map(mode, lhs, rhs, ...) abort$/;"	f
 map	plugged/vim-polyglot/ftplugin/ruby.vim	/^function! s:map(mode, flags, map) abort$/;"	f
 map	plugged/vim-textobj-user/autoload/textobj/user.vim	/^function! s:map(forced_p, lhs, rhs)$/;"	f
 map_accum	plugged/vim-polyglot/autoload/vital/_crystal/Data/List.vim	/^function! s:map_accum(expr, xs, init) abort$/;"	f
@@ -18707,7 +18816,6 @@ nonpackage	plugged/vim-wakatime/plugin/packages/wakatime/dependencies/python.py	
 noremap	plugged/vim-textobj-user/autoload/textobj/user.vim	/^function! s:noremap(forced_p, lhs, rhs)$/;"	f
 norm	plugged/vim-wakatime/plugin/packages/wakatime/packages/ntlm_auth/U32.py	/^def norm(n):$/;"	f
 normal	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/lexers/diff.py	/^    normal = r'[^{}[\\]+-]+'  # for performance$/;"	v	class:WDiffLexer
-normal_keywords_highlight	plugged/vim-polyglot/syntax/ansible.vim	/^fun! s:normal_keywords_highlight(name)$/;"	f
 normalize	plugged/vim-textobj-user/autoload/textobj/user.vim	/^function! s:normalize(obj_specs)$/;"	f
 normalize	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/lexers/robotframework.py	/^def normalize(string, remove=''):$/;"	f
 normalize	plugged/vim-wakatime/plugin/packages/wakatime/packages/pytz/__init__.py	/^    def normalize(self, dt, is_dst=False):$/;"	m	class:UTC
@@ -19031,6 +19139,7 @@ preproc	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/lexers/f
 preproc_callback	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/lexers/haxe.py	/^    def preproc_callback(self, match, ctx):$/;"	m	class:HaxeLexer
 preproc_stack	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/lexers/haxe.py	/^    preproc_stack = []$/;"	v	class:HaxeLexer
 pretty_command	plugged/vim-test/autoload/test/strategy.vim	/^function! s:pretty_command(cmd) abort$/;"	f
+prev_non_connected_line	plugged/vim-polyglot/indent/applescript.vim	/^func! s:prev_non_connected_line(line)$/;"	f
 preview	plugged/vim-gitgutter/autoload/gitgutter/hunk.vim	/^function! s:preview(hunk_diff)$/;"	f
 preview_commit	autoload/plug.vim	/^function! s:preview_commit()$/;"	f
 previous_token	plugged/vim-polyglot/indent/typescript.vim	/^function s:previous_token()$/;"	f
@@ -19248,6 +19357,7 @@ readable_last_opening_line	plugged/vim-rails/autoload/rails.vim	/^function! s:re
 readable_line_count	plugged/vim-rails/autoload/rails.vim	/^function! s:readable_line_count() dict abort$/;"	f
 readable_model_name	plugged/vim-rails/autoload/rails.vim	/^function! s:readable_model_name(...) dict abort$/;"	f
 readable_open_command	plugged/vim-rails/autoload/rails.vim	/^function! s:readable_open_command(cmd, argument, name, projections) dict abort$/;"	f
+readable_params	plugged/vim-rails/autoload/rails.vim	/^function! s:readable_params(...) dict abort$/;"	f
 readable_preview_urls	plugged/vim-rails/autoload/rails.vim	/^function! s:readable_preview_urls(lnum) dict abort$/;"	f
 readable_projected	plugged/vim-rails/autoload/rails.vim	/^function! s:readable_projected(key, ...) dict abort$/;"	f
 readable_projected_with_raw	plugged/vim-rails/autoload/rails.vim	/^function! s:readable_projected_with_raw(key, ...) dict abort$/;"	f
@@ -19277,6 +19387,7 @@ recvfrom	plugged/vim-wakatime/plugin/packages/wakatime/packages/socks.py	/^    d
 redraw	plugged/vim-surround/plugin/surround.vim	/^function! s:redraw()$/;"	f
 reduce_line	plugged/fzf.vim/autoload/fzf/vim/complete.vim	/^function! s:reduce_line(lines)$/;"	f
 reek_plugin	plugged/vim-reek/plugin/reek.vim	/^  augroup reek_plugin$/;"	a
+referrerpolicy	plugged/vim-polyglot/autoload/xml/html5.vim	/^let referrerpolicy = ['no-referrer', 'no-referrer-when-downgrade', 'same-origin', 'origin', 'strict-origin', 'origin-when-cross-origin', 'strict-origin-when-cross-origin', 'unsafe-url']$/;"	v
 reformat	plugged/ctrlp.vim/autoload/ctrlp/mrufiles.vim	/^fu! s:reformat(mrufs, ...)$/;"	f
 regenerate	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/lexers/_lua_builtins.py	/^    def regenerate(filename, modules):$/;"	f
 regenerate	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/lexers/_php_builtins.py	/^    def regenerate(filename, modules):$/;"	f
@@ -19417,6 +19528,7 @@ restore_view	plugged/vim-polyglot/autoload/julia_blocks.vim	/^function! s:restor
 restorescreen	plugged/vim-test/autoload/test/strategy.vim	/^function! s:restorescreen() abort$/;"	f
 retry	autoload/plug.vim	/^function! s:retry()$/;"	f
 retry_using_http_NTLM_auth	plugged/vim-wakatime/plugin/packages/wakatime/packages/requests_ntlm/requests_ntlm.py	/^    def retry_using_http_NTLM_auth(self, auth_header_field, auth_header,$/;"	m	class:HttpNtlmAuth
+returnAppleScriptIndent	plugged/vim-polyglot/indent/applescript.vim	/^func! s:returnAppleScriptIndent()$/;"	f
 reverse	plugged/vim-polyglot/autoload/vital/_crystal/Data/String.vim	/^function! s:reverse(str) abort$/;"	f
 revert	autoload/plug.vim	/^function! s:revert()$/;"	f
 rewind_body	plugged/vim-wakatime/plugin/packages/wakatime/packages/requests/packages/urllib3/util/request.py	/^def rewind_body(body, body_pos):$/;"	f
@@ -19429,6 +19541,7 @@ rm_rf	autoload/plug.vim	/^function! s:rm_rf(dir)$/;"	f
 robotparser	plugged/vim-wakatime/plugin/packages/wakatime/packages/requests/packages/urllib3/packages/six.py	/^    robotparser = _importer._get_module("moves.urllib_robotparser")$/;"	v	class:Module_six_moves_urllib
 robotparser	plugged/vim-wakatime/plugin/packages/wakatime/packages/six.py	/^    robotparser = _importer._get_module("moves.urllib_robotparser")$/;"	v	class:Module_six_moves_urllib
 role	plugged/vim-polyglot/autoload/xml/aria.vim	/^let role = extend(role, dpub_role)$/;"	v
+role	plugged/vim-polyglot/autoload/xml/aria.vim	/^let role = extend(role, graphic_role)$/;"	v
 role	plugged/vim-polyglot/autoload/xml/aria.vim	/^let role = extend(role, landmark_role)$/;"	v
 role	plugged/vim-polyglot/autoload/xml/aria.vim	/^let role = extend(widget_role, document_structure)$/;"	v
 role	plugged/vim-polyglot/autoload/xml/html5.vim	/^    let role = extend(role, dpub_role)$/;"	v
@@ -21076,6 +21189,7 @@ s:continuation_regex	plugged/vim-polyglot/indent/ruby.vim	/^let s:continuation_r
 s:continuation_regex	plugged/vim-polyglot/indent/solidity.vim	/^let s:continuation_regex = '\\%([\\\\*+\/.:]\\|\\%(<%\\)\\@<![=-]\\|\\W[|&?]\\|||\\|&&\\)' . s:line_term$/;"	v
 s:core_funcrefs	plugged/vim-airline/autoload/airline.vim	/^let s:core_funcrefs = [$/;"	v
 s:counter	plugged/vim-textobj-user/t/script-local.vim	/^let s:counter = [0]$/;"	v
+s:countonly	plugged/vim-polyglot/indent/html.vim	/^let s:countonly = 0$/;"	v
 s:counts	plugged/neomake/autoload/neomake/statusline.vim	/^let s:counts = {}$/;"	v
 s:cpo_orig	plugged/vim-polyglot/syntax/plantuml.vim	/^let s:cpo_orig=&cpo$/;"	v
 s:cpo_sav	plugged/vim-polyglot/indent/eruby.vim	/^let s:cpo_sav = &cpo$/;"	v
@@ -21098,6 +21212,7 @@ s:cpo_save	plugged/vim-polyglot/compiler/rubyunit.vim	/^let s:cpo_save = &cpo$/;
 s:cpo_save	plugged/vim-polyglot/compiler/rustc.vim	/^let s:cpo_save = &cpo$/;"	v
 s:cpo_save	plugged/vim-polyglot/compiler/sbt.vim	/^let s:cpo_save = &cpo$/;"	v
 s:cpo_save	plugged/vim-polyglot/compiler/typescript.vim	/^let s:cpo_save = &cpo$/;"	v
+s:cpo_save	plugged/vim-polyglot/ftdetect/polyglot.vim	/^let s:cpo_save=&cpo$/;"	v
 s:cpo_save	plugged/vim-polyglot/ftplugin/clojure.vim	/^let s:cpo_save = &cpo$/;"	v
 s:cpo_save	plugged/vim-polyglot/ftplugin/mma.vim	/^let s:cpo_save = &cpo$/;"	v
 s:cpo_save	plugged/vim-polyglot/ftplugin/mustache.vim	/^let s:cpo_save = &cpo$/;"	v
@@ -21105,9 +21220,11 @@ s:cpo_save	plugged/vim-polyglot/ftplugin/plantuml.vim	/^let s:cpo_save = &cpo$/;
 s:cpo_save	plugged/vim-polyglot/ftplugin/ruby.vim	/^let s:cpo_save = &cpo$/;"	v
 s:cpo_save	plugged/vim-polyglot/ftplugin/typescript.vim	/^let s:cpo_save = &cpo$/;"	v
 s:cpo_save	plugged/vim-polyglot/ftplugin/vifm.vim	/^let s:cpo_save = &cpo$/;"	v
+s:cpo_save	plugged/vim-polyglot/indent/applescript.vim	/^let s:cpo_save=&cpo$/;"	v
 s:cpo_save	plugged/vim-polyglot/indent/crystal.vim	/^let s:cpo_save = &cpo$/;"	v
 s:cpo_save	plugged/vim-polyglot/indent/eelixir.vim	/^let s:cpo_save = &cpo$/;"	v
 s:cpo_save	plugged/vim-polyglot/indent/erlang.vim	/^let s:cpo_save = &cpo$/;"	v
+s:cpo_save	plugged/vim-polyglot/indent/graphql.vim	/^let s:cpo_save = &cpoptions$/;"	v
 s:cpo_save	plugged/vim-polyglot/indent/html.vim	/^let s:cpo_save = &cpo$/;"	v
 s:cpo_save	plugged/vim-polyglot/indent/javascript.vim	/^let s:cpo_save = &cpo$/;"	v
 s:cpo_save	plugged/vim-polyglot/indent/json.vim	/^let s:cpo_save = &cpo$/;"	v
@@ -21132,7 +21249,6 @@ s:cposet	plugged/vim-polyglot/ftplugin/ocaml.vim	/^let s:cposet=&cpoptions$/;"	v
 s:crystal_deindent_keywords	plugged/vim-polyglot/indent/crystal.vim	/^let s:crystal_deindent_keywords =$/;"	v
 s:crystal_indent_keywords	plugged/vim-polyglot/indent/crystal.vim	/^let s:crystal_indent_keywords =$/;"	v
 s:cs	plugged/vim-airline/autoload/airline/extensions/ctrlspace.vim	/^let s:cs = ctrlspace#context#Configuration().Symbols.CS$/;"	v
-s:cssindent	plugged/vim-polyglot/indent/html.vim	/^let s:cssindent = &indentexpr$/;"	v
 s:cterm00	plugged/base16-vim/colors/base16-3024.vim	/^let s:cterm00        = "00"$/;"	v
 s:cterm00	plugged/base16-vim/colors/base16-apathy.vim	/^let s:cterm00        = "00"$/;"	v
 s:cterm00	plugged/base16-vim/colors/base16-ashes.vim	/^let s:cterm00        = "00"$/;"	v
@@ -24234,7 +24350,10 @@ s:current_fileformats	plugged/vim-polyglot/ftdetect/polyglot.vim	/^let s:current
 s:current_modified	plugged/vim-airline/autoload/airline/extensions/tabline/buffers.vim	/^let s:current_modified = 0$/;"	v
 s:current_modified	plugged/vim-airline/autoload/airline/extensions/tabline/tabs.vim	/^let s:current_modified = 0$/;"	v
 s:current_syntax	plugged/vim-polyglot/after/syntax/coffee.vim	/^  let s:current_syntax=b:current_syntax$/;"	v
+s:current_syntax	plugged/vim-polyglot/after/syntax/javascript/graphql.vim	/^  let s:current_syntax = b:current_syntax$/;"	v
 s:current_syntax	plugged/vim-polyglot/after/syntax/jsx.vim	/^  let s:current_syntax=b:current_syntax$/;"	v
+s:current_syntax	plugged/vim-polyglot/after/syntax/typescript/graphql.vim	/^  let s:current_syntax = b:current_syntax$/;"	v
+s:current_syntax	plugged/vim-polyglot/syntax/ansible.vim	/^  let s:current_syntax=b:current_syntax$/;"	v
 s:current_syntax	plugged/vim-polyglot/syntax/dockerfile.vim	/^let s:current_syntax = b:current_syntax$/;"	v
 s:current_syntax_save	plugged/vim-polyglot/after/syntax/haml.vim	/^  let s:current_syntax_save = b:current_syntax$/;"	v
 s:current_syntax_save	plugged/vim-polyglot/after/syntax/html.vim	/^  let s:current_syntax_save = b:current_syntax$/;"	v
@@ -24253,6 +24372,7 @@ s:dark_mint	plugged/vim-airline-themes/autoload/airline/themes/vice.vim	/^let s:
 s:data_file	plugged/vim-wakatime/plugin/wakatime.vim	/^    let s:data_file = s:home . '\/.wakatime.data'$/;"	v
 s:debug_mode_already_setup	plugged/vim-wakatime/plugin/wakatime.vim	/^    let s:debug_mode_already_setup = s:false$/;"	v
 s:decIndent	plugged/vim-polyglot/indent/plantuml.vim	/^let s:decIndent = '^\\s*\\%(end\\|else\\|}\\)'$/;"	v
+s:dec_num	plugged/vim-polyglot/syntax/nim.vim	/^  let s:dec_num = '\\d%(_?\\d)*'$/;"	v
 s:dec_regex	plugged/vim-polyglot/syntax/julia.vim	/^let s:dec_regex = '\\d\\%(_\\?\\d\\)*\\%(\\>\\|im\\>\\|\\ze\\D\\)'$/;"	v
 s:defArgMatcher	plugged/vim-polyglot/indent/scala.vim	/^let s:defArgMatcher = '\\%((\\_.\\{-})\\)'$/;"	v
 s:defMatcher	plugged/vim-polyglot/indent/scala.vim	/^let s:defMatcher = '\\%(\\%(private\\|protected\\)\\%(\\[[^\\]]*\\]\\)\\?\\s\\+\\|abstract\\s\\+\\|override\\s\\+\\)*\\<def\\>'$/;"	v
@@ -24301,6 +24421,7 @@ s:end_skip_expr	plugged/vim-polyglot/indent/ruby.vim	/^let s:end_skip_expr = s:s
 s:end_start_regex	plugged/vim-polyglot/indent/crystal.vim	/^let s:end_start_regex =$/;"	v
 s:end_start_regex	plugged/vim-polyglot/indent/ruby.vim	/^let s:end_start_regex =$/;"	v
 s:endtag	plugged/vim-polyglot/after/indent/jsx.vim	/^let s:endtag = '^\\s*\\\/\\?>\\s*;\\='$/;"	v
+s:endtags	plugged/vim-polyglot/indent/html.vim	/^let s:endtags = [0,0,0,0,0,0,0]   " long enough for the highest index$/;"	v
 s:entry_to_sign_type	plugged/neomake/autoload/neomake/signs.vim	/^let s:entry_to_sign_type = {'W': 'warn', 'I': 'info', 'M': 'msg'}$/;"	v
 s:envbeginpattern	plugged/vim-polyglot/ftplugin/latex-box/folding.vim	/^let s:envbeginpattern = s:notcomment . s:notbslash . '\\\\begin\\s*{.\\{-}}'$/;"	v
 s:envendpattern	plugged/vim-polyglot/ftplugin/latex-box/folding.vim	/^let s:envendpattern = s:notcomment . s:notbslash . '\\\\end\\s*{.\\{-}}'$/;"	v
@@ -24316,12 +24437,12 @@ s:errors	plugged/vim-gitgutter/test/runner.vim	/^let s:errors = 0$/;"	v
 s:errors	plugged/vim-polyglot/autoload/elm.vim	/^let s:errors = []$/;"	v
 s:exe_error_thrown	plugged/neomake/autoload/neomake/core.vim	/^let s:exe_error_thrown = {}$/;"	v
 s:executables	plugged/vim-fugitive/plugin/fugitive.vim	/^let s:executables = {}$/;"	v
+s:exp	plugged/vim-polyglot/syntax/nim.vim	/^  let s:exp = '%([eE][+-]?'.s:dec_num.')'$/;"	v
 s:exs_re	plugged/vim-polyglot/syntax/python.vim	/^      let s:exs_re .= '|BlockingIOError|ChildProcessError|ConnectionError|BrokenPipeError|ConnectionAbortedError|ConnectionRefusedError|ConnectionResetError|FileExistsError|FileNotFoundError|InterruptedError|IsADirectoryError|NotADirectoryError|PermissionError|ProcessLookupError|TimeoutError|StopAsyncIteration|ResourceWarning'$/;"	v
 s:exs_re	plugged/vim-polyglot/syntax/python.vim	/^      let s:exs_re .= '|StandardError'$/;"	v
 s:exs_re	plugged/vim-polyglot/syntax/python.vim	/^    let s:exs_re = 'BaseException|Exception|ArithmeticError|LookupError|EnvironmentError|AssertionError|AttributeError|BufferError|EOFError|FloatingPointError|GeneratorExit|IOError|ImportError|IndexError|KeyError|KeyboardInterrupt|MemoryError|NameError|NotImplementedError|OSError|OverflowError|ReferenceError|RuntimeError|StopIteration|SyntaxError|IndentationError|TabError|SystemError|SystemExit|TypeError|UnboundLocalError|UnicodeError|UnicodeEncodeError|UnicodeDecodeError|UnicodeTranslateError|ValueError|VMSError|WindowsError|ZeroDivisionError|Warning|UserWarning|BytesWarning|DeprecationWarning|PendingDepricationWarning|SyntaxWarning|RuntimeWarning|FutureWarning|ImportWarning|UnicodeWarning'$/;"	v
 s:ext	plugged/vim-airline/autoload/airline/extensions.vim	/^let s:ext = {}$/;"	v
 s:ext	plugged/vim-airline/autoload/airline/extensions.vim	/^let s:ext._theme_funcrefs = []$/;"	v
-s:extra_syntax	plugged/vim-polyglot/syntax/ansible_template.vim	/^  let s:extra_syntax = split(g:ansible_extra_syntaxes)$/;"	v
 s:fail	plugged/vim-gitgutter/test/runner.vim	/^      let s:fail += 1$/;"	v
 s:fail	plugged/vim-gitgutter/test/runner.vim	/^let s:fail = 0$/;"	v
 s:false	plugged/vim-wakatime/plugin/wakatime.vim	/^    let s:false = 0$/;"	v
@@ -24351,25 +24472,17 @@ s:filetype_overrides	plugged/vim-airline/autoload/airline/extensions.vim	/^let s
 s:filetype_regex_overrides	plugged/vim-airline/autoload/airline/extensions.vim	/^let s:filetype_regex_overrides = {}$/;"	v
 s:first_rtp	autoload/plug.vim	/^let s:first_rtp = s:escrtp(get(s:split_rtp(), 0, ''))$/;"	v
 s:first_sign_id	plugged/vim-gitgutter/autoload/gitgutter/sign.vim	/^let s:first_sign_id = 3000$/;"	v
+s:fixture_root	plugged/neomake/tests/include/init.vim	/^let s:fixture_root = '\/tmp\/neomake-tests'$/;"	v
 s:flags	plugged/vim-airline/autoload/airline/extensions/tagbar.vim	/^let s:flags = get(g:, 'airline#extensions#tagbar#flags', '')$/;"	v
 s:float_regex	plugged/vim-polyglot/syntax/julia.vim	/^let s:float_regex = '\\%(' . s:float_regex3 .$/;"	v
 s:float_regex1	plugged/vim-polyglot/syntax/julia.vim	/^let s:float_regex1 = '\\.\\d\\%(_\\?\\d\\)*\\%([eEf][-+]\\?\\d\\+\\)\\?\\%(\\>\\|im\\>\\|\\ze\\D\\)'$/;"	v
 s:float_regex2	plugged/vim-polyglot/syntax/julia.vim	/^let s:float_regex2 = '\\d\\%(_\\?\\d\\)*\\.\\%(\\d\\%(_\\?\\d\\)*\\)\\?\\%([eEf][-+]\\?\\d\\+\\)\\?\\%(\\>\\|im\\>\\|\\ze\\D\\)'$/;"	v
 s:float_regex3	plugged/vim-polyglot/syntax/julia.vim	/^let s:float_regex3 = '\\d\\%(_\\?\\d\\)*[eEf][-+]\\?\\d\\+\\%(\\>\\|im\\>\\|\\ze\\D\\)'$/;"	v
+s:float_suf	plugged/vim-polyglot/syntax/nim.vim	/^  let s:float_suf = '%(''%(%(f|F)%(32|64|128)?|d|D))'$/;"	v
 s:fmod	plugged/vim-airline/autoload/airline/extensions/fugitiveline.vim	/^  let s:fmod = ':.'$/;"	v
 s:fmod	plugged/vim-airline/autoload/airline/extensions/fugitiveline.vim	/^  let s:fmod = ':p'$/;"	v
 s:fnamecollapse	plugged/vim-airline/autoload/airline/extensions/tabline/formatters/default.vim	/^let s:fnamecollapse = get(g:, 'airline#extensions#tabline#fnamecollapse', 1)$/;"	v
 s:fnametruncate	plugged/vim-airline/autoload/airline/extensions/tabline/formatters/default.vim	/^let s:fnametruncate = get(g:, 'airline#extensions#tabline#fnametruncate', 0)$/;"	v
-s:fold_block	plugged/vim-polyglot/syntax/go.vim	/^    let s:fold_block = 0$/;"	v
-s:fold_block	plugged/vim-polyglot/syntax/go.vim	/^let s:fold_block = 1$/;"	v
-s:fold_comment	plugged/vim-polyglot/syntax/go.vim	/^    let s:fold_comment = 1$/;"	v
-s:fold_comment	plugged/vim-polyglot/syntax/go.vim	/^let s:fold_comment = 0$/;"	v
-s:fold_import	plugged/vim-polyglot/syntax/go.vim	/^    let s:fold_import = 0$/;"	v
-s:fold_import	plugged/vim-polyglot/syntax/go.vim	/^let s:fold_import = 1$/;"	v
-s:fold_package_comment	plugged/vim-polyglot/syntax/go.vim	/^    let s:fold_package_comment = 0$/;"	v
-s:fold_package_comment	plugged/vim-polyglot/syntax/go.vim	/^let s:fold_package_comment = 1$/;"	v
-s:fold_varconst	plugged/vim-polyglot/syntax/go.vim	/^    let s:fold_varconst = 0$/;"	v
-s:fold_varconst	plugged/vim-polyglot/syntax/go.vim	/^let s:fold_varconst = 1$/;"	v
 s:foldable_groups	plugged/vim-polyglot/syntax/ruby.vim	/^let s:foldable_groups = split($/;"	v
 s:folded	plugged/vim-polyglot/ftplugin/latex-box/folding.vim	/^let s:folded = '\\(% Fake\\|\\\\\\(document\\|begin\\|end\\|paragraph\\|'$/;"	v
 s:foldparts	plugged/vim-polyglot/ftplugin/latex-box/folding.vim	/^let s:foldparts = '^\\s*\\\\\\%(' . join(g:LatexBox_fold_parts, '\\|') . '\\)'$/;"	v
@@ -26954,9 +27067,6 @@ s:hook_context_stack	plugged/neomake/autoload/neomake/utils.vim	/^let s:hook_con
 s:hot_pink	plugged/vim-airline-themes/autoload/airline/themes/vice.vim	/^let s:hot_pink = [201, "#ff00ff" ]$/;"	v
 s:htmlIndentExpr	plugged/vim-polyglot/after/indent/html.vim	/^let s:htmlIndentExpr = &l:indentexpr$/;"	v
 s:html_indent	plugged/vim-polyglot/indent/vue.vim	/^let s:html_indent = s:get_indentexpr('html')$/;"	v
-s:html_indent_tags	plugged/vim-polyglot/indent/html.vim	/^let s:html_indent_tags = '[a-z_][a-z0-9_.-]*'$/;"	v
-s:html_noindent_tags	plugged/vim-polyglot/indent/html.vim	/^    let s:html_noindent_tags = s:html_noindent_tags.'\\|'.join(g:html_exclude_tags, '\\|')$/;"	v
-s:html_noindent_tags	plugged/vim-polyglot/indent/html.vim	/^let s:html_noindent_tags = join(s:no_tags, '\\|')$/;"	v
 s:htmlindent	plugged/vim-polyglot/indent/blade.vim	/^let s:htmlindent = &indentexpr$/;"	v
 s:hunk_re	plugged/vim-gitgutter/autoload/gitgutter/diff.vim	/^let s:hunk_re = '^@@ -\\(\\d\\+\\),\\?\\(\\d*\\) +\\(\\d\\+\\),\\?\\(\\d*\\) @@'$/;"	v
 s:hunk_symbols	plugged/vim-airline/autoload/airline/extensions/hunks.vim	/^let s:hunk_symbols = get(g:, 'airline#extensions#hunks#hunk_symbols', ['+', '~', '-'])$/;"	v
@@ -26988,11 +27098,13 @@ s:incIndent	plugged/vim-polyglot/indent/plantuml.vim	/^let s:incIndent =$/;"	v
 s:indent	plugged/vim-gitgutter/test/runner.vim	/^let s:indent = ''$/;"	v
 s:indent	plugged/vim-gitgutter/test/runner.vim	/^let s:indent = max(map(copy(s:tests), {_, val -> len(FriendlyName(val))}))$/;"	v
 s:indent_access_modifier_regex	plugged/vim-polyglot/indent/ruby.vim	/^let s:indent_access_modifier_regex = '\\C^\\s*\\%(protected\\|private\\)\\s*\\%(#.*\\)\\=$'$/;"	v
+s:indent_tags	plugged/vim-polyglot/indent/html.vim	/^let s:indent_tags = {}$/;"	v
 s:infixkeywords	plugged/vim-polyglot/syntax/julia.vim	/^  let s:infixkeywords = '\\<\\%(in\\)\\>'$/;"	v
 s:infixkeywords	plugged/vim-polyglot/syntax/julia.vim	/^  let s:infixkeywords = '\\<\\%(in\\|isa\\)\\>'$/;"	v
 s:init	plugged/vim-airline/autoload/airline/extensions/tagbar.vim	/^let s:init=0$/;"	v
 s:innerbg	plugged/vim-airline-themes/autoload/airline/themes/distinguished.vim	/^let s:innerbg = [234, '#1c1c1c']$/;"	v
 s:int_regex	plugged/vim-polyglot/syntax/julia.vim	/^let s:int_regex = '\\%(' . s:hex_regex .$/;"	v
+s:int_suf	plugged/vim-polyglot/syntax/nim.vim	/^  let s:int_suf = '%(''%(%(i|I|u|U)%(8|16|32|64)|u|U))'$/;"	v
 s:interp_dollar	plugged/vim-polyglot/syntax/julia.vim	/^let s:interp_dollar = '\\([' . s:nonidS_chars . s:uniop_chars . s:binop_chars . '!?]\\|^\\)\\@'.s:d(1).'<=\\$'$/;"	v
 s:inverse	plugged/gruvbox/colors/gruvbox.vim	/^  let s:inverse = ''$/;"	v
 s:inverse	plugged/gruvbox/colors/gruvbox.vim	/^let s:inverse = 'inverse,'$/;"	v
@@ -27035,7 +27147,6 @@ s:job_id	plugged/neomake/autoload/neomake.vim	/^    let s:job_id = 1$/;"	v
 s:jobinfo_base	plugged/neomake/autoload/neomake.vim	/^let s:jobinfo_base = {}$/;"	v
 s:jobs	plugged/neomake/autoload/neomake.vim	/^    let s:jobs = {}$/;"	v
 s:js_keywords	plugged/vim-polyglot/indent/solidity.vim	/^let s:js_keywords = '^\\s*\\(break\\|case\\|catch\\|continue\\|debugger\\|default\\|delete\\|do\\|else\\|finally\\|for\\|function\\|if\\|in\\|instanceof\\|new\\|return\\|switch\\|this\\|throw\\|try\\|typeof\\|var\\|void\\|while\\|with\\)'$/;"	v
-s:jsindent	plugged/vim-polyglot/indent/html.vim	/^let s:jsindent = &indentexpr$/;"	v
 s:jsx_pragma_pattern	plugged/vim-polyglot/ftdetect/polyglot.vim	/^let s:jsx_pragma_pattern = '\\%^\\_s*\\\/\\*\\*\\%(\\_.\\%(\\*\\\/\\)\\@!\\)*@jsx\\_.\\{-}\\*\\\/'$/;"	v
 s:julia_blocks_functions	plugged/vim-polyglot/autoload/julia_blocks.vim	/^let s:julia_blocks_functions = {$/;"	v
 s:julia_highlight_operators	plugged/vim-polyglot/syntax/julia.vim	/^let s:julia_highlight_operators = get(g:, "julia_highlight_operators", 1)$/;"	v
@@ -27148,7 +27259,6 @@ s:neomake_elixir_credo_config_typemap	plugged/neomake/autoload/neomake/makers/ft
 s:neomake_root	plugged/neomake/autoload/neomake/makers/ft/help.vim	/^    let s:neomake_root = expand('<sfile>:p:h:h:h:h:h', 1)$/;"	v
 s:new_log_session	plugged/vim-gitgutter/autoload/gitgutter/debug.vim	/^let s:new_log_session = 1$/;"	v
 s:next_sign_id	plugged/vim-gitgutter/autoload/gitgutter/sign.vim	/^let s:next_sign_id  = s:first_sign_id$/;"	v
-s:no_tags	plugged/vim-polyglot/indent/html.vim	/^let s:no_tags = []$/;"	v
 s:nomacro	plugged/vim-polyglot/ftplugin/julia.vim	/^  let s:nomacro = '\\%(' . s:macro_regex . '\\)\\@<!'$/;"	v
 s:nomodeline	plugged/vim-gitgutter/autoload/gitgutter/diff.vim	/^let s:nomodeline = (v:version > 703 || (v:version == 703 && has('patch442'))) ? '<nomodeline>' : ''$/;"	v
 s:non_bracket_continuation_regex	plugged/vim-polyglot/indent/crystal.vim	/^let s:non_bracket_continuation_regex = '\\%([\\\\.,:*\/%+]\\|\\<and\\|\\<or\\|\\%(<%\\)\\@<![=-]\\|\\W[|&?]\\|||\\|&&\\)\\s*\\%(#.*\\)\\=$'$/;"	v
@@ -27255,7 +27365,6 @@ s:obj	plugged/vim-polyglot/indent/ocaml.vim	/^let s:obj = '^\\s*\\(constraint\\|
 s:oct_regex	plugged/vim-polyglot/syntax/julia.vim	/^let s:oct_regex = '0o\\o\\%(_\\?\\o\\)*\\%(\\>\\|im\\>\\|\\ze\\O\\)'$/;"	v
 s:old_cpo	plugged/vim-wakatime/plugin/wakatime.vim	/^    let s:old_cpo = &cpo$/;"	v
 s:old_style	plugged/vim-polyglot/syntax/erlang.vim	/^let s:old_style = (exists("g:erlang_old_style_highlight") &&$/;"	v
-s:omittable	plugged/vim-polyglot/indent/html.vim	/^let s:omittable = [ $/;"	v
 s:one_line_scope_regex	plugged/vim-polyglot/indent/solidity.vim	/^let s:one_line_scope_regex = '\\<\\%(if\\|else\\|for\\|while\\)\\>[^{;]*' . s:line_term$/;"	v
 s:oneline	plugged/vim-polyglot/syntax/markdown.vim	/^    let s:oneline = ' oneline'$/;"	v
 s:oneline	plugged/vim-polyglot/syntax/markdown.vim	/^    let s:oneline = ''$/;"	v
@@ -27426,10 +27535,10 @@ s:sign_column	plugged/gruvbox/colors/gruvbox.vim	/^let s:sign_column = s:bg1$/;"
 s:sign_order	plugged/neomake/autoload/neomake/signs.vim	/^let s:sign_order = {'neomake_file_err': 0, 'neomake_file_warn': 1,$/;"	v
 s:skip	plugged/splitjoin.vim/autoload/sj/c.vim	/^let s:skip = sj#SkipSyntax(['cComment', 'cCommentL', 'cString', 'cCppString', 'cBlock'])$/;"	v
 s:skip	plugged/splitjoin.vim/autoload/sj/python.vim	/^let s:skip = sj#SkipSyntax(['pythonString', 'pythonComment'])$/;"	v
-s:skipPatterns	plugged/vim-polyglot/indent/julia.vim	/^let s:skipPatterns = '\\<julia\\%(Comprehension\\%(For\\|If\\)\\|RangeEnd\\|CommentL\\|\\%([bsv]\\|ip\\|big\\|MIME\\|Shell\\|Printf\\|Doc\\)\\=String\\|RegEx\\|SymbolS\\?\\)\\>'$/;"	v
+s:skipPatterns	plugged/vim-polyglot/indent/julia.vim	/^let s:skipPatterns = '\\<julia\\%(Comprehension\\%(For\\|If\\)\\|RangeEnd\\|Comment[LM]\\|\\%([bsv]\\|ip\\|big\\|MIME\\|Shell\\|Printf\\|Doc\\)\\=String\\|RegEx\\|SymbolS\\?\\)\\>'$/;"	v
 s:skip_after_opening_paren	plugged/vim-polyglot/indent/cython.vim	/^let s:skip_after_opening_paren = 'synIDattr(synID(line("."), col("."), 0), "name") ' .$/;"	v
 s:skip_after_opening_paren	plugged/vim-polyglot/indent/python.vim	/^let s:skip_after_opening_paren = 'synIDattr(synID(line("."), col("."), 0), "name") ' .$/;"	v
-s:skip_check_ft	plugged/vim-airline/autoload/airline/extensions/whitespace.vim	/^let s:skip_check_ft = {'make': ['indent', 'mixed-indent-file'] }$/;"	v
+s:skip_check_ft	plugged/vim-airline/autoload/airline/extensions/whitespace.vim	/^let s:skip_check_ft = {'make': ['indent', 'mixed-indent-file']}$/;"	v
 s:skip_expr	plugged/vim-polyglot/indent/crystal.vim	/^let s:skip_expr =$/;"	v
 s:skip_expr	plugged/vim-polyglot/indent/javascript.vim	/^let s:skip_expr = "s:SynAt(line('.'),col('.')) =~? b:syng_strcom"$/;"	v
 s:skip_expr	plugged/vim-polyglot/indent/lua.vim	/^let s:skip_expr = "synIDattr(synID(line('.'),col('.'),1),'name') =~# 'luaComment\\\\|luaString'"$/;"	v
@@ -27449,6 +27558,7 @@ s:skip_syntax	plugged/vim-polyglot/indent/nix.vim	/^let s:skip_syntax = '\\%(Com
 s:slash	plugged/neomake/autoload/neomake/makers/ft/help.vim	/^let s:slash = neomake#utils#Slash()$/;"	v
 s:slash	plugged/neomake/autoload/neomake/makers/ft/python.vim	/^    let s:slash = neomake#utils#Slash()$/;"	v
 s:slash	plugged/vim-test/autoload/test/csharp.vim	/^let s:slash = (has('win32') || has('win64')) && fnamemodify(&shell, ':t') ==? 'cmd.exe' ? '\\' : '\/'$/;"	v
+s:sock_type	plugged/vim-polyglot/autoload/go/config.vim	/^let s:sock_type = (has('win32') || has('win64')) ? 'tcp' : 'unix'$/;"	v
 s:solarized	plugged/vim-airline-themes/autoload/airline/themes/base16_shell.vim	/^let s:solarized         = get(g:, 'airline_base16_solarized', 0)$/;"	v
 s:spc	plugged/vim-airline/autoload/airline/extensions/ctrlspace.vim	/^let s:spc = g:airline_symbols.space$/;"	v
 s:spc	plugged/vim-airline/autoload/airline/extensions/example.vim	/^let s:spc = g:airline_symbols.space$/;"	v
@@ -27466,6 +27576,7 @@ s:spc	plugged/vim-airline/autoload/airline/util.vim	/^let s:spc = g:airline_symb
 s:spell_cluster	plugged/vim-polyglot/syntax/ruby.vim	/^let s:spell_cluster = exists('ruby_spellcheck_strings') ? ',@Spell' : ''$/;"	v
 s:splat_regex	plugged/vim-polyglot/indent/crystal.vim	/^let s:splat_regex = '[[,(]\\s*\\*\\s*\\%(#.*\\)\\=$'$/;"	v
 s:splat_regex	plugged/vim-polyglot/indent/ruby.vim	/^let s:splat_regex = '[[,(]\\s*\\*\\s*\\%(#.*\\)\\=$'$/;"	v
+s:sql_define	plugged/vim-rails/autoload/rails.vim	/^let s:sql_define = substitute($/;"	v
 s:ss_pattern	plugged/auto-pairs/plugin/auto-pairs.vim	/^let s:ss_pattern = '\\v''' . s:string_chunk . ''''$/;"	v
 s:st	plugged/vim-polyglot/syntax/tt2.vim	/^        let s:st = strpart(s:str,0,stridx(s:str,' '))$/;"	v
 s:start_pattern	plugged/vim-textobj-rubyblock/plugin/textobj/rubyblock.vim	/^let s:start_pattern = s:comment_escape . s:block_openers$/;"	v
@@ -27502,7 +27613,6 @@ s:tag	plugged/vim-polyglot/indent/haml.vim	/^let s:tag = '\\%([%.#][[:alnum:]_-]
 s:tag	plugged/vim-polyglot/indent/pug.vim	/^let s:tag = '\\([%.#][[:alnum:]_-]\\+\\|'.s:attributes.'\\)*[<>]*'$/;"	v
 s:tag	plugged/vim-polyglot/indent/slim.vim	/^let s:tag = '\\%([%.#][[:alnum:]_-]\\+\\|'.s:attributes.'\\)*[<>]*'$/;"	v
 s:tag	plugged/vim-polyglot/indent/slime.vim	/^let s:tag = '\\%([%.#][[:alnum:]_-]\\+\\|'.s:attributes.'\\)*[<>]*'$/;"	v
-s:tags	plugged/vim-polyglot/indent/html.vim	/^let s:tags = []$/;"	v
 s:teal	plugged/vim-airline-themes/autoload/airline/themes/vice.vim	/^let s:teal = [123, "#87ffff"]$/;"	v
 s:temp_buffer	plugged/vim-gitgutter/autoload/gitgutter/diff.vim	/^let s:temp_buffer = tempname()$/;"	v
 s:temp_files	plugged/vim-fugitive/plugin/fugitive.vim	/^  let s:temp_files = {}$/;"	v
@@ -27610,6 +27720,8 @@ s:win_sep	plugged/vim-polyglot/ftplugin/dart.vim	/^let s:win_sep = (has('win32')
 s:words	plugged/vim-polyglot/autoload/clojurecomplete.vim	/^let s:words = ["*","*'","*1","*2","*3","*agent*","*allow-unresolved-vars*","*assert*","*clojure-version*","*command-line-args*","*compile-files*","*compile-path*","*compiler-options*","*data-readers*","*default-data-reader-fn*","*e","*err*","*file*","*flush-on-newline*","*fn-loader*","*in*","*math-context*","*ns*","*out*","*print-dup*","*print-length*","*print-level*","*print-meta*","*print-readably*","*read-eval*","*source-path*","*suppress-read*","*unchecked-math*","*use-context-classloader*","*verbose-defrecords*","*warn-on-reflection*","+","+'","-","-'","->","->>","->ArrayChunk","->Eduction","->Vec","->VecNode","->VecSeq","-cache-protocol-fn","-reset-methods",".","..","\/","<","<=","=","==",">",">=","EMPTY-NODE","Throwable->map","accessor","aclone","add-classpath","add-watch","agent","agent-error","agent-errors","aget","alength","alias","all-ns","alter","alter-meta!","alter-var-root","amap","ancestors","and","apply","areduce","array-map","as->","aset","aset-boolean","aset-byte","aset-char","aset-double","aset-float","aset-int","aset-long","aset-short","assert","assoc!","assoc","assoc-in","associative?","atom","await","await-for","await1","bases","bean","bigdec","bigint","biginteger","binding","bit-and","bit-and-not","bit-clear","bit-flip","bit-not","bit-or","bit-set","bit-shift-left","bit-shift-right","bit-test","bit-xor","boolean","boolean-array","booleans","bound-fn","bound-fn*","bound?","butlast","byte","byte-array","bytes","case","cast","cat","catch","char","char-array","char-escape-string","char-name-string","char?","chars","chunk","chunk-append","chunk-buffer","chunk-cons","chunk-first","chunk-next","chunk-rest","chunked-seq?","class","class?","clear-agent-errors","clojure-version","coll?","comment","commute","comp","comparator","compare","compare-and-set!","compile","complement","completing","concat","cond","cond->","cond->>","condp","conj!","conj","cons","constantly","construct-proxy","contains?","count","counted?","create-ns","create-struct","cycle","dec","dec'","decimal?","declare","dedupe","def","default-data-readers","definline","definterface","defmacro","defmethod","defmulti","defn","defn-","defonce","defprotocol","defrecord","defstruct","deftype","delay","delay?","deliver","denominator","deref","derive","descendants","destructure","disj!","disj","dissoc!","dissoc","distinct","distinct?","do","doall","dorun","doseq","dosync","dotimes","doto","double","double-array","doubles","drop","drop-last","drop-while","eduction","empty","empty?","ensure","ensure-reduced","enumeration-seq","error-handler","error-mode","eval","even?","every-pred","every?","ex-data","ex-info","extend","extend-protocol","extend-type","extenders","extends?","false?","ffirst","file-seq","filter","filterv","finally","find","find-keyword","find-ns","find-protocol-impl","find-protocol-method","find-var","first","flatten","float","float-array","float?","floats","flush","fn","fn","fn?","fnext","fnil","for","force","format","frequencies","future","future-call","future-cancel","future-cancelled?","future-done?","future?","gen-class","gen-interface","gensym","get","get-in","get-method","get-proxy-class","get-thread-bindings","get-validator","group-by","hash","hash-combine","hash-map","hash-ordered-coll","hash-set","hash-unordered-coll","identical?","identity","if","if-let","if-not","if-some","ifn?","import","in-ns","inc","inc'","init-proxy","instance?","int","int-array","integer?","interleave","intern","interpose","into","into-array","ints","io!","isa?","iterate","iterator-seq","juxt","keep","keep-indexed","key","keys","keyword","keyword?","last","lazy-cat","lazy-seq","let","let","letfn","line-seq","list","list*","list?","load","load-file","load-reader","load-string","loaded-libs","locking","long","long-array","longs","loop","loop","macroexpand","macroexpand-1","make-array","make-hierarchy","map","map-entry?","map-indexed","map?","mapcat","mapv","max","max-key","memfn","memoize","merge","merge-with","meta","method-sig","methods","min","min-key","mix-collection-hash","mod","monitor-enter","monitor-exit","munge","name","namespace","namespace-munge","neg?","new","newline","next","nfirst","nil?","nnext","not","not-any?","not-empty","not-every?","not=","ns","ns-aliases","ns-imports","ns-interns","ns-map","ns-name","ns-publics","ns-refers","ns-resolve","ns-unalias","ns-unmap","nth","nthnext","nthrest","num","number?","numerator","object-array","odd?","or","parents","partial","partition","partition-all","partition-by","pcalls","peek","persistent!","pmap","pop!","pop","pop-thread-bindings","pos?","pr","pr-str","prefer-method","prefers","primitives-classnames","print","print-ctor","print-dup","print-method","print-simple","print-str","printf","println","println-str","prn","prn-str","promise","proxy","proxy-call-with-super","proxy-mappings","proxy-name","proxy-super","push-thread-bindings","pvalues","quot","quote","rand","rand-int","rand-nth","random-sample","range","ratio?","rational?","rationalize","re-find","re-groups","re-matcher","re-matches","re-pattern","re-seq","read","read-line","read-string","reader-conditional","reader-conditional?","realized?","record?","recur","reduce","reduce-kv","reduced","reduced?","reductions","ref","ref-history-count","ref-max-history","ref-min-history","ref-set","refer","refer-clojure","reify","release-pending-sends","rem","remove","remove-all-methods","remove-method","remove-ns","remove-watch","repeat","repeatedly","replace","replicate","require","reset!","reset-meta!","resolve","rest","restart-agent","resultset-seq","reverse","reversible?","rseq","rsubseq","run!","satisfies?","second","select-keys","send","send-off","send-via","seq","seq?","seque","sequence","sequential?","set!","set","set-agent-send-executor!","set-agent-send-off-executor!","set-error-handler!","set-error-mode!","set-validator!","set?","short","short-array","shorts","shuffle","shutdown-agents","slurp","some","some->","some->>","some-fn","some?","sort","sort-by","sorted-map","sorted-map-by","sorted-set","sorted-set-by","sorted?","special-symbol?","spit","split-at","split-with","str","string?","struct","struct-map","subs","subseq","subvec","supers","swap!","symbol","symbol?","sync","tagged-literal","tagged-literal?","take","take-last","take-nth","take-while","test","the-ns","thread-bound?","throw","time","to-array","to-array-2d","trampoline","transduce","transient","tree-seq","true?","try","type","unchecked-add","unchecked-add-int","unchecked-byte","unchecked-char","unchecked-dec","unchecked-dec-int","unchecked-divide-int","unchecked-double","unchecked-float","unchecked-inc","unchecked-inc-int","unchecked-int","unchecked-long","unchecked-multiply","unchecked-multiply-int","unchecked-negate","unchecked-negate-int","unchecked-remainder-int","unchecked-short","unchecked-subtract","unchecked-subtract-int","underive","unquote","unquote-splicing","unreduced","unsigned-bit-shift-right","update","update-in","update-proxy","use","val","vals","var","var-get","var-set","var?","vary-meta","vec","vector","vector-of","vector?","volatile!","volatile?","vreset!","vswap!","when","when-first","when-let","when-not","when-some","while","with-bindings","with-bindings*","with-in-str","with-loading-context","with-local-vars","with-meta","with-open","with-out-str","with-precision","with-redefs","with-redefs-fn","xml-seq","zero?","zipmap"]$/;"	v
 s:worktree_for_dir	plugged/vim-fugitive/plugin/fugitive.vim	/^let s:worktree_for_dir = {}$/;"	v
 s:xterm_escape_template	plugged/vim-airline/autoload/airline/extensions/cursormode.vim	/^let s:xterm_escape_template = '\\033]12;%s\\007'$/;"	v
+s:yamlKey	plugged/vim-polyglot/syntax/ansible.vim	/^  let s:yamlKey = "yamlBlockMappingKey"$/;"	v
+s:yamlKey	plugged/vim-polyglot/syntax/ansible.vim	/^  let s:yamlKey = g:ansible_yamlKeyName$/;"	v
 s:yellow	plugged/gruvbox/autoload/lightline/colorscheme/gruvbox.vim	/^  let s:yellow = s:getGruvColor('GruvboxYellow')$/;"	v
 s:yellow	plugged/gruvbox/colors/gruvbox.vim	/^  let s:yellow = s:gb.bright_yellow$/;"	v
 s:yellow	plugged/gruvbox/colors/gruvbox.vim	/^  let s:yellow = s:gb.faded_yellow$/;"	v
@@ -27662,7 +27774,7 @@ scan	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/scanner.py	
 scan_once	plugged/vim-wakatime/plugin/packages/wakatime/packages/simplejson/scanner.py	/^    def scan_once(string, idx):$/;"	f	function:py_make_scanner
 scan_once_str	plugged/vim-wakatime/plugin/packages/wakatime/packages/simplejson/_speedups.c	/^scan_once_str(PyScannerObject *s, PyObject *pystr, Py_ssize_t idx, Py_ssize_t *next_idx_ptr)$/;"	f	file:
 scan_once_unicode	plugged/vim-wakatime/plugin/packages/wakatime/packages/simplejson/_speedups.c	/^scan_once_unicode(PyScannerObject *s, PyObject *pystr, Py_ssize_t idx, Py_ssize_t *next_idx_ptr)$/;"	f	file:
-scanlineforuris	plugged/vim-rails/autoload/rails.vim	/^function! s:scanlineforuris(line)$/;"	f
+scanlineforuris	plugged/vim-rails/autoload/rails.vim	/^function! s:scanlineforuris(line) abort$/;"	f
 scanner_call	plugged/vim-wakatime/plugin/packages/wakatime/packages/simplejson/_speedups.c	/^scanner_call(PyObject *self, PyObject *args, PyObject *kwds)$/;"	f	file:
 scanner_clear	plugged/vim-wakatime/plugin/packages/wakatime/packages/simplejson/_speedups.c	/^scanner_clear(PyObject *self)$/;"	f	file:
 scanner_dealloc	plugged/vim-wakatime/plugin/packages/wakatime/packages/simplejson/_speedups.c	/^scanner_dealloc(PyObject *self)$/;"	f	file:
@@ -27674,7 +27786,7 @@ scanstring	plugged/vim-wakatime/plugin/packages/wakatime/packages/simplejson/dec
 scanstring_str	plugged/vim-wakatime/plugin/packages/wakatime/packages/simplejson/_speedups.c	/^scanstring_str(PyObject *pystr, Py_ssize_t end, char *encoding, int strict, Py_ssize_t *next_end_ptr)$/;"	f	file:
 scanstring_unicode	plugged/vim-wakatime/plugin/packages/wakatime/packages/simplejson/_speedups.c	/^scanstring_unicode(PyObject *pystr, Py_ssize_t end, int strict, Py_ssize_t *next_end_ptr)$/;"	f	file:
 schemaEdit	plugged/vim-rails/autoload/rails.vim	/^function! s:schemaEdit(cmd,...)$/;"	f
-schemaList	plugged/vim-rails/autoload/rails.vim	/^function! s:schemaList(A,L,P)$/;"	f
+schemaList	plugged/vim-rails/autoload/rails.vim	/^function! s:schemaList(A,L,P) abort$/;"	f
 scheme	plugged/vim-wakatime/plugin/packages/wakatime/packages/requests/packages/urllib3/connectionpool.py	/^    scheme = 'http'$/;"	v	class:HTTPConnectionPool
 scheme	plugged/vim-wakatime/plugin/packages/wakatime/packages/requests/packages/urllib3/connectionpool.py	/^    scheme = 'https'$/;"	v	class:HTTPSConnectionPool
 scheme	plugged/vim-wakatime/plugin/packages/wakatime/packages/requests/packages/urllib3/connectionpool.py	/^    scheme = None$/;"	v	class:ConnectionPool
@@ -27762,6 +27874,7 @@ settimeout	plugged/vim-wakatime/plugin/packages/wakatime/packages/socks.py	/^   
 settype	plugged/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:settype(type)$/;"	f
 setup	plugged/vim-wakatime/plugin/packages/wakatime/logger.py	/^    def setup(self, timestamp, is_write, entity, version, plugin, verbose,$/;"	m	class:JsonFormatter
 setup	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/sphinxext.py	/^def setup(app):$/;"	f
+setupTemplate	plugged/vim-polyglot/ftdetect/polyglot.vim	/^function! s:setupTemplate()$/;"	f
 setupWrappingAndSpellcheck	init.vim	/^function s:setupWrappingAndSpellcheck()$/;"	f
 setup_autocmds	plugged/neomake/plugin/neomake.vim	/^function! s:setup_autocmds() abort$/;"	f
 setup_coffee_filetype	plugged/splitjoin.vim/spec/plugin/coffee_spec.rb	/^  def setup_coffee_filetype$/;"	f
@@ -27769,6 +27882,7 @@ setup_go_filetype	plugged/splitjoin.vim/spec/plugin/go_spec.rb	/^  def setup_go_
 setup_haml_filetype	plugged/splitjoin.vim/spec/plugin/haml_spec.rb	/^  def setup_haml_filetype$/;"	f
 setup_handlebars_filetype	plugged/splitjoin.vim/spec/plugin/handlebars_spec.rb	/^  def setup_handlebars_filetype$/;"	f
 setup_logging	plugged/vim-wakatime/plugin/packages/wakatime/logger.py	/^def setup_logging(args, version):$/;"	f
+setup_maps	plugged/vim-gitgutter/autoload/gitgutter.vim	/^function! s:setup_maps()$/;"	f
 setup_statusline_augroup_for_use	plugged/neomake/autoload/neomake/statusline.vim	/^function! s:setup_statusline_augroup_for_use() abort$/;"	f
 setup_vim_server	plugged/vim-polyglot/ftplugin/latex-box/latexmk.vim	/^function! s:setup_vim_server()$/;"	f
 setupblank	plugged/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:setupblank()$/;"	f
@@ -27985,7 +28099,9 @@ sj#sh#SplitBySemicolon	plugged/splitjoin.vim/autoload/sj/sh.vim	/^function! sj#s
 sj#tex#JoinBlock	plugged/splitjoin.vim/autoload/sj/tex.vim	/^function! sj#tex#JoinBlock()$/;"	f
 sj#tex#SplitBlock	plugged/splitjoin.vim/autoload/sj/tex.vim	/^function! sj#tex#SplitBlock()$/;"	f
 sj#vim#Join	plugged/splitjoin.vim/autoload/sj/vim.vim	/^function! sj#vim#Join()$/;"	f
+sj#vim#JoinIfClause	plugged/splitjoin.vim/autoload/sj/vim.vim	/^function! sj#vim#JoinIfClause()$/;"	f
 sj#vim#Split	plugged/splitjoin.vim/autoload/sj/vim.vim	/^function! sj#vim#Split()$/;"	f
+sj#vim#SplitIfClause	plugged/splitjoin.vim/autoload/sj/vim.vim	/^function! sj#vim#SplitIfClause()$/;"	f
 sj#vue#JoinCssDefinition	plugged/splitjoin.vim/autoload/sj/vue.vim	/^function! sj#vue#JoinCssDefinition()$/;"	f
 sj#vue#JoinCssMultilineSelector	plugged/splitjoin.vim/autoload/sj/vue.vim	/^function! sj#vue#JoinCssMultilineSelector()$/;"	f
 sj#vue#SplitCssDefinition	plugged/splitjoin.vim/autoload/sj/vue.vim	/^function! sj#vue#SplitCssDefinition()$/;"	f
@@ -29192,6 +29308,7 @@ warn	plugged/vim-fugitive/plugin/fugitive.vim	/^function! s:warn(str) abort$/;"	
 warn	plugged/vim-rails/autoload/rails.vim	/^function! s:warn(str) abort$/;"	f
 warning	plugged/vim-polyglot/ftplugin/latex-box/common.vim	/^		let warning = escape(substitute(w, '[\\,]', '%\\\\\\\\&', 'g'), ' ')$/;"	v
 wcswidth	plugged/vim-polyglot/autoload/vital/_crystal/Data/String.vim	/^  function! s:wcswidth(str) abort$/;"	f
+webcat	plugged/vim-rails/autoload/rails.vim	/^function! s:webcat() abort$/;"	f
 where	plugged/vim-wakatime/plugin/packages/wakatime/packages/requests/certs.py	/^    def where():$/;"	f
 widget_attributes	plugged/vim-polyglot/autoload/xml/aria.vim	/^let widget_attributes = {$/;"	v
 widget_role	plugged/vim-polyglot/autoload/xml/aria.vim	/^let widget_role = [$/;"	v
@@ -29212,7 +29329,6 @@ wise	plugged/vim-textobj-user/autoload/textobj/user.vim	/^function! s:wise(defau
 withIndentation	plugged/splitjoin.vim/autoload/sj/html.vim	/^function! s:withIndentation(str, indent)$/;"	f
 with_cd	autoload/plug.vim	/^function! s:with_cd(cmd, dir)$/;"	f
 with_index	plugged/vim-polyglot/autoload/vital/_crystal/Data/List.vim	/^function! s:with_index(list, ...) abort$/;"	f
-with_keywords_highlight	plugged/vim-polyglot/syntax/ansible.vim	/^fun! s:with_keywords_highlight(name)$/;"	f
 with_metaclass	plugged/vim-wakatime/plugin/packages/wakatime/packages/requests/packages/urllib3/packages/six.py	/^def with_metaclass(meta, *bases):$/;"	f
 with_metaclass	plugged/vim-wakatime/plugin/packages/wakatime/packages/six.py	/^def with_metaclass(meta, *bases):$/;"	f
 word_callback	plugged/vim-wakatime/plugin/packages/wakatime/packages/pygments/lexers/rebol.py	/^    def word_callback(lexer, match):$/;"	m	class:RebolLexer

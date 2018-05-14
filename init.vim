@@ -110,24 +110,24 @@ nnoremap <CR> :nohlsearch<cr>
 
 inoremap jj <Esc>
 
-map <leader>ga :Files app<cr>
-map <leader>gv :Files app/views<cr>
-map <leader>gc :Files app/controllers<cr>
-map <leader>gm :Files app/models<cr>
-map <leader>gh :Files app/helpers<cr>
-map <leader>gj :Files app/assets/javascripts<cr>
-map <leader>gf :Files features<cr>
-map <leader>gs :Files spec<cr>
-map <leader>gt :Files test<cr>
-map <leader>gl :Files lib<cr>
-map <leader>ge :Files engines<cr>
-map <leader>f :Files ./<cr>
-map <leader>b :Buffers<cr>
-map <leader>gd :e db/schema.rb<cr>
-map <leader>gr :e config/routes.rb<cr>
-map <leader>gg :e Gemfile<cr>
-map <leader>s :A<CR>
-map <leader>v :AV<CR>
+nmap <leader>ga :Files app<cr>
+nmap <leader>gv :Files app/views<cr>
+nmap <leader>gc :Files app/controllers<cr>
+nmap <leader>gm :Files app/models<cr>
+nmap <leader>gh :Files app/helpers<cr>
+nmap <leader>gj :Files app/assets/javascripts<cr>
+nmap <leader>gf :Files features<cr>
+nmap <leader>gs :Files spec<cr>
+nmap <leader>gt :Files test<cr>
+nmap <leader>gl :Files lib<cr>
+nmap <leader>ge :Files engines<cr>
+nmap <leader>f :Files ./<cr>
+nmap <leader>b :Buffers<cr>
+nmap <leader>gd :e db/schema.rb<cr>
+nmap <leader>gr :e config/routes.rb<cr>
+nmap <leader>gg :e Gemfile<cr>
+nmap <leader>s :A<CR>
+nmap <leader>v :AV<CR>
 
 " vim-test
 nmap <silent> <leader>t :TestNearest<CR>
