@@ -103,6 +103,13 @@ augroup vimrc
   autocmd FileType fzf tnoremap <buffer> <C-k> <Up>
 augroup END
 
+" quick-scope
+augroup qs_colors
+  autocmd! qs_colors
+  autocmd ColorScheme * highlight QuickScopePrimary ctermfg=3 cterm=underline
+  autocmd ColorScheme * highlight QuickScopeSecondary ctermfg=5 cterm=underline
+augroup END
+
 " Toggle relative numbers
 nnoremap <C-n> :let &rnu=!&rnu<CR>
 
