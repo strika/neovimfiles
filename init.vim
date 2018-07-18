@@ -23,6 +23,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rails'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
+Plug 'unblevable/quick-scope'
 Plug 'vim-airline/vim-airline'
 
 call plug#end()
