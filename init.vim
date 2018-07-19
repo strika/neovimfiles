@@ -206,5 +206,8 @@ let g:fzf_colors =
 " Neomake
 call neomake#configure#automake('w')
 
+" Abbreviations
+ab fsl # frozen_string_literal: true
+
 " Color scheme
 colorscheme nord
