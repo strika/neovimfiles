@@ -1,5 +1,5 @@
 #!/bin/bash
-gem install neovim
+gem install --verbose neovim --no-ri --no-rdoc
 mkdir _backup
 mkdir _temp
 nvim +PlugInstall +qall
