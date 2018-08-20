@@ -119,37 +119,6 @@ In visual mode:
 * `gJ` (with the cursor on the first line of a block) to join a block into a
   single-line statement
 
-## Plugins:
-
-* [ack.vim](https://github.com/mileszs/ack.vim)
-* [ctrlp.vim](https://github.com/kien/ctrlp.vim)
-* [neomake](https://github.com/neomake/neomake)
-* [nord-vim](https://github.com/arcticicestudio/nord-vim)
-* [rename.vim](https://github.com/danro/rename.vim)
-* [ri.vim](https://github.com/danchoi/ri.vim)
-* [splitjoin.vim](https://github.com/AndrewRadev/splitjoin.vim)
-* [tabular](https://github.com/godlygeek/tabular)
-* [vim-airline-themes](https://github.com/vim-airline/vim-airline-themes)
-* [vim-airline](https://github.com/vim-airline/vim-airline)
-* [vim-commentary](https://github.com/tpope/vim-commentary)
-* [vim-endwise](https://github.com/tpope/vim-endwise)
-* [vim-fugitive](https://github.com/tpope/vim-fugitive)
-* [vim-gitgutter](https://github.com/airblade/vim-gitgutter)
-* [vim-gutentags](https://github.com/ludovicchabant/vim-gutentags)
-* [vim-numbertoggle](https://github.com/jeffkreeftmeijer/vim-numbertoggle)
-* [vim-polyglot](https://github.com/sheerun/vim-polyglot)
-* [vim-rails](https://github.com/tpope/vim-rails)
-* [vim-reek](https://github.com/rainerborene/vim-reek)
-* [vim-repeat](https://github.com/tpope/vim-repeat)
-* [vim-surround](https://github.com/tpope/vim-surround)
-* [vim-test](https://github.com/janko-m/vim-test)
-* [vim-textobj-rubyblock](https://github.com/nelstrom/vim-textobj-rubyblock)
-* [vim-textobj-user](https://github.com/kana/vim-textobj-user)
-
-## Included colorschemes:
-
-* [nord](https://github.com/arcticicestudio/nord-vim)
-
 Thanks to these guys:
 
 * [Drew Neil](http://vimcasts.org)
