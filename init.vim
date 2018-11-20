@@ -170,14 +170,6 @@ nmap <leader>A :Ack <C-r><C-w>
 " Lightline
 let g:lightline = { "colorscheme": "nord"  }
 
-" Airline
-let g:airline_left_sep=""
-let g:airline_right_sep=""
-let g:airline_section_x=""
-let g:airline_section_y=""
-let g:airline_section_z="%l/%L %-3.c"
-let g:airline_theme="nord"
-
 " Nvim Terminal
 " Make escape work in the Neovim terminal.
 tnoremap <Esc> <C-\><C-n>
