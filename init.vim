@@ -169,7 +169,15 @@ nmap <leader>a :Ack ""<Left>
 nmap <leader>A :Ack <C-r><C-w>
 
 " Lightline
-let g:lightline = { "colorscheme": "nord"  }
+let g:lightline = {
+      \   "colorscheme": "nord",
+      \   "active": {
+      \     "right": [
+      \       [ "lineinfo" ],
+      \       [ "percent" ]
+      \     ]
+      \   },
+      \ }
 
 " Nvim Terminal
 " Make escape work in the Neovim terminal.
@@ -185,20 +193,21 @@ tnoremap <C-l> <C-\><C-N><C-w>l
 let g:rubycomplete_rails = 1
 
 " FZF
-let g:fzf_colors =
-\ { 'fg':      ['fg', 'Normal'],
-  \ 'bg':      ['bg', 'Normal'],
-  \ 'hl':      ['fg', 'Comment'],
-  \ 'fg+':     ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
-  \ 'bg+':     ['bg', 'CursorLine', 'CursorColumn'],
-  \ 'hl+':     ['fg', 'Statement'],
-  \ 'info':    ['fg', 'PreProc'],
-  \ 'border':  ['fg', 'Ignore'],
-  \ 'prompt':  ['fg', 'Conditional'],
-  \ 'pointer': ['fg', 'Exception'],
-  \ 'marker':  ['fg', 'Keyword'],
-  \ 'spinner': ['fg', 'Label'],
-  \ 'header':  ['fg', 'Comment'] }
+let g:fzf_colors = {
+      \   'fg':      ['fg', 'Normal'],
+      \   'bg':      ['bg', 'Normal'],
+      \   'hl':      ['fg', 'Comment'],
+      \   'fg+':     ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
+      \   'bg+':     ['bg', 'CursorLine', 'CursorColumn'],
+      \   'hl+':     ['fg', 'Statement'],
+      \   'info':    ['fg', 'PreProc'],
+      \   'border':  ['fg', 'Ignore'],
+      \   'prompt':  ['fg', 'Conditional'],
+      \   'pointer': ['fg', 'Exception'],
+      \   'marker':  ['fg', 'Keyword'],
+      \   'spinner': ['fg', 'Label'],
+      \   'header':  ['fg', 'Comment']
+      \ }
 
 " Tagbar
 nmap <leader>q :TagbarToggle<CR>
