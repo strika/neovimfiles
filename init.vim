@@ -6,6 +6,7 @@ Plug 'arcticicestudio/nord-vim'
 Plug 'danchoi/ri.vim'
 Plug 'danro/rename.vim'
 Plug 'godlygeek/tabular'
+Plug 'itchyny/lightline.vim'
 Plug 'janko-m/vim-test'
 Plug 'jeffkreeftmeijer/vim-numbertoggle'
 Plug 'jiangmiao/auto-pairs'
@@ -24,7 +25,6 @@ Plug 'tpope/vim-rails'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'unblevable/quick-scope'
-Plug 'vim-airline/vim-airline'
 
 call plug#end()
 
@@ -33,7 +33,7 @@ set ruler                               " Show the cursor position all the time
 set colorcolumn=80                      " Show vertical bar at column 80
 set cursorline                          " Highlight the line of the cursor
 set showcmd                             " Show partial commands below the status line
-set noshowmode                          " Don't show current model - it's already displayed in Airline
+set noshowmode                          " Don't show current model - it's already displayed in Lightline
 set shell=bash                          " Avoids munging PATH under zsh
 let g:is_bash=1                         " Default shell syntax
 set scrolloff=3                         " Have some context around the current line always
@@ -166,6 +166,9 @@ inoremap <silent> <C-S> <C-O>:update<CR>
 let g:ackprg="ack-grep -H --nocolor --nogroup --column"
 nmap <leader>a :Ack ""<Left>
 nmap <leader>A :Ack <C-r><C-w>
+
+" Lightline
+let g:lightline = { "colorscheme": "nord"  }
 
 " Airline
 let g:airline_left_sep=""
