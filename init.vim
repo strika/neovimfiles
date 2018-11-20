@@ -172,10 +172,17 @@ nmap <leader>A :Ack <C-r><C-w>
 let g:lightline = {
       \   "colorscheme": "nord",
       \   "active": {
+      \     "left": [
+      \       [ "mode", "paste" ],
+      \       [ "gitbranch", "readonly", "filename", "modified" ]
+      \     ],
       \     "right": [
       \       [ "lineinfo" ],
       \       [ "percent" ]
-      \     ]
+      \     ],
+      \   },
+      \   "component_function": {
+      \     "gitbranch": "fugitive#head"
       \   },
       \ }
 
