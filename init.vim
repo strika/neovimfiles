@@ -19,6 +19,7 @@ Plug 'mileszs/ack.vim'
 Plug 'nelstrom/vim-textobj-rubyblock'
 Plug 'neomake/neomake'
 Plug 'sheerun/vim-polyglot'
+Plug 'takac/vim-hardtime'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-fugitive'
@@ -221,6 +222,12 @@ nmap <leader>q :TagbarToggle<CR>
 
 " Neomake
 call neomake#configure#automake('w')
+
+" Hardtime
+let g:hardtime_default_on = 1
+let g:hardtime_ignore_quickfix = 1
+let g:hardtime_allow_different_key = 1
+let g:hardtime_maxcount = 2
 
 " Abbreviations
 ab fsl # frozen_string_literal: true
