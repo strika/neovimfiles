@@ -47,6 +47,7 @@ set hidden                              " Allow backgrounding buffers without wr
 set backupdir=~/.config/nvim/_backup    " where to put backup files
 set directory=~/.config/nvim/_temp      " where to put swap files
 set inccommand=nosplit                  " incremental substitute
+set termguicolors
 
 " Whitespace
 set nowrap                              " don't wrap lines
@@ -233,4 +234,5 @@ let g:hardtime_maxcount = 2
 ab fsl # frozen_string_literal: true
 
 " Color scheme
+let g:nord_comment_brightness = 15
 colorscheme nord
