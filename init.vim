@@ -232,5 +232,10 @@ let g:hardtime_maxcount = 2
 " Abbreviations
 ab fsl # frozen_string_literal: true
 
+augroup nord-overrides
+  autocmd!
+  autocmd ColorScheme nord highlight Comment ctermfg=5
+augroup END
+
 " Color scheme
 colorscheme nord
