@@ -3,6 +3,7 @@ call plug#begin('~/.config/nvim/plugged')
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'arcticicestudio/nord-vim'
+Plug 'bfredl/nvim-miniyank'
 Plug 'danchoi/ri.vim'
 Plug 'danro/rename.vim'
 Plug 'godlygeek/tabular'
@@ -231,6 +232,11 @@ let g:hardtime_maxcount = 2
 
 " Abbreviations
 ab fsl # frozen_string_literal: true
+
+" nvim-miniyank
+map p <Plug>(miniyank-autoput)
+map P <Plug>(miniyank-autoPut)
+map <leader>n <Plug>(miniyank-cycle)
 
 " Color scheme
 colorscheme nord
