@@ -180,7 +180,8 @@ let g:lightline = {
       \     ],
       \     "right": [
       \       [ "lineinfo" ],
-      \       [ "percent" ]
+      \       [ "percent" ],
+      \       [ "fileformat", "fileencoding" ]
       \     ],
       \   },
       \   "component_function": {
