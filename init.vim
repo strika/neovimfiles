@@ -139,7 +139,7 @@ nmap <leader>gr :e config/routes.rb<cr>
 nmap <leader>gg :e Gemfile<cr>
 nmap <leader>s :A<CR>
 nmap <leader>v :AV<CR> <C-w>r
-nmap <leader>qa :%bd<CR>
+nmap <leader>qa :%bd!<CR>
 
 " vim-test
 nmap <silent> <leader>t :TestNearest<CR>
