@@ -175,7 +175,7 @@ nmap <leader>A :Ack <C-r><C-w>
 
 " Lightline
 let g:lightline = {
-      \   "colorscheme": "nord",
+      \   "colorscheme": "onehalfdark",
       \   "active": {
       \     "left": [
       \       [ "mode", "paste" ],
@@ -246,4 +246,5 @@ map P <Plug>(miniyank-autoPut)
 map <leader>n <Plug>(miniyank-cycle)
 
 " Color scheme
-colorscheme nord
+" colorscheme nord
+colorscheme onehalflight
