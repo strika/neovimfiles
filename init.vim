@@ -231,6 +231,9 @@ let g:hardtime_ignore_quickfix = 1
 let g:hardtime_allow_different_key = 1
 let g:hardtime_maxcount = 2
 
+" splitjoin
+let g:splitjoin_ruby_hanging_args = 0
+
 " Abbreviations
 ab fsl # frozen_string_literal: true
 
