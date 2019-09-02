@@ -134,7 +134,7 @@ nmap <leader>gl :Files lib<cr>
 nmap <leader>ge :Files engines<cr>
 nmap <leader>f :Files ./<cr>
 nmap <leader>b :Buffers<cr>
-nmap <leader>gl :BLines<cr>
+nmap <leader>gn :BLines<cr>
 nmap <leader>gd :e db/schema.rb<cr>
 nmap <leader>gr :e config/routes.rb<cr>
 nmap <leader>gg :e Gemfile<cr>
