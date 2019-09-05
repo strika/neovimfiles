@@ -93,8 +93,6 @@ augroup vimrc
   " Encrypted Yaml
   autocmd BufRead,BufNewFile *.yml.enc setlocal filetype=yaml
 
-  autocmd BufRead,BufNewFile *.{inky} setlocal filetype=html
-
   " Git
   autocmd Filetype gitcommit setlocal spell textwidth=72
 
