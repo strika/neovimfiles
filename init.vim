@@ -87,8 +87,11 @@ augroup vimrc
   autocmd BufReadPost * if &filetype !~ '^git\c' && line("'\"") > 0 && line("'\"") <= line("$")
     \| exe "normal! g`\"" | endif
 
+  " ES6
+  autocmd BufRead,BufNewFile *.es6 setlocal filetype=javascript
+
   " Encrypted Yaml
-  autocmd BufRead,BufNewFile *.{yml.enc} setlocal filetype=yaml
+  autocmd BufRead,BufNewFile *.yml.enc setlocal filetype=yaml
 
   autocmd BufRead,BufNewFile *.{inky} setlocal filetype=html
 
