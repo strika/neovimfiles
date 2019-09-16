@@ -33,6 +33,8 @@ installation fails for any reason, open Neovim and run `:PlugInstall`.
 * `:KillWhitespace` - strip trailing whitespace
 * `<leader>s` opens spec
 * `<leader>v` opens spec in split view
+* `<leader>s` opens alternate file
+* `<leader>x` opens related file
 
 ### Ack
 
