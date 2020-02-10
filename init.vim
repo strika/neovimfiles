@@ -28,6 +28,7 @@ Plug 'tpope/vim-rails'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'unblevable/quick-scope'
+Plug 'vimwiki/vimwiki'
 
 call plug#end()
 
