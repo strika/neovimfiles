@@ -246,5 +246,8 @@ map p <Plug>(miniyank-autoput)
 map P <Plug>(miniyank-autoPut)
 map <leader>n <Plug>(miniyank-cycle)
 
+" vimwiki
+let g:vimwiki_list = [{'syntax': 'markdown', 'ext': '.md'}]
+
 " Color scheme
 colorscheme nord
