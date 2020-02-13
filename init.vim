@@ -83,8 +83,8 @@ augroup vimrc
   " Spellcheck
   autocmd BufRead,BufNewFile *.feature setlocal spell
 
-  " Turn off spellcheck in Tasks.md
-  autocmd BufRead,BufNewFile Tasks.md setlocal nospell
+  " Turn off spellcheck in some Vimwiki pages
+  autocmd BufRead,BufNewFile {Tasks,Scheduled\ tasks,Satovi}.md setlocal nospell
 
   " Remember last location in file, but not for commit messages.
   " see :help last-position-jump
