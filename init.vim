@@ -118,6 +118,10 @@ augroup qs_colors
   autocmd ColorScheme * highlight QuickScopeSecondary ctermfg=5 cterm=underline
 augroup END
 
+" Quickly edit vimrc file
+nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+nnoremap <leader>sv :source $MYVIMRC<cr>
+
 " Toggle relative numbers
 nnoremap <C-n> :let &rnu=!&rnu<CR>
 
