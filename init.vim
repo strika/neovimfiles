@@ -1,3 +1,6 @@
+let mapleader=" "
+
+" Plugins ------------------------- {{{
 call plug#begin('~/.config/nvim/plugged')
 
 Plug 'AndrewRadev/splitjoin.vim'
@@ -31,7 +34,9 @@ Plug 'unblevable/quick-scope'
 Plug 'vimwiki/vimwiki'
 
 call plug#end()
+" }}}
 
+" Basic settings ---------------------- {{{
 set number
 set ruler                               " Show the cursor position all the time
 set colorcolumn=80                      " Show vertical bar at column 80
@@ -59,8 +64,7 @@ set expandtab                           " use spaces, not tabs
 " Searching
 set ignorecase                          " searches are case insensitive...
 set smartcase                           " ... unless they contain at least one capital letter
-
-let mapleader=" "
+" }}}
 
 function s:setupWrappingAndSpellcheck()
   set wrap
@@ -105,11 +109,14 @@ augroup vimrc
 
   " Prefer Neovim terminal insert mode to normal mode.
   autocmd BufEnter term://* startinsert
-
-  " FZF
-  autocmd FileType fzf tnoremap <buffer> <C-j> <Down>
-  autocmd FileType fzf tnoremap <buffer> <C-k> <Up>
 augroup END
+
+" Vimscript file settings ---------------------- {{{
+augroup filetype_vim
+  autocmd!
+  autocmd FileType vim setlocal foldmethod=marker
+augroup END
+" }}}
 
 " quick-scope
 augroup qs_colors
@@ -213,7 +220,14 @@ tnoremap <C-l> <C-\><C-N><C-w>l
 " Ruby on Rails
 let g:rubycomplete_rails = 1
 
-" FZF
+" FZF settings ---------------------- {{{
+augroup fzf
+  autocmd! fzf
+
+  autocmd FileType fzf tnoremap <buffer> <C-j> <Down>
+  autocmd FileType fzf tnoremap <buffer> <C-k> <Up>
+augroup END
+
 let g:fzf_colors = {
       \   'fg':      ['fg', 'Normal'],
       \   'bg':      ['bg', 'Normal'],
@@ -229,6 +243,7 @@ let g:fzf_colors = {
       \   'spinner': ['fg', 'Label'],
       \   'header':  ['fg', 'Comment']
       \ }
+" }}}
 
 " Tagbar
 nmap <leader>q :TagbarToggle<CR>
