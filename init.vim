@@ -262,6 +262,7 @@ let g:splitjoin_ruby_hanging_args = 0
 
 " Abbreviations
 ab fsl # frozen_string_literal: true
+ab ar #aligni - Review
 
 " nvim-miniyank
 map p <Plug>(miniyank-autoput)
