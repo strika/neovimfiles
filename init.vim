@@ -88,7 +88,7 @@ augroup vimrc
   autocmd BufRead,BufNewFile *.feature setlocal spell
 
   " Turn off spellcheck in some Vimwiki pages
-  autocmd BufRead,BufNewFile {Tasks,Scheduled\ tasks,Satovi}.md setlocal nospell
+  autocmd BufRead,BufNewFile {Tasks,Scheduled\ tasks,Satovi,Dnevnik}.md setlocal nospell
 
   " Remember last location in file, but not for commit messages.
   " see :help last-position-jump
@@ -262,6 +262,7 @@ let g:splitjoin_ruby_hanging_args = 0
 
 " Abbreviations
 ab fsl # frozen_string_literal: true
+ab al #aligni -
 ab ar #aligni - Review
 
 " nvim-miniyank
