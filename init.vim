@@ -21,6 +21,7 @@ Plug 'ludovicchabant/vim-gutentags'
 Plug 'mileszs/ack.vim'
 Plug 'nelstrom/vim-textobj-rubyblock'
 Plug 'neomake/neomake'
+Plug 'sonph/onehalf', {'rtp': 'vim/'}
 Plug 'takac/vim-hardtime'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-endwise'
@@ -188,7 +189,6 @@ nmap <leader>A :Ack <C-r><C-w>
 
 " Lightline
 let g:lightline = {
-      \   "colorscheme": "nord",
       \   "active": {
       \     "left": [
       \       [ "mode", "paste" ],
@@ -270,3 +270,7 @@ let g:vimwiki_list = [{'syntax': 'markdown', 'ext': '.md'}]
 
 " Color scheme
 colorscheme nord
+let g:lightline.colorscheme='nord'
+
+" colorscheme onehalflight
+" let g:lightline.colorscheme='onehalflight'
