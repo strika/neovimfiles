@@ -183,7 +183,7 @@ vnoremap <silent> <C-S> <C-C>:update<CR>
 inoremap <silent> <C-S> <C-O>:update<CR>
 
 " Ack
-let g:ackprg="ack-grep -H --nocolor --nogroup --column"
+let g:ackprg="ack -H --nocolor --nogroup --column"
 nmap <leader>a :Ack ""<Left>
 nmap <leader>A :Ack <C-r><C-w>
 
