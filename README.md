@@ -121,6 +121,17 @@ In visual mode:
 * `gJ` (with the cursor on the first line of a block) to join a block into a
   single-line statement
 
+### [ri](https://github.com/danchoi/ri.vim)
+
+This plugin lets you search and navigate Ruby library and gem documentation
+inside Vim.
+
+
+* `<leader>R` opens the search/autocomplete window, and will use a vertical
+  split to display matching documentation
+* `K` opens documentation for the word under the cursor, if the current buffer
+  is a Ruby file
+
 Thanks to these guys:
 
 * [Drew Neil](http://vimcasts.org)
