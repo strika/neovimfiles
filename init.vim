@@ -273,4 +273,4 @@ colorscheme nord
 let g:lightline.colorscheme='nord'
 
 " colorscheme onehalflight
-" let g:lightline.colorscheme='onehalflight'
+" let g:lightline.colorscheme='onehalfdark'
