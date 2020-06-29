@@ -31,9 +31,8 @@ installation fails for any reason, open Neovim and run `:PlugInstall`.
   * `<leader>gc` - in `app/controllers`
   * `<leader>gs` - in `specs`
 * `:KillWhitespace` - strip trailing whitespace
-* `<leader>s` opens spec
-* `<leader>v` opens spec in split view
-* `<leader>s` opens alternate file
+* `<leader>s` opens alternate file (spec)
+* `<leader>v` opens alternate file in split view
 * `<leader>x` opens related file
 
 ### Ack

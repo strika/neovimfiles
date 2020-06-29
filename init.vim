@@ -103,9 +103,6 @@ augroup vimrc
   " Git
   autocmd Filetype gitcommit setlocal spell textwidth=72
 
-  " I like relative numbering when in normal mode.
-  autocmd TermOpen * setlocal conceallevel=0 colorcolumn=0 relativenumber
-
   " Prefer Neovim terminal insert mode to normal mode.
   autocmd BufEnter term://* startinsert
 augroup END
