@@ -79,6 +79,9 @@ augroup vimrc
   " Delete empty space from the end of lines on every save
   autocmd BufWritePre * :%s/\s\+$//e
 
+  " Use relative numbering when in normal mode
+  autocmd TermOpen * setlocal conceallevel=0 colorcolumn=0 relativenumber
+
   " Make sure all markdown files have the correct filetype set and setup
   " wrapping and spell check
   autocmd BufRead,BufNewFile *.{md,md.erb,markdown,mdown,mkd,mkdn,txt} setf markdown | call s:setupWrappingAndSpellcheck()
