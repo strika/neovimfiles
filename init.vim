@@ -268,6 +268,10 @@ map <leader>n <Plug>(miniyank-cycle)
 " vimwiki
 let g:vimwiki_list = [{'syntax': 'markdown', 'ext': '.md'}]
 
+" Tabular
+vnoremap <leader>B> :Tabular /=><cr>
+vnoremap <leader>B= :Tabular /=<cr>
+
 " Color scheme
 colorscheme nord
 let g:lightline.colorscheme='nord'
