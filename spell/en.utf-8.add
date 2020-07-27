@@ -21,3 +21,6 @@ PurchaseItem
 PurchaseHistoryChart
 InventoryUnit
 BuildAllocationItem
+Tuesday
+BuildReservationItem
+InventoryTransferItem
