@@ -128,13 +128,24 @@ augroup END
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
 
+inoremap jj <Esc>
+
+" Close all buffers with <leader>qa
+nmap <leader>qa :%bd!<CR>
+
+" Close window with <leader>q
+nnoremap <leader>q :q<CR>
+
+" Map Ctrl+S to :w
+noremap <silent> <C-S>  :update<CR>
+vnoremap <silent> <C-S> <C-C>:update<CR>
+inoremap <silent> <C-S> <C-O>:update<CR>
+
 " Toggle relative numbers
 nnoremap <C-n> :let &rnu=!&rnu<CR>
 
-" clear the search buffer when hitting return
+" Clear the search buffer when hitting return
 nnoremap <CR> :nohlsearch<cr>
-
-inoremap jj <Esc>
 
 nmap <leader>ga :Files app<cr>
 nmap <leader>gv :Files app/views<cr>
@@ -156,7 +167,6 @@ nmap <leader>gg :e Gemfile<cr>
 nmap <leader>s :A<CR>
 nmap <leader>x :R<CR>
 nmap <leader>v :AV<CR> <C-w>r
-nmap <leader>qa :%bd!<CR>
 
 " vim-test
 nmap <silent> <leader>t :TestNearest<CR>
@@ -176,11 +186,6 @@ nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
 nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
-
-" map Ctrl+S to :w
-noremap <silent> <C-S>  :update<CR>
-vnoremap <silent> <C-S> <C-C>:update<CR>
-inoremap <silent> <C-S> <C-O>:update<CR>
 
 " Ack
 let g:ackprg="ack -H --nocolor --nogroup --column"
