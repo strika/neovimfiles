@@ -63,7 +63,16 @@ set expandtab                           " use spaces, not tabs
 " Searching
 set ignorecase                          " searches are case insensitive...
 set smartcase                           " ... unless they contain at least one capital letter
+
+set wildignore+=tmp/**
+set wildignore+=*/vendor/*
+set wildignore+=*/plugged/*
 " }}}
+
+" Abbreviations
+ab fsl # frozen_string_literal: true
+ab al #aligni -
+ab ar #aligni - Review
 
 function s:setupWrappingAndSpellcheck()
   set wrap
@@ -174,10 +183,6 @@ nmap <silent> <leader>T :TestFile<CR>
 nmap <silent> <leader>l :TestLast<CR>
 let test#strategy="neovim"
 
-set wildignore+=tmp/**
-set wildignore+=*/vendor/*
-set wildignore+=*/plugged/*
-
 " switch between 2 files opened last
 nnoremap <leader><leader> <c-^>
 
@@ -259,11 +264,6 @@ let g:hardtime_maxcount = 2
 
 " splitjoin
 let g:splitjoin_ruby_hanging_args = 0
-
-" Abbreviations
-ab fsl # frozen_string_literal: true
-ab al #aligni -
-ab ar #aligni - Review
 
 " nvim-miniyank
 map p <Plug>(miniyank-autoput)
