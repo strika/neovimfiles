@@ -71,8 +71,8 @@ set wildignore+=*/plugged/*
 
 " Abbreviations
 ab fsl # frozen_string_literal: true
-ab al #aligni -
-ab ar #aligni - Review
+ab al# #aligni -
+ab ar# #aligni - Review
 
 function s:setupWrappingAndSpellcheck()
   set wrap
