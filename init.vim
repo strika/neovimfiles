@@ -138,8 +138,6 @@ augroup END
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
 
-inoremap jj <Esc>
-
 " Close all buffers with <leader>qa
 nmap <leader>qa :%bd!<CR>
 
@@ -277,6 +275,18 @@ let g:vimwiki_list = [{'syntax': 'markdown', 'ext': '.md'}]
 " Tabular
 noremap <leader>B> :Tabular /=><cr>
 noremap <leader>B= :Tabular /=<cr>
+
+" Colemak
+inoremap nn <Esc>
+
+" Down/Left/Right
+nnoremap n j|xnoremap n j|onoremap n j|
+nnoremap e k|xnoremap e k|onoremap e k|
+nnoremap i l|xnoremap i l|onoremap i l|
+
+" Insert
+nnoremap s i|
+nnoremap S I|
 
 " Color scheme
 colorscheme nord
