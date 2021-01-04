@@ -278,14 +278,17 @@ nnoremap n j|xnoremap n j|onoremap n j|
 nnoremap e k|xnoremap e k|onoremap e k|
 nnoremap i l|xnoremap i l|onoremap i l|
 
-" Insert
+" inSert
 nnoremap s i|
 nnoremap S I|
+
+" inneR
+onoremap r i
 
 " easier navigation between split windows
 nnoremap <c-n> <c-w>j
 nnoremap <c-e> <c-w>k
-nnoremap <c-h> <c-w>h
+nnoremap <c-h5 <c-w>h
 nnoremap <c-i> <c-w>l
 
 " Color scheme
