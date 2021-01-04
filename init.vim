@@ -185,12 +185,6 @@ let test#strategy="neovim"
 " switch between 2 files opened last
 nnoremap <leader><leader> <c-^>
 
-" easier navigation between split windows
-nnoremap <c-j> <c-w>j
-nnoremap <c-k> <c-w>k
-nnoremap <c-h> <c-w>h
-nnoremap <c-l> <c-w>l
-
 " Ack
 let g:ackprg="ack -H --nocolor --nogroup --column"
 nmap <leader>a :Ack ""<Left>
@@ -287,6 +281,12 @@ nnoremap i l|xnoremap i l|onoremap i l|
 " Insert
 nnoremap s i|
 nnoremap S I|
+
+" easier navigation between split windows
+nnoremap <c-n> <c-w>j
+nnoremap <c-e> <c-w>k
+nnoremap <c-h> <c-w>h
+nnoremap <c-i> <c-w>l
 
 " Color scheme
 colorscheme nord
