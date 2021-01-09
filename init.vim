@@ -278,12 +278,10 @@ nnoremap n j|xnoremap n j|onoremap n j|
 nnoremap e k|xnoremap e k|onoremap e k|
 nnoremap i l|xnoremap i l|onoremap i l|
 
-" inSert
-nnoremap s i|
-nnoremap S I|
-
-" inneR
-onoremap r i
+" Down/Left/Right
+nnoremap j n|xnoremap j n|onoremap j n|
+nnoremap k e|xnoremap k e|onoremap k e|
+nnoremap l i|xnoremap l i|onoremap l i|
 
 " easier navigation between split windows
 nnoremap <c-n> <c-w>j
