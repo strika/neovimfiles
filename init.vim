@@ -286,7 +286,7 @@ nnoremap l i|xnoremap l i|onoremap l i|
 " easier navigation between split windows
 nnoremap <c-n> <c-w>j
 nnoremap <c-e> <c-w>k
-nnoremap <c-h5 <c-w>h
+nnoremap <c-h> <c-w>h
 nnoremap <c-i> <c-w>l
 
 " Color scheme
