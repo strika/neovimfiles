@@ -276,6 +276,9 @@ nnoremap j n|xnoremap j n|onoremap j n|
 nnoremap k e|xnoremap k e|onoremap k e|
 nnoremap l i|xnoremap l i|onoremap l i|
 
+nnoremap <c-n> <c-n>
+nnoremap <c-e> <c-k>
+
 " easier navigation between split windows
 nnoremap <c-n> <c-w>j
 nnoremap <c-e> <c-w>k
