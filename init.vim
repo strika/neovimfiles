@@ -22,7 +22,6 @@ Plug 'mileszs/ack.vim'
 Plug 'nelstrom/vim-textobj-rubyblock'
 Plug 'neomake/neomake'
 Plug 'sonph/onehalf', {'rtp': 'vim/'}
-Plug 'takac/vim-hardtime'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-fugitive'
@@ -248,12 +247,6 @@ let g:fzf_colors = {
 
 " Neomake
 call neomake#configure#automake('w')
-
-" Hardtime
-let g:hardtime_default_on = 1
-let g:hardtime_ignore_quickfix = 1
-let g:hardtime_allow_different_key = 1
-let g:hardtime_maxcount = 2
 
 " splitjoin
 let g:splitjoin_ruby_hanging_args = 0
