@@ -224,8 +224,8 @@ let g:rubycomplete_rails = 1
 augroup fzf
   autocmd! fzf
 
-  autocmd FileType fzf tnoremap <buffer> <C-j> <Down>
-  autocmd FileType fzf tnoremap <buffer> <C-k> <Up>
+  autocmd FileType fzf tnoremap <buffer> <C-n> <Down>
+  autocmd FileType fzf tnoremap <buffer> <C-e> <Up>
 augroup END
 
 let g:fzf_colors = {
@@ -275,9 +275,6 @@ nnoremap i l|xnoremap i l|onoremap i l|
 nnoremap j n|xnoremap j n|onoremap j n|
 nnoremap k e|xnoremap k e|onoremap k e|
 nnoremap l i|xnoremap l i|onoremap l i|
-
-nnoremap <c-n> <c-n>
-nnoremap <c-e> <c-k>
 
 " easier navigation between split windows
 nnoremap <c-n> <c-w>j
