@@ -149,7 +149,7 @@ vnoremap <silent> <C-S> <C-C>:update<CR>
 inoremap <silent> <C-S> <C-O>:update<CR>
 
 " Toggle relative numbers
-nnoremap <C-n> :let &rnu=!&rnu<CR>
+nnoremap <C-k> :let &rnu=!&rnu<CR>
 
 " Clear the search buffer when hitting return
 nnoremap <CR> :nohlsearch<cr>
