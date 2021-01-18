@@ -264,7 +264,7 @@ noremap <leader>B> :Tabular /=><cr>
 noremap <leader>B= :Tabular /=<cr>
 
 " Colemak
-inoremap nn <Esc>
+inoremap ee <Esc>
 
 " Down/Left/Right
 nnoremap n j|xnoremap n j|onoremap n j|
