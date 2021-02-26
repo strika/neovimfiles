@@ -270,10 +270,18 @@ nnoremap n j|xnoremap n j|onoremap n j|
 nnoremap e k|xnoremap e k|onoremap e k|
 nnoremap i l|xnoremap i l|onoremap i l|
 
+nnoremap N J|xnoremap N J|onoremap N J|
+nnoremap E K|xnoremap E K|onoremap E K|
+nnoremap I L|xnoremap I L|onoremap I L|
+
 " Down/Left/Right
 nnoremap j n|xnoremap j n|onoremap j n|
 nnoremap k e|xnoremap k e|onoremap k e|
 nnoremap l i|xnoremap l i|onoremap l i|
+
+nnoremap J N|xnoremap J N|onoremap J N|
+nnoremap K E|xnoremap K E|onoremap K E|
+nnoremap L I|xnoremap L I|onoremap L I|
 
 " easier navigation between split windows
 nnoremap <c-n> <c-w>j
