@@ -31,6 +31,7 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'unblevable/quick-scope'
 Plug 'vimwiki/vimwiki'
+Plug 'wlangstroth/vim-racket'
 
 call plug#end()
 " }}}
@@ -180,6 +181,8 @@ nmap <leader>v :AV<CR> <C-w>r
 nmap <silent> <leader>t :TestNearest<CR>
 nmap <silent> <leader>T :TestFile<CR>
 nmap <silent> <leader>l :TestLast<CR>
+let test#racket#rackunit#file_pattern = '\v.*\.rkt$'
+let test#racket#rackunit#executable = 'raco test'
 let test#strategy="neovim"
 
 " switch between 2 files opened last
