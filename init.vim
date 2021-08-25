@@ -300,6 +300,11 @@ nnoremap <c-h> <c-w>h
 nnoremap <c-i> <c-w>l
 
 " Color scheme
+augroup nord-theme-overrides
+  autocmd!
+  autocmd ColorScheme nord highlight Comment ctermfg=11
+augroup END
+
 colorscheme nord
 let g:lightline.colorscheme='nord'
 
