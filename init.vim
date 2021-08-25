@@ -111,6 +111,9 @@ augroup vimrc
   " ES6
   autocmd BufRead,BufNewFile *.es6 setlocal filetype=javascript
 
+  " Racket
+  autocmd BufRead,BufNewFile *.rkt setlocal colorcolumn=102 textwidth=102
+
   " Encrypted Yaml
   autocmd BufRead,BufNewFile *.yml.enc setlocal filetype=yaml
 
@@ -120,6 +123,7 @@ augroup vimrc
   " Prefer Neovim terminal insert mode to normal mode.
   autocmd BufEnter term://* startinsert
 
+  " Alas
   autocmd BufRead Tasks.md :! alas ~/vimwiki/Tasks.md
 augroup END
 
