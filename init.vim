@@ -16,13 +16,13 @@ Plug 'jeffkreeftmeijer/vim-numbertoggle'
 Plug 'jiangmiao/auto-pairs'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
 Plug 'junegunn/fzf.vim'
+Plug 'junegunn/vim-peekaboo'
 Plug 'kana/vim-textobj-user'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'mileszs/ack.vim'
 Plug 'nelstrom/vim-textobj-rubyblock'
 Plug 'neomake/neomake'
 Plug 'sonph/onehalf', {'rtp': 'vim/'}
-Plug 'takac/vim-hardtime'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-fugitive'
@@ -31,6 +31,7 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'unblevable/quick-scope'
 Plug 'vimwiki/vimwiki'
+Plug 'wlangstroth/vim-racket'
 
 call plug#end()
 " }}}
@@ -118,6 +119,8 @@ augroup vimrc
 
   " Prefer Neovim terminal insert mode to normal mode.
   autocmd BufEnter term://* startinsert
+
+  autocmd BufRead Tasks.md :! alas ~/vimwiki/Tasks.md
 augroup END
 
 " Vimscript file settings ---------------------- {{{
@@ -138,8 +141,6 @@ augroup END
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
 
-inoremap jj <Esc>
-
 " Close all buffers with <leader>qa
 nmap <leader>qa :%bd!<CR>
 
@@ -152,7 +153,7 @@ vnoremap <silent> <C-S> <C-C>:update<CR>
 inoremap <silent> <C-S> <C-O>:update<CR>
 
 " Toggle relative numbers
-nnoremap <C-n> :let &rnu=!&rnu<CR>
+nnoremap <C-k> :let &rnu=!&rnu<CR>
 
 " Clear the search buffer when hitting return
 nnoremap <CR> :nohlsearch<cr>
@@ -182,16 +183,12 @@ nmap <leader>v :AV<CR> <C-w>r
 nmap <silent> <leader>t :TestNearest<CR>
 nmap <silent> <leader>T :TestFile<CR>
 nmap <silent> <leader>l :TestLast<CR>
+let test#racket#rackunit#file_pattern = '\v.*\.rkt$'
+let test#racket#rackunit#executable = 'raco test'
 let test#strategy="neovim"
 
 " switch between 2 files opened last
 nnoremap <leader><leader> <c-^>
-
-" easier navigation between split windows
-nnoremap <c-j> <c-w>j
-nnoremap <c-k> <c-w>k
-nnoremap <c-h> <c-w>h
-nnoremap <c-l> <c-w>l
 
 " Ack
 let g:ackprg="ack -H --nocolor --nogroup --column"
@@ -233,8 +230,8 @@ let g:rubycomplete_rails = 1
 augroup fzf
   autocmd! fzf
 
-  autocmd FileType fzf tnoremap <buffer> <C-j> <Down>
-  autocmd FileType fzf tnoremap <buffer> <C-k> <Up>
+  autocmd FileType fzf tnoremap <buffer> <C-n> <Down>
+  autocmd FileType fzf tnoremap <buffer> <C-e> <Up>
 augroup END
 
 let g:fzf_colors = {
@@ -257,12 +254,6 @@ let g:fzf_colors = {
 " Neomake
 call neomake#configure#automake('w')
 
-" Hardtime
-let g:hardtime_default_on = 1
-let g:hardtime_ignore_quickfix = 1
-let g:hardtime_allow_different_key = 1
-let g:hardtime_maxcount = 2
-
 " splitjoin
 let g:splitjoin_ruby_hanging_args = 0
 
@@ -277,6 +268,32 @@ let g:vimwiki_list = [{'syntax': 'markdown', 'ext': '.md'}]
 " Tabular
 noremap <leader>B> :Tabular /=><cr>
 noremap <leader>B= :Tabular /=<cr>
+
+" Colemak
+
+" Down/Left/Right
+nnoremap n j|xnoremap n j|onoremap n j|
+nnoremap e k|xnoremap e k|onoremap e k|
+nnoremap i l|xnoremap i l|onoremap i l|
+
+nnoremap N J|xnoremap N J|onoremap N J|
+nnoremap E K|xnoremap E K|onoremap E K|
+nnoremap I L|xnoremap I L|onoremap I L|
+
+" Down/Left/Right
+nnoremap j n|xnoremap j n|onoremap j n|
+nnoremap k e|xnoremap k e|onoremap k e|
+nnoremap l i|xnoremap l i|onoremap l i|
+
+nnoremap J N|xnoremap J N|onoremap J N|
+nnoremap K E|xnoremap K E|onoremap K E|
+nnoremap L I|xnoremap L I|onoremap L I|
+
+" easier navigation between split windows
+nnoremap <c-n> <c-w>j
+nnoremap <c-e> <c-w>k
+nnoremap <c-h> <c-w>h
+nnoremap <c-i> <c-w>l
 
 " Color scheme
 colorscheme nord
