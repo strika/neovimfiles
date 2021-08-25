@@ -119,6 +119,8 @@ augroup vimrc
 
   " Prefer Neovim terminal insert mode to normal mode.
   autocmd BufEnter term://* startinsert
+
+  autocmd BufRead Tasks.md :! alas ~/vimwiki/Tasks.md
 augroup END
 
 " Vimscript file settings ---------------------- {{{
